@@ -29,8 +29,6 @@
   }
 ]);
 
-  });
-
   app.directive('header',function(){
     return{
       restrict : 'A',
