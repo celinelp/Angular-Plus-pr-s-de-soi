@@ -132,7 +132,6 @@ font-size: 1.5em;
 #pg-dietetique {
 	background-image: url(../img/dietetique.jpg);
 	height: 300px;
-
 }
 
 #pg-atelier {
@@ -143,7 +142,6 @@ font-size: 1.5em;
 #pg-apropos {
 	background-image: url(../img/apropos.jpg);
 	height: 340px;
-
 }
 
 #pg-contact {
@@ -173,13 +171,9 @@ footer > ul
 }
 
 /* Page Atelier */
-
-
-
 .hfixed {
 	height: 300px;
 }
-
 .atelierBandeTransition{
 	text-align: center;
 	padding-top: 35px;
@@ -209,10 +203,13 @@ footer > ul
 	padding-top: 10px;
 	overflow: auto;
 	text-align: center;
+<<<<<<< HEAD
+=======
 }
 .activeLien{
 	color: yellow !important;
 	background-color: #af7653 !important;
+>>>>>>> 87ccaf4c0c7e2c9aeb03f95463b4e38801c36adc
 }
 /* dietetique - recette et conseil*/
 
@@ -372,9 +369,7 @@ h4 {
 .customtitle1 {
 	color: #663C26;
 	font-weight: bold;
-
 }
-
 #aproposPhraseAccroche h1 {
 	color: #A97052;
 	font-size: 4em;
@@ -382,9 +377,7 @@ h4 {
 	text-align: center;
 	position: relative;
 	top: 40px;
-
 }
-
 blockquote {
 	font-family: 'Open', sans-serif;
 	position: relative;
@@ -429,9 +422,7 @@ li.prose {
 	bottom: -50px;
 	clear: both;
 	width: 80%;
-
 }
-
 img.img-responsive2 {
 	width: 70%;
 }
@@ -495,24 +486,20 @@ transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	right: 70px;
 	bottom: 0px;
 }
-}
 .tab-apropos1 {
 font-size: 08px;
 }
-
 hr {
 border-color: #6e5342!important;
 width: 80%;
 font-size: 12px;
 }
 
-
 p.lead {
 font-size: 16px;
 font-style: italic;
 text-indent: 25px;
 }
-
 .avis-utilisateur p {
 font-size: 22px;
 font-weight: bolder;
@@ -530,7 +517,6 @@ font-size: 16px;
 position: relative;
 left: 60px;
 top: 40px;
-
 }
 .accueil_btn_top , .accueil_btn_bottom
 {
@@ -542,7 +528,6 @@ width: 200px;
 height: 100px;
 margin: auto;
 font-size: 2em;
-
 }
 .acc_btn_top_txt, .acc_btn_bot_txt{ font-family: "titre"; font-size: 1.1em}
 .acc_btn_top_txt{margin-bottom: -30px;  color:#e7dcc6 ;}
