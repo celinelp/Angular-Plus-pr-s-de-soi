@@ -1,6 +1,6 @@
   (function(){
     var app = angular.module('plusPresDeSoi', ["ngRoute"], function($locationProvider){
-      $locationProvider.html5Mode(true);
+      //$locationProvider.html5Mode(true);
     });
 
     app.config(['$routeProvider',function($routeProvider){
