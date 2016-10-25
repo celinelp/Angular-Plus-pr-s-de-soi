@@ -191,7 +191,7 @@ footer > ul
 }
 .thumbnail{
 	color: black !important;
-	background-color: #e7dcc6 !important; 
+	background-color: #e7dcc6 !important;
 }
 
 /* Home Bloc News*/
@@ -200,6 +200,7 @@ footer > ul
 	background-color: #e7dcc6;
 	padding: auto;
 	overflow: auto;
+	text-align: center;
 }
 /* dietetique - recette et conseil*/
 
