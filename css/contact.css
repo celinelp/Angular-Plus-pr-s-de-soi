@@ -31,14 +31,27 @@ body
 {
  font-size: 1.2em;
 }
-
-
-  .contactTxt
-  {
-    border-right:  1px solid black;
-    height: 10vh;
-  }
-
+.btn-envoie
+{
+  margin-top: 1em;
+}
+.contactTxt
+{
+  border-right:  1px solid black;
+  height: 10vh;
+}
+.DivDivFicheContact
+{
+  text-align: center; line-height: 2.5em;
+}
+.DivFicheContact
+{
+  height: 200px; border-radius: 4px;
+}
+.HFicheContact
+{
+  text-align: center;
+}
 /** btn radio**/
 .radio {
   padding-left: 20px; }
