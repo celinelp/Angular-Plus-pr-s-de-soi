@@ -177,4 +177,18 @@
         {}
       ];*/
 
-  })();
+app.controller('ContactController', function(){
+  this.vueCtrlData = ContactBackCtrldata;
+});
+
+var ContactBackCtrldata = [
+  { 
+    adresse_1: "34 rue de la tannerie 28000 Chartres" ,
+    adresse_2: "4 Rue du Préau 28300 Berchères-Saint-Germain",
+    ficheContactName: " Guillet Mélina",
+    ficheContactNum: " 06.72.31.97.12",
+    ficheContactMail: " melinaguillet26@gmail.com"
+  }
+];
+
+})();
