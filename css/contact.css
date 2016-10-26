@@ -11,6 +11,7 @@ body
 }
 #MapBrechere
 {
+  border-radius: 4px;
   height: 35vh;
 }
 .contactSpan , .contactSpan2

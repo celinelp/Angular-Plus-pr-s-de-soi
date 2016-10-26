@@ -1,6 +1,48 @@
-<div ng-controller="imageHeader as image"/>
-<animation></animation>
+<!-- Descriptif magnetisme diet -->
+<div ng-controller="HomeController as HomeCtrl">
+	<div class="row">
+		<div class="accueil_txt vert">
+			<p>
+				{{HomeCtrl.HomeVueCtrlData[0].txtBgVert}}
+			</p>
+		</div>
+		<center>
+			<a href="#/magnetisme.html"><button class="accueil_btn_top marron ">
+				<p class="acc_btn_top_txt">Magnétisme</p>
+			</button></a><br/>
+			<a href="#/dietetique.html"><button class="accueil_btn_bottom vert">
+				<p class="acc_btn_bot_txt">Diététique</p>
+			</button></a>
+		</center>
+		<div class="accueil_txt2 marron">
+			<p>{{HomeCtrl.HomeVueCtrlData[0].txtBgMarron}}</p>
+		</div>
+	</div>
 
-<news></news>
+	<!-- NEWS -->
+	<div id="homeBlocNews" class="row">
+		<div class="col-xs-4">
+			<img src="img/lamer.jpg" class="img-responsive">
+			<h2 class="center bold">L'atelier du mois</h2>
+			<p class="center font">Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de 	colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d'accord sur une explication simple, évidente ou simplement plausible.</p>
+			<a class="boutonAccroche hvr-round-corners" ng-click="image.changeImg('/atelier')">Mes ateliers</a>
 
-<lien-Assos></lien-Assos>
+		</div>
+		<div class="col-xs-4">
+			<img src="img/smoothie.jpg" class="img-responsive">
+
+			<h2 class="center bold">Le conseil du jour</h2>
+			<p class="center font">Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de 	colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d'accord sur une explication simple, évidente ou simplement plausible.</p>
+			<a class="boutonAccroche hvr-round-corners" ng-click="image.changeImg('/dietetique')">Le conseil du jour</a>
+
+		</div>
+		<div class="col-xs-4">
+			<img src="img/vegetables2.jpg" class="img-responsive">
+			<h2 class="center bold">Recette coup de coeur</h2>
+			<p class="center font">Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de 	colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d'accord sur une explication simple, évidente ou simplement plausible.</p>
+			<a class="boutonAccroche hvr-round-corners" ng-click="image.changeImg('/dietetique')">La recette coup de coeur</a>
+
+		</div>
+
+	</div>
+</div>

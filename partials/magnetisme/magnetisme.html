@@ -1,1 +1,12 @@
-<descriptif-Magnet></descriptif-Magnet>
+<div class="row vert descriptifDietMagnet" ng-controller="magnetController as magnetCtrl">
+  <h1>{{magnetCtrl.magnet[0].titreDescriptif}}</h1>
+  <p>{{magnetCtrl.magnet[0].texteDescriptif}}</p>
+</div>
+
+<div class="row accrocheContact">
+  <div class="col-xs-12">
+    <h3>Vous avez décidé de prendre soin de vous ? C'est le moment</h3>
+    <a class="boutonAccroche hvr-round-corners" ng-click="image.changeImg('/contact')">Me contacter</a>
+
+  </div>
+</div>
