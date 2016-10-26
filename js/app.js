@@ -101,4 +101,32 @@
     }
   });
 
+/*_____________________ HOME _____________________*/
+app.controller('HomeController', function(){
+  this.HomeVueCtrlData = HomeBackCtrldata;
+});
+
+var HomeBackCtrldata = [
+  {
+    txtBgVert: '"On ne voit bien qu’avec le coeur,l’essentiel est invisible pour les yeux " ST Exupéry, extrait Le Petit Prince.',
+    txtBgMarron: "Le magnétisme, comme jadis l'électricité ou la lumière, fait partie de ces énergies mystérieuses, dont on observe les effets sans en connaître les causes."
+  }
+];
+
+/*____________________ CONTACT ____________________*/
+app.controller('ContactController', function(){
+  this.ContactVueCtrlData = ContactBackCtrldata;
+});
+
+var ContactBackCtrldata = [
+  {
+    adresse_1: "34 rue de la tannerie 28000 Chartres" ,
+    adresse_2: "4 Rue du Préau 28300 Berchères-Saint-Germain",
+    ficheContactName: " Guillet Mélina",
+    ficheContactNum: " 06.72.31.97.12",
+    ficheContactMail: " melinaguillet26@gmail.com"
+  }
+];
+/*____________________ _______ ____________________*/
+
 })();
