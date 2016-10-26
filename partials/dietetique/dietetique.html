@@ -1,8 +1,8 @@
-<div class="vert row descriptifDietMagnet">
+<div class="vert row descriptifDietMagnet" ng-controller="dietController as dietCtrl">
 
 						<div class="col-xs-12">
-							<h1>Définition de la diététique</h1>
-							<p>La diététique est la science de l'alimentation équilibrée. Elle permet de retrouver une alimentation équilibrée afin de trouver ou retrouver votre santé.  Je vous aide à équilibrer vos repas, à répondre à vos besoins en quantité et en qualité, à retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie. Je ne conseille pas de restriction alimentaire avec la tête comme ce que préconisent  quasiment tous les régimes. L’objectif est de retrouver ses propres repères de faim et de satiété pour répondre à ses besoins On travaille sur le comportement alimentaire pour que les effets agissent sur du long terme. On abordera vos croyances et représentations, votre histoire, vos habitudes…</p>
+							<h1>{{dietCtrl.diet[0].titreDescriptif}}</h1>
+							<p>{{dietCtrl.diet[0].texteDescriptif}}</p>
 
 						</div>
 
@@ -73,10 +73,7 @@
 					<div class="row accrocheContact">
 						<div class="col-xs-12">
 							<h3>Vous avez décidé de prendre soin de vous ? C'est le moment</h3>
-							<a class="boutonAccroche hvr-round-corners" href="contact.html">Me contacter</a>
+							<a class="boutonAccroche hvr-round-corners" ng-click="image.changeImg('/contact')">Me contacter</a>
 
 						</div>
 					</div>
-
-					<script type="text/javascript" src="js/vendor/script.js">
-					</script>

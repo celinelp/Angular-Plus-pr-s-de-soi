@@ -127,6 +127,29 @@ var ContactBackCtrldata = [
     ficheContactMail: " melinaguillet26@gmail.com"
   }
 ];
-/*____________________ _______ ____________________*/
+
+/*____________________ DIETETIQUE ____________________*/
+app.controller('dietController', function(){
+  this.diet = dietData;
+});
+
+var dietData = [
+  {
+    titreDescriptif : "Définition de la diététique",
+    texteDescriptif : "La diététique est la science de l'alimentation équilibrée. Elle permet de retrouver une alimentation équilibrée afin de trouver ou retrouver votre santé.  Je vous aide à équilibrer vos repas, à répondre à vos besoins en quantité et en qualité, à retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie. Je ne conseille pas de restriction alimentaire avec la tête comme ce que préconisent  quasiment tous les régimes. L’objectif est de retrouver ses propres repères de faim et de satiété pour répondre à ses besoins On travaille sur le comportement alimentaire pour que les effets agissent sur du long terme. On abordera vos croyances et représentations, votre histoire, vos habitudes…"
+  }
+];
+/*____________________ MAGNETISME ____________________*/
+
+app.controller('magnetController', function(){
+  this.magnet = magnetData;
+});
+
+var magnetData = [
+  {
+    titreDescriptif : "Définition du magnétisme",
+    texteDescriptif : "Le magnétisme est un soin énergétique que je capte du ciel et de la terre et qui permet de soigner les maux du corps et de l’esprit. Qui permettent d’aider en cas de stress, de douleur, problèmes professionnels, problèmes relationnels… Le magnétisme peut aussi aider à se détendre et s’apaiser et/ou à faire remonter des émotions bloquées qui provoquent insomnie, stress…. Le magnétisme, comme jadis l'électricité ou la lumière, fait partie de ces énergies mystérieuses, dont on observe les effets sans en connaître les causes."
+  }
+];
 
 })();
