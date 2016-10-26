@@ -1,4 +1,4 @@
-$( function() {
+( function() {
         /* dietetique - animation de conseil et recette*/
     	$('#recette a').click(function (e) {
     		e.preventDefault()
@@ -13,7 +13,7 @@ $( function() {
           $('.tabDietetique').removeClass('activeLien');
           $(this).addClass('activeLien');
       });
-      // changement de la classe active des onglets recette et conseil lors des choix de la page home
+      /*// changement de la classe active des onglets recette et conseil lors des choix de la page home
       $('#boutonHomeConseil').click(function() {
           $('#recette').removeClass('active');
           $('#conseil').addClass('active');
@@ -21,5 +21,5 @@ $( function() {
       $('.required-icon').tooltip({
           placement: 'left',
           title: 'Required field'
-      });
+      });*/
     });

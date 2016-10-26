@@ -273,10 +273,11 @@ footer > ul
 /*apropos*/
 
 .img-responsive1 {
-	width: 90%;
-	padding-top: 30px;
-	padding-left: 65px;
+	width: 85%;
+	padding-top: 130px;
+	padding-left: 120px;
 	float: right;
+	
 }
 .apropos {
 	background-color: #e7dcc6;
@@ -300,13 +301,13 @@ footer > ul
 }
 
 .fondParcours {
+	font-family: 'texte', sans-serif;
 	font-size-adjust: 20px;
 	font-size: 120%;
-	text-align: left;
+	text-align: justify;
 	position: relative;
 	top: 40px;
 	line-height: 25px;
-	text-indent: 10px;
 	color: #2E3837;
 
 }
@@ -335,19 +336,20 @@ footer > ul
 .photo-bio h2 {
 	color: #6e5342;
 	position: relative;
-	top:570px;
-	left: 60px;
+	left: 100px;
+	top: 30px;
 	text-align: center;
-	padding-top: 20px;
+	
 	font-family: 'Josefin', serif;
 }
 
 h2.titre1 {
 	color: #6e5342;
-}
 
+
+}
 .partie-bio {
-	height: 600px;
+	height: 700px;
 	display: inline-block;
 	top: 90px;
 	padding-left: 100px;
@@ -405,7 +407,7 @@ h2.aproposTitre3 {
 	font-weight: bold;
 }
 
-li.prose {
+.prose {
 	font-size: 16px;
 }
 
@@ -434,6 +436,20 @@ img.img-responsive2 {
 	color: #A97052;
 	font-weight: bold;
 }
+p.agglo {
+		font-size: 17px;
+		color: black;
+		text-align: center;
+		width: 40%;
+		text-transform: uppercase;
+		padding-right: 40px;
+
+	}
+span.assoc {
+		font-size: 26px;
+		color: #a9c04b;
+
+	}
 .teaser1 {
 	position: relative;
 	top: 100px;
@@ -490,6 +506,7 @@ img.img-responsive2 {
 		right: 70px;
 		bottom: 0px;
 	}
+}
 	.tab-apropos1 {
 		font-size: 08px;
 	}

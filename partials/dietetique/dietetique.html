@@ -1,2 +1,9 @@
-<descriptif-Diet></descriptif-Diet>
-<recette-Conseil></recette-Conseil>
+<div ng-controller ="AproposController as apropos">
+<div class="row ">
+              <div class="col-xs-4 partie-bio">
+               <h2>Votre diététicienne est spécialisée en prévention et éducation pour la santé</h2>
+               <ul class="prose">
+                <li ng-repeat="expe in formation">{{expe}}</li>
+</ul>
+</div>
+</div>
