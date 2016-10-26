@@ -75,8 +75,11 @@ body {
 	color: white !important;
 	opacity: 1 !important;
 }
+a {
+    cursor: pointer;
+}
 #homePhraseAccroche{
-	padding-top: 150px;
+	padding-top: 120px;
 }
 #homePhraseAccroche h1{
 	font-family: 'logo', cursive;
@@ -216,7 +219,10 @@ footer > ul
 }
 
 /* dietetique - recette et conseil*/
-
+.activeLien{
+		color: yellow !important;
+		background-color: #af7653 !important;
+	}
 .descriptifDietMagnet{
 	padding: 10px;
 }
