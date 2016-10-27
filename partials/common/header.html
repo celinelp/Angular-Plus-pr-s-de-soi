@@ -1,4 +1,4 @@
-<header class="row" ng-controller="imageHeader as image" id="pg-home">
+<header class="row" id="{{image.page}}">
 
 		<nav class="navbar navbar-default">
 
@@ -8,23 +8,23 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#/">Plus&nbsp;Près&nbsp;de&nbsp;Soi</a>
+				<a class="navbar-brand" ng-click="image.changeImg('/')">Plus&nbsp;Près&nbsp;de&nbsp;Soi</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-					<li><a href="#/dietetique">Diététique</a></li>
-					<li><a href="#/magnetisme">Magnétisme</a></li>
-					<li><a href="#/atelier">Mes ateliers</a></li>
-					<li><a href="#/apropos">A propos</a></li>
-					<li><a href="#/contact">Contact</a></li>
+					<li><a ng-click="image.changeImg('/')"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+					<li><a ng-click="image.changeImg('/dietetique')">Diététique</a></li>
+					<li><a ng-click="image.changeImg('/magnetisme')">Magnétisme</a></li>
+					<li><a ng-click="image.changeImg('/atelier')">Mes ateliers</a></li>
+					<li><a ng-click="image.changeImg('/apropos')">A propos</a></li>
+					<li><a ng-click="image.changeImg('/contact')">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
 
 		<div id="homePhraseAccroche" class="col-xs-5 col-xs-offset-7">
-      <h1>Comment je m'aime ?</h1>
-			<h1 id="decalagePhraseAccroche">Comment je mange ?</h1>
+      <h1>{{image.texte1}}</h1>
+			<h1 id="decalagePhraseAccroche">{{image.texte2}}</h1>
 		</div>
 
 </header>

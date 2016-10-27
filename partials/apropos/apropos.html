@@ -1,0 +1,131 @@
+<div ng-controller ="AproposController as apropos">
+<div class="row apropos">
+        <div class="col-xs-4  photo-bio">
+          
+          <img class="img-responsive1" ng-src="{{aproposData[0].imageBio}}">
+          <h2>Mélina Guillet</h2>
+
+        </div>
+        <div class="parcours-bio">
+          <div class="  col-xs-7 col-xs-offset-1 fondParcours">
+            <h2 class="titre1">Mon parcours</h2>
+           
+            <p ng-bind-html="aproposData[0].textBio"></p>
+
+            </div>
+          </div>
+
+          <div class="row" >
+            <div class="col-xs-12 ">
+              <blockquote ng-bind-html="aproposData[1].textCitation"></blockquote>
+              </div>
+            </div>
+
+            <div class="row ">
+              <div class="col-xs-4 partie-bio">
+               <h2>Votre diététicienne est spécialisée en prévention et éducation pour la santé</h2>
+               <ul>
+                <li class="prose">DUT génie biologique, option diététique, IUT Tours, septembre 1999.
+                  <div data-uk-alert="" class="uk-alert uk-alert-success">
+                    <p class="round">Info :
+                     DUT et BTS sont les deux seuls diplômes reconnus pour exercer en tant que diététicienne-nutritionniste.</br> Ils garantissent le sérieux de la formation des professionnels qui sont diplômés.
+                   </p>
+                 </div>
+               </li>
+               <li class="prose">Le goût</li>
+               <li class="prose">Compétences psycho-sociales des enfants</li>
+               <li class="prose">Magnétisme et libération émotionnelle depuis 2013</li>
+               <li class="prose">Régimes et estime de soi</li>
+             </ul>
+
+
+             <a href="contact.html"><p class="button">Me contacter</p></a>
+           </div>
+
+
+           <div class="parcours-bio">
+            <div class="col-xs-7 col-offset-1 formation">
+              <h2 class="aproposTitre3">Mes formations</h2>
+              <p>J’ai fait une formation de géobiologie 1er niveau en 2012 et cela m’a permis de réaliser que j’avais une sensibilité développée.<br> J’ai alors compris que si je voulais être heureuse, le seul moyen était d’ « utiliser » mon don et mes capacités pour aider les autres.<br>  Depuis 2013, je suis une formation en magnétisme et libération émotionnelle avec Nelly Forget sur Chartres.<br> J’ai également créé mon activité d’auto-entrepreneur
+               de diététicienne-magnétiseuse en parallèle de mon emploi au CHU Dreux.<br> Je fais partie de&nbsp;
+               <a href="http://uni.vers.sante.28.over-blog.com/" target ="_blank"><span class="assoc">
+                l’association Univers Santé</a></span>&nbsp; et du groupe de travail
+                <a href="https://alternatiba.eu/" target ="_blank"><span class="assoc">&nbsp;Alternatiba</a></span>
+                ,&nbsp;deux associations qui participent à différentes manifestations pour la santé de la terre et de l’humain et la lutte contre le réchauffement climatique.<br>
+                Depuis l’âge de 16 ans, je travaille sur moi pour prendre soin de ma santé, toujours être au plus juste de ce que je ressens et aujourd’hui, pour mieux accompagner les personnes vers leur propre chemin.<br> J’ai suivi des thérapies différentes (PNL, thérapie primale, libération émotionnelle) et m’intéresse à pleins de domaines : <strong>Feng shui, Radiesthésie,Réflexologie plantaire</strong>.<br>  Aujourd’hui maman, je m’épanouis dans mon rôle de parent qui me fait beaucoup grandir.</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row " >
+            <div class="col-xs-12 presse">
+              <h2>{{presse.titre}}</h2>
+              <img class="img-responsive2" ng-src="{{presse.img}}">
+              <p class="agglo">{{presse.lieu}}</p>
+            </div>
+
+          </div>
+
+
+          <!--debut commentaires a propos-->
+          <div class="avis-utilisateur">
+            <div class="row">
+              <div class="col-xs-12" style="padding-bottom: 30px; text-align: center;">
+                <hr>
+                <p>Mes témoignages</p>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class="[ container text-center ]">
+            <div class="[ row ]">
+              <div class="[ col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 ]" role="tabpanel">
+                <div class="[ col-xs-4 col-sm-12 ]">
+                
+                  <ul class="[ nav nav-justified ]" id="nav-tabs" role="tablist">
+                    <li ng-repeat="temoignage in temoignages" role="presentation">
+                      <a href="#{{temoignage.id}}" target="_self" aria-controls="{{temoignage.id}}" role="tab" data-toggle="tab">
+
+                        <img class="img-circle" src="img/button4.png" />
+                        <span class="quote"><i class="fa fa-quote-left"></i></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="[ col-xs-8 col-sm-12 ]">
+              
+                  <div class="tab-content" id="tabs-collapse">
+
+                    <div ng-repeat="temoignage in temoignages" role="tabpanel" class="tab-pane fade" id="{{temoignage.id}}">
+                      <div class="tab-inner">
+                        <p class="lead">{{temoignage.texte}}</p>
+                        <p class="text-uppercase"><strong>{{temoignage.auteur}}</strong></p>
+
+                      </div>
+                    </div>
+
+                   
+
+                
+
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+          <div class="row accrocheContact">
+            <div class="col-xs-12">
+              <h3>Vous avez décidé de prendre soin de vous ? C'est le moment</h3>
+              <a class="boutonAccroche hvr-round-corners" href="contact.html">Me contacter</a>
+
+            </div>
+          </div>
+</div>
