@@ -157,6 +157,7 @@
 /*_____________________ HOME _____________________*/
 app.controller('HomeController', function(){
   this.HomeVueCtrlData = HomeBackCtrldata;
+  this.HomeVueCtrlData = HomeBlocNewsCtrldata;
 });
 
 var HomeBackCtrldata = [
@@ -165,6 +166,20 @@ var HomeBackCtrldata = [
     txtBgMarron: "Le magnétisme, comme jadis l'électricité ou la lumière, fait partie de ces énergies mystérieuses, dont on observe les effets sans en connaître les causes."
   }
 ];
+
+  var HomeBlocNewsCtrldata = [
+    {
+      imgAtelierMois: "img/lamer.jpg",
+      txtAtelierMois: "Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de 	colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d'accord sur une explication simple, évidente ou simplement plausible.",
+
+      imgConseil: "img/smoothie.jpg",
+      txtConseil: "Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de 	colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d\'accord sur une explication simple, évidente ou simplement plausible.",
+
+      imgRecette: "img/vegetables2.jpg",
+      txtRecette: "Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de 	colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d'accord sur une explication simple, évidente ou simplement plausible."
+    }
+];
+
 /*____________________ CONTACT ____________________*/
 app.controller('ContactController', function(){
   this.ContactVueCtrlData = ContactBackCtrldata;
