@@ -7,10 +7,10 @@
 			</p>
 		</div>
 		<center>
-			<a href="#/magnetisme.html"><button class="accueil_btn_top marron ">
+			<a ng-click="image.changeImg('/magnetisme')"><button class="accueil_btn_top marron ">
 				<p class="acc_btn_top_txt">Magnétisme</p>
 			</button></a><br/>
-			<a href="#/dietetique.html"><button class="accueil_btn_bottom vert">
+			<a ng-click="image.changeImg('/dietetique')"><button class="accueil_btn_bottom vert">
 				<p class="acc_btn_bot_txt">Diététique</p>
 			</button></a>
 		</center>
@@ -22,27 +22,26 @@
 	<!-- NEWS -->
 	<div id="homeBlocNews" class="row">
 		<div class="col-xs-4">
-			<img src="img/lamer.jpg" class="img-responsive">
+			<img src="{{HomeCtrl.HomeVueCtrlData[1].imgAtelierMois}}" class="img-responsive">
 			<h2 class="center bold">L'atelier du mois</h2>
-			<p class="center font">Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de 	colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d'accord sur une explication simple, évidente ou simplement plausible.</p>
+			<p class="center font">{{HomeCtrl.HomeVueCtrlData[1].txtAtelierMois}}</p>
 			<a class="boutonAccroche hvr-round-corners" ng-click="image.changeImg('/atelier')">Mes ateliers</a>
 
 		</div>
 		<div class="col-xs-4">
-			<img src="img/smoothie.jpg" class="img-responsive">
+			<img src="{{HomeCtrl.HomeVueCtrlData[1].imgConseil}}" class="img-responsive">
 
 			<h2 class="center bold">Le conseil du jour</h2>
-			<p class="center font">Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de 	colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d'accord sur une explication simple, évidente ou simplement plausible.</p>
+			<p class="center font">{{HomeCtrl.HomeVueCtrlData[1].txtConseil}}</p>
 			<a class="boutonAccroche hvr-round-corners" ng-click="image.changeImg('/dietetique')">Le conseil du jour</a>
 
 		</div>
 		<div class="col-xs-4">
-			<img src="img/vegetables2.jpg" class="img-responsive">
+			<img src="{{HomeCtrl.HomeVueCtrlData[1].imgRecette}}" class="img-responsive">
 			<h2 class="center bold">Recette coup de coeur</h2>
-			<p class="center font">Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de 	colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d'accord sur une explication simple, évidente ou simplement plausible.</p>
+			<p class="center font">{{HomeCtrl.HomeVueCtrlData[1].txtRecette}}</p>
 			<a class="boutonAccroche hvr-round-corners" ng-click="image.changeImg('/dietetique')">La recette coup de coeur</a>
 
 		</div>
-
 	</div>
 </div>
