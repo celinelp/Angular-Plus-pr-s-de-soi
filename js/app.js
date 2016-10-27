@@ -136,18 +136,6 @@
        detailAtelier : 'Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>'
       }];
 
-  app.directive('header',function(){
-    return{
-      restrict : 'A',
-      templateUrl : 'partials/common/header.html'
-    }
-  });
-  app.directive('footer',function(){
-    return{
-      restrict : 'A',
-      templateUrl : 'partials/common/footer.html'
-    }
-  });
 /*_____________________ HOME _____________________*/
 app.controller('HomeController', function(){
   this.HomeVueCtrlData = HomeBackCtrldata;
@@ -159,13 +147,13 @@ var HomeBackCtrldata = [
     txtBgMarron: "Le magnétisme, comme jadis l'électricité ou la lumière, fait partie de ces énergies mystérieuses, dont on observe les effets sans en connaître les causes."
   },
     {
-      imgAtelierMois: "img/lamer.jpg",
+      imgAtelierMois: "img/homeAtelier.jpg",
       txtAtelierMois: "Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de 	colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d'accord sur une explication simple, évidente ou simplement plausible.",
 
-      imgConseil: "img/smoothie.jpg",
+      imgConseil: "img/homeConseil.jpg",
       txtConseil: "Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de 	colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d\'accord sur une explication simple, évidente ou simplement plausible.",
 
-      imgRecette: "img/vegetables2.jpg",
+      imgRecette: "img/homeRecette.jpg",
       txtRecette: "Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de 	colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d'accord sur une explication simple, évidente ou simplement plausible."
     }
 ];
