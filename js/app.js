@@ -135,13 +135,7 @@
        titreDetail : 'L\'estime de soi',
        detailAtelier : 'Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>'
       }];
-            $location.path('');
-            this.page = "pg-home";
-            this.texte1 = "Comment je m'aime ?";
-            this.texte2 = "Comment je mange ?";
-      };
-    }
-  });
+
   app.directive('header',function(){
     return{
       restrict : 'A',
@@ -157,17 +151,13 @@
 /*_____________________ HOME _____________________*/
 app.controller('HomeController', function(){
   this.HomeVueCtrlData = HomeBackCtrldata;
-  this.HomeVueCtrlData = HomeBlocNewsCtrldata;
 });
 
 var HomeBackCtrldata = [
   {
     txtBgVert: '"On ne voit bien qu’avec le coeur,l’essentiel est invisible pour les yeux " ST Exupéry, extrait Le Petit Prince.',
     txtBgMarron: "Le magnétisme, comme jadis l'électricité ou la lumière, fait partie de ces énergies mystérieuses, dont on observe les effets sans en connaître les causes."
-  }
-];
-
-  var HomeBlocNewsCtrldata = [
+  },
     {
       imgAtelierMois: "img/lamer.jpg",
       txtAtelierMois: "Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de 	colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d'accord sur une explication simple, évidente ou simplement plausible.",
@@ -237,7 +227,6 @@ $scope.presse = {
                   img : "img/pressemel.png",
                   lieu: "Votre Agglo- N°54 - Avril 2016"
 }
-
 $scope.temoignages = [
                   { id : "celine",
                     texte:"Après une séance d’émotionnel sur une situation de licenciement abusif en juin : au cours de l’été, j'ai perdu 3 kgs et cela m'a permis du coup de mieux m'entendre avec mon nouveau patron. ",
@@ -254,6 +243,3 @@ $scope.temoignages = [
 ];
 });
 })();
-];
-});
- })();
