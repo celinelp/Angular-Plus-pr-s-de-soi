@@ -335,7 +335,7 @@ footer > ul
 .parcours-bio h2 {
 	color: black;
 	padding-top: 30px
-	text-decoration :underline;
+	zztext-decoration :underline;
 	font-family: 'Josefin', serif;
 	text-indent: 10px;
 	font-weight: bolder;
@@ -603,3 +603,21 @@ span.assoc {
 		text-align: center;
 		margin-bottom: 0;
 	}
+/*page magnetique*/
+.descriptifMagnet{
+	font-size: 18px;
+	text-align: left;
+	height: 270px;
+	padding-top: 15px;
+	padding-left: 380px;
+
+
+}
+img.img-responsive4 {
+	width: 80%;
+	position: absolute;
+	right: 40px;
+}
+.approcheMagnet {
+	height: 490px;
+}
