@@ -142,17 +142,17 @@ var dietData = [
 ];
 /*____________________ MAGNETISME ____________________*/
 
-app.controller('magnetController', function(){
-  this.magnet = magnetData;
-});
+app.controller('magnetController', function($scope,$sce){
 
-var magnetData = [
+
+
+$scope.magnetData = [
   {
     titreDescriptif : "Définition du magnétisme",
-    texteDescriptif : "Le magnétisme est un soin énergétique que je capte du ciel et de la terre et qui permet de soigner les maux du corps et de l’esprit. Qui permettent d’aider en cas de stress, de douleur, problèmes professionnels, problèmes relationnels… Le magnétisme peut aussi aider à se détendre et s’apaiser et/ou à faire remonter des émotions bloquées qui provoquent insomnie, stress…. Le magnétisme, comme jadis l'électricité ou la lumière, fait partie de ces énergies mystérieuses, dont on observe les effets sans en connaître les causes."
+    texteDescriptif : $sce.trustAsHtml("Le magnétisme est un soin d’énergie vitale qui permet de soigner les maux du corps et de l’esprit.<br> Il soulage les douleurs, zonas, verrues, brûlures, eczéma, troubles fonctionnels et nerveux, stress, insomnie, fatigue, deuil, …<br>Je suis un canal de l’énergie du ciel et de la terre et cette énergie va aider la personne à l’endroit où elle en a besoin.<br> La personne soignée reste habillée et est allongée sur une table de massage..<br><strong>Séance d’1 heure</strong>: La personne peut avoir besoin d’une ou plusieurs séances…<br><strong>Attention : le magnétisme ne se substitue pas à un suivi médical, ni à un traitement médicamenteux.</strong>")
   }
 ];
-
+});
 /*____________________ APROPOS
  ____________________*/
 app.controller('AproposController', function($scope,$sce){
