@@ -2,25 +2,22 @@
 <div class="row apropos">
         <div class="col-xs-4  photo-bio">
           
-          <img class="img-responsive1" src="{{aproposData[0].imageBio}}">
-
+          <img class="img-responsive1" ng-src="{{aproposData[0].imageBio}}">
           <h2>Mélina Guillet</h2>
-          <div ng-bind-html="test"></div>
+
         </div>
         <div class="parcours-bio">
           <div class="  col-xs-7 col-xs-offset-1 fondParcours">
             <h2 class="titre1">Mon parcours</h2>
            
-            <p><div ng-bind-html="aproposData[0].textBio"></div></p>
+            <p>{{aproposData[0].textBio}}</p>
 
             </div>
           </div>
 
           <div class="row" >
             <div class="col-xs-12 ">
-              <blockquote>
-              <div ng-bind-html="aproposData[1].textCitation"></div>
-              </blockquote>
+              <blockquote>{{aproposData[1].textCitation}}</blockquote>
               </div>
             </div>
 
@@ -108,7 +105,7 @@
                       </div>
                     </div>
 
-                  
+                   
 
                 
 
@@ -132,4 +129,3 @@
             </div>
           </div>
 </div>
-

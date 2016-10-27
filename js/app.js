@@ -24,7 +24,7 @@
     })
     .when('/mention',{
       templateUrl : 'partials/mention/mention.html'
-    })
+    });
   }]);
 
   app.controller('imageHeader', function($location){
