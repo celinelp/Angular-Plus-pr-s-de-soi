@@ -138,7 +138,13 @@ var dietData = [
   {
     titreDescriptif : "Définition de la diététique",
     texteDescriptif : "La diététique est la science de l'alimentation équilibrée. Elle permet de retrouver une alimentation équilibrée afin de trouver ou retrouver votre santé.  Je vous aide à équilibrer vos repas, à répondre à vos besoins en quantité et en qualité, à retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie. Je ne conseille pas de restriction alimentaire avec la tête comme ce que préconisent  quasiment tous les régimes. L’objectif est de retrouver ses propres repères de faim et de satiété pour répondre à ses besoins On travaille sur le comportement alimentaire pour que les effets agissent sur du long terme. On abordera vos croyances et représentations, votre histoire, vos habitudes…"
-  }
+  },
+    recette = [{
+
+    }],
+    conseil = [{
+      texte : "Bien mâcher permet de mieux sentir les goûts et d’arriver à satiété. Cela évite de manger trop. Respecter ses rythmes et heures... de repas et de sommeil  (le manque de sommeil pertube les centres de faim et de satiété). On conseille un temps de repas d’un minimum de 20 minutes pour laisser le temps à l’estomac de communiquer avec  le cerveau et de renseigner sur la satiété. Manger trop vite peut amener à manger des quantités supérieures à nos besoins."
+    }]
 ];
 /*____________________ MAGNETISME ____________________*/
 
