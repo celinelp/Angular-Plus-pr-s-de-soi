@@ -52,14 +52,17 @@
 </script> 
 <!-- Formulaire -->
 <div class="row marron-clair">
-	<form class="form-horizontal col-xs-5 col-xs-offset-1" role="form" method="post">
+	<form class="form-horizontal col-xs-5 col-xs-offset-1" role="form" ng-submit="ContactCtrl.addcontact(contact)" method="post">
 
 		<div class="form-group row">
 			<label class="control-label"></label>  
 			<div class="col-sm-12 inputGroupContainer">
 				<div class="input-group">
 					<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-					<input  name="first_name" placeholder="Nom" class="form-control"  type="text" maxlength="20" required>
+					
+					<input name="first_name" placeholder="Nom" class="form-control" type="text" maxlength="20" required
+					ng-model="ContactCtrl.contact.Nom">
+
 				</div>
 			</div>
 		</div>
@@ -69,7 +72,8 @@
 			<div class="col-sm-12 inputGroupContainer">
 				<div class="input-group">
 					<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-					<input  name="first_name" placeholder="Prénom" class="form-control"  type="text" maxlength="20" required>
+					<input  name="first_name" placeholder="Prénom" class="form-control"  type="text" maxlength="20" required
+					ng-model="ContactCtrl.contact.Prenom">
 				</div>
 			</div>
 		</div>
@@ -79,7 +83,8 @@
 			<div class="col-sm-12 inputGroupContainer">
 				<div class="input-group">
 					<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-					<input name="email" placeholder=" Addresse@mail.com" class="form-control"  type="email" required>
+					<input name="email" placeholder=" Addresse@mail.com" class="form-control"  type="email" required
+					ng-model="ContactCtrl.contact.Mail">
 				</div>
 			</div>
 		</div>
@@ -89,7 +94,8 @@
 			<div class="col-sm-12 inputGroupContainer">
 				<div class="input-group">
 					<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-					<textarea class="form-control" placeholder="Votre message ..."  name="comment" required></textarea>
+					<textarea class="form-control" placeholder="Votre message ..."  name="comment" required
+					ng-model="ContactCtrl.contact.Message" ></textarea>
 				</div>
 			</div>
 		</div>
@@ -97,11 +103,13 @@
 		<!-- Bouton radio-->
 
 		<div class="radio radio-inline">
-			<input type="radio" id="inlineRadio1" value="option1" name="radioInline" required>
+			<input type="radio" id="inlineRadio1" value="option1" name="radioInline" required 
+			ng-model="ContactCtrl.contact.Particulier">
 			<label for="inlineRadio1"> Particulier </label>
 		</div>
 		<div class="radio radio-inline">
-			<input type="radio" id="inlineRadio2" value="option1" name="radioInline" required>
+			<input type="radio" id="inlineRadio2" value="option1" name="radioInline" required 
+			ng-model="ContactCtrl.contact.Professionnel">
 			<label for="inlineRadio2"> Professionnel </label>
 		</div>
 		<center>

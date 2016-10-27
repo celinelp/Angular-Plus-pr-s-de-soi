@@ -18,6 +18,9 @@ h1, h2, h3, h4{
 p, a{
 	font-family: 'texte', sans-serif;
 }
+a:hover {
+	cursor: pointer;
+}
 
 body {
 	overflow-x: hidden;
@@ -204,7 +207,14 @@ footer > ul
 	color: black !important;
 	background-color: #e7dcc6 !important;
 }
-
+.lesProfessionels {
+	padding: 40px;
+	text-align: center;
+	background-color: #A97052;
+	color: white;
+	height: 500 px;
+	margin: auto;
+}
 /* Home Bloc News*/
 
 #homeBlocNews {
@@ -270,6 +280,11 @@ footer > ul
 	color: black;
 	float: none;
 }
+.activeLien{
+		color: yellow !important;
+		background-color: #af7653 !important;
+	}
+
 /*apropos*/
 
 .img-responsive1 {
@@ -277,7 +292,7 @@ footer > ul
 	padding-top: 130px;
 	padding-left: 120px;
 	float: right;
-	
+
 }
 .apropos {
 	background-color: #e7dcc6;
@@ -314,7 +329,7 @@ footer > ul
 .parcours-bio h2 {
 	color: black;
 	padding-top: 30px
-	text-decoration :underline;
+	zztext-decoration :underline;
 	font-family: 'Josefin', serif;
 	text-indent: 10px;
 	font-weight: bolder;
@@ -339,7 +354,7 @@ footer > ul
 	left: 100px;
 	top: 30px;
 	text-align: center;
-	
+
 	font-family: 'Josefin', serif;
 }
 
