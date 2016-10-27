@@ -204,6 +204,13 @@ footer > ul
 	color: black !important;
 	background-color: #e7dcc6 !important;
 }
+.lesProfessionels {
+	padding: 40px;
+	text-align: center;
+	background-color: #A97052;
+	color: white;
+	height: 500 px;
+	margin: auto;
 
 /* Home Bloc News*/
 
