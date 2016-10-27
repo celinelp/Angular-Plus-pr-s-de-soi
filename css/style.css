@@ -18,6 +18,9 @@ h1, h2, h3, h4{
 p, a{
 	font-family: 'texte', sans-serif;
 }
+a:hover {
+	cursor: pointer;
+}
 
 body {
 	overflow-x: hidden;
@@ -277,6 +280,11 @@ footer > ul
 	color: black;
 	float: none;
 }
+.activeLien{
+		color: yellow !important;
+		background-color: #af7653 !important;
+	}
+
 /*apropos*/
 
 .img-responsive1 {
