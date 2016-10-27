@@ -79,7 +79,7 @@ body {
 	opacity: 1 !important;
 }
 #homePhraseAccroche{
-	padding-top: 150px;
+		margin-top: 20vh; 
 }
 #homePhraseAccroche h1{
 	font-family: 'logo', cursive;
@@ -89,9 +89,15 @@ body {
 #decalagePhraseAccroche{
 	text-indent: 20px;
 }
-@media (max-width: 800px){
+@media (max-width: 768px){
 	.navbar-brand {
 		font-size: 1.5em;
+	}
+	#homePhraseAccroche{
+		position: absolute;
+		top: 380px;
+		right: 10%;
+		margin-top: initial; 
 	}
 	#homePhraseAccroche h1{
 		font-size: 1.5em;
