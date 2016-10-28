@@ -1,36 +1,4 @@
-@font-face {
-	font-family: "logo";
-	src: url("../fonts/Kalam/Kalam-Regular.ttf") format("truetype");
-}
-@font-face {
-	font-family: "titre";
-	src: url('../fonts/Josefin_Slab/JosefinSlab-Regular.ttf') format("truetype");
-}
-@font-face {
-	font-family : "texte";
-	src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
-}
-
-h1, h2, h3, h4{
-	font-family: 'titre', serif;
-}
-
-p, a{
-	font-family: 'texte', sans-serif;
-}
-a:hover {
-	cursor: pointer;
-}
-
-body {
-	overflow-x: hidden;
-}
-.bold {
-	font-weight: bold;
-}
-.font {
-	font-size: 1.1em;
-}
+/*___________________________________ All page ___________________________________*/
 /* palette des couleurs */
 
 .jaune{
@@ -54,55 +22,50 @@ body {
 	background-color: #e7dcc6 !important;
 	color: black;
 }
-/* Header */
-.navbar-default .navbar-toggle .icon-bar
-{
-	background-color: #FFF; /* Menu burger */
-}
-.navbar {
-	background-color: rgba(0, 0, 0, .4);
-	border: none;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-right: 20px;
-	border: 0;
-	border-radius: 0;
-	margin-bottom: 0;
-	font-size: 15px;
-	letter-spacing: 5px;
+.bold {
 	font-weight: bold;
-}
-.navbar-brand {
-	font-family:  'logo', cursive;
-	font-size: 3em;
-	color: white !important;
-	opacity: 1 !important;
-}
-#homePhraseAccroche{
-	padding-top: 150px;
-}
-#homePhraseAccroche h1{
-	font-family: 'logo', cursive;
-	font-weight: bold;
-	color: white;
-}
-#decalagePhraseAccroche{
-	text-indent: 20px;
-}
-@media (max-width: 800px){
-	.navbar-brand {
-		font-size: 1.5em;
-	}
-	#homePhraseAccroche h1{
-		font-size: 1.5em;
-	}
-}
-.nav a:not(.tabDietetique) {
-	color: white !important;
-	opacity: 1 !important;
 }
 
-/* accroche pour prendre contact */
+/* font */
+@font-face {
+	font-family: "logo";
+	src: url("../fonts/Kalam/Kalam-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "titre";
+	src: url('../fonts/Josefin_Slab/JosefinSlab-Regular.ttf') format("truetype");
+}
+@font-face {
+	font-family : "texte";
+	src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+}
+.font {
+	font-size: 1.1em;
+}
+h1, h2, h3, h4{
+	font-family: 'titre', serif;
+}
+
+p, a{
+	font-family: 'texte', sans-serif;
+}
+a:hover {
+	cursor: pointer;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+#pg-home, #pg-magnetisme, #pg-dietetique, #pg-atelier, #pg-apropos, #pg-contact {
+	background-image: url(../img/home.jpg);
+	background-repeat: no-repeat;
+	height: 500px;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+/* bandeau btn "Me contacter" */
 .accrocheContact {
 	text-align: center;
 	background-color: #A97052;
@@ -128,39 +91,64 @@ body {
 	text-decoration: none;
 }
 
-#pg-home, #pg-magnetisme, #pg-dietetique, #pg-atelier, #pg-apropos, #pg-contact {
-	background-image: url(../img/home.jpg);
-	background-repeat: no-repeat;
-	height: 500px;
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
+/*_____________________ Header _____________________*/
+.navbar-default .navbar-toggle .icon-bar
+{
+	background-color: #FFF; /* Burger bg */
 }
-
-#pg-magnetisme {
-	background-image: url(../img/magnetisme.jpg);
-	height: 300px;
+.navbar {
+	background-color: rgba(0, 0, 0, .4);
+	border: none;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+	font-size: 15px;
+	letter-spacing: 5px;
+	font-weight: bold;
 }
-
-#pg-dietetique {
-	background-image: url(../img/dietetique.jpg);
-	height: 300px;
+.navbar-brand {
+	font-family:  'logo', cursive;
+	font-size: 3em;
+	color: white !important;
+	opacity: 1 !important;
 }
-
-#pg-atelier {
-	background-image: url(../img/atelier.jpg);
-	height: 300px;
+#homePhraseAccroche{
+		margin-top: 20vh; 
 }
-
-#pg-apropos {
-	background-image: url(../img/apropos.jpg);
-	height: 340px;
+#homePhraseAccroche h1{
+	font-family: 'logo', cursive;
+	font-weight: bold;
+	color: white;
 }
-
-#pg-contact {
-	background-image: url(../img/contact.jpg);
-	height: 300px;
+#decalagePhraseAccroche{
+	text-indent: 20px;
 }
+@media (max-width: 768px){
+	.navbar-brand {
+		font-size: 1.5em;
+	}
+	#homePhraseAccroche{
+		position: absolute;
+		top: 380px;
+		right: 10%;
+		margin-top: initial; 
+	}
+	#homePhraseAccroche h1{
+		font-size: 1.5em;
+	}
+}
+.nav a:not(.tabDietetique) {
+	color: white !important;
+	opacity: 1 !important;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+	text-decoration: none;
+	background-color: #a9c04b;
+}
+/*_____________________ Footer _____________________ */
 footer > ul > li
 {
 	list-style: none;
@@ -183,7 +171,162 @@ footer > ul
 	background-color: #6e5342;
 }
 
-/* Page Atelier */
+/*_____________________ _____________________ */
+#pg-contact {
+	background-image: url(../img/contact.jpg);
+	height: 300px;
+}
+/*_____________________ Home  _____________________*/
+
+#homeBlocNews {
+	background-color: #FFF;
+	padding: auto;
+	padding-top: 10px;
+	overflow: auto;
+	text-align: center;
+}
+.homeNewMarginTop
+{
+	margin-bottom: 5vh; 
+}
+.accueil_btn_top , .accueil_btn_bottom
+	{
+		color: white;
+		border: none;
+		display:inline-block;
+		font-size: 16px;
+		width: 200px;
+		height: 100px;
+		margin: auto;
+		font-size: 2em;
+	}
+	.acc_btn_top_txt, .acc_btn_bot_txt{ font-family: "titre"; font-size: 1.1em}
+	.acc_btn_top_txt{margin-bottom: -30px;  color:#e7dcc6 ;}
+	.acc_btn_bot_txt{margin-bottom: 30px;  color:#6e5342 ; }
+	.accueil_btn_top
+	{
+		border-radius: 100px 100px 0 0;
+		font-weight:bold;
+	}
+	.accueil_btn_bottom
+	{
+		border-radius: 0 0 100px  100px;
+		font-weight:bold;
+	}
+	.accueil_txt
+	{
+		color:#6e5342 ;
+		padding:50px 50px 100px 50px;
+		margin-bottom:-100px;
+		text-align: center;
+		font-size: 1.5em;
+		line-height: 2em;
+	}
+	.accueil_txt2
+	{
+		line-height: 2em;
+		font-size: 1.5em;
+		color: #e7dcc6;
+		margin-top: -100px;
+		padding:100px 50px 50px 50px;
+		text-align: center;
+		margin-bottom: 0;
+	}
+	@media (max-width: 768px){
+	.accueil_btn_top , .accueil_btn_bottom
+	{
+	  width: 120px;
+	  height: 60px;
+	  font-size: 1.2em;
+	}
+	.accueil_btn_top, .accueil_btn_top > a
+	{
+	   border-radius: 60px 60px 0 0;
+	   color: #FFF !important;
+	}
+	.accueil_btn_bottom, .accueil_btn_bottom > a
+	{
+	    border-radius: 0px 0px 60px  60px;
+	    color: #000 !important;
+	}
+	.accueil_txt
+	{
+		font-size: 1.2em;
+	  padding:30px 30px 60px 30px;
+	  margin-bottom:-60px;
+	}
+	.accueil_txt2
+	{
+	  font-size: 1.2em;
+	  margin-top: -60px;
+	  padding:60px 30px 30px 30px;
+	}
+}
+/*_____________ dietetique - recette et conseil _____________*/
+
+#pg-dietetique {
+	background-image: url(../img/dietetique.jpg);
+	height: 300px;
+}
+.descriptifDietMagnet{
+	padding: 10px;
+}
+.descriptifDietMagnet h1{
+	text-align: center;
+}
+#dietTabs{
+	background-color: white;
+}
+#dietTabs ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#dietTabs li{
+	float: left;
+	width: 50%;
+	color: white;
+}
+#dietTabs li a{
+	display: block;
+	color: white;
+	font-weight: bold;
+	font-family: 'titre', serif;
+	font-size: 2em;
+	text-align: center;
+	padding: auto;
+}
+#ongletRecette, #ongletConseil{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+#dietTexteRecette, #dietTexteConseil{
+	padding: 1em;
+	margin-right: 0;
+}
+#dietTexteRecette h2, #dietTexteConseil h2{
+	font-style: bold;
+}
+#dietTexteRecette ul, #dietTexteConseil ul{
+	display: block;
+}
+#dietTexteRecette li, #dietTexteConseil li{
+	margin-bottom: .5em;
+	color: black;
+	float: none;
+}
+.activeLien{
+		color: yellow !important;
+		background-color: #af7653 !important;
+	}
+
+/*_____________________ Page Atelier _____________________*/
+#pg-atelier {
+	background-image: url(../img/atelier.jpg);
+	height: 300px;
+}
 .hfixed {
 	height: 300px;
 }
@@ -215,78 +358,12 @@ footer > ul
 	height: 500 px;
 	margin: auto;
 }
-/* Home Bloc News*/
 
-#homeBlocNews {
-	background-color: #FFF;
-	padding: auto;
-	padding-top: 10px;
-	overflow: auto;
-	text-align: center;
+/*_____________________ apropos _____________________ */
+#pg-apropos {
+	background-image: url(../img/apropos.jpg);
+	height: 340px;
 }
-
-/* dietetique - recette et conseil*/
-
-.descriptifDietMagnet{
-	padding: 10px;
-}
-.descriptifDietMagnet h1{
-	text-align: center;
-}
-#dietTabs{
-	background-color: white;
-}
-#dietTabs ul{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-}
-#dietTabs li{
-	float: left;
-	width: 50%;
-	color: white;
-}
-#dietTabs li a{
-	display: block;
-	color: white;
-	font-weight: bold;
-	font-family: 'titre', serif;
-	font-size: 2em;
-	text-align: center;
-	padding: auto;
-}
-.nav > li > a:focus, .nav > li > a:hover {
-	text-decoration: none;
-	background-color: #a9c04b;
-}
-#ongletRecette, #ongletConseil{
-	max-width: 100%;
-	height: auto;
-	display: block;
-}
-#dietTexteRecette, #dietTexteConseil{
-	padding: 1em;
-	margin-right: 0;
-}
-#dietTexteRecette h2, #dietTexteConseil h2{
-	font-style: bold;
-}
-#dietTexteRecette ul, #dietTexteConseil ul{
-	display: block;
-}
-#dietTexteRecette li, #dietTexteConseil li{
-	margin-bottom: .5em;
-	color: black;
-	float: none;
-}
-.activeLien{
-		color: yellow !important;
-		background-color: #af7653 !important;
-	}
-
-/*apropos*/
-
 .img-responsive1 {
 	width: 85%;
 	padding-top: 130px;
@@ -554,50 +631,13 @@ span.assoc {
 		left: 60px;
 		top: 40px;
 	}
-	.accueil_btn_top , .accueil_btn_bottom
-	{
-		color: white;
-		border: none;
-		display:inline-block;
-		font-size: 16px;
-		width: 200px;
-		height: 100px;
-		margin: auto;
-		font-size: 2em;
-	}
-	.acc_btn_top_txt, .acc_btn_bot_txt{ font-family: "titre"; font-size: 1.1em}
-	.acc_btn_top_txt{margin-bottom: -30px;  color:#e7dcc6 ;}
-	.acc_btn_bot_txt{margin-bottom: 30px;  color:#6e5342 ; }
-	.accueil_btn_top
-	{
-		border-radius: 100px 100px 0 0;
-		font-weight:bold;
-	}
-	.accueil_btn_bottom
-	{
-		border-radius: 0 0 100px  100px;
-		font-weight:bold;
-	}
-	.accueil_txt
-	{
-		color:#6e5342 ;
-		padding:50px 50px 100px 50px;
-		margin-bottom:-100px;
-		text-align: center;
-		font-size: 1.5em;
-		line-height: 2em;
-	}
-	.accueil_txt2
-	{
-		line-height: 2em;
-		font-size: 1.5em;
-		color: #e7dcc6;
-		margin-top: -100px;
-		padding:100px 50px 50px 50px;
-		text-align: center;
-		margin-bottom: 0;
-	}
-/*page magnetique*/
+/*_____________________ _____________________ */
+	
+/*_____________________ page magnetique _____________________ */
+#pg-magnetisme {
+	background-image: url(../img/magnetisme.jpg);
+	height: 300px;
+}
 .descriptifMagnet{
 	font-size: 18px;
 	text-align: left;

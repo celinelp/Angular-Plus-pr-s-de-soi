@@ -1,6 +1,6 @@
 <!-- MAP -->
-<div class="row" ng-controller="ContactController as ContactCtrl">
-<div class="col-xs-10 col-xs-offset-1  gris-clair contactBlocMap">
+<div class="row marron-clair" ng-controller="ContactController as ContactCtrl">
+<div class="col-sm-10 col-sm-offset-1 col-xs-12 gris-clair contactBlocMap">
 	<h1 class="text-align"> Mes points de rendez-vous </h1>
 	<h3 class="text-align">Contactez-moi pour prendre rendez-vous. </h3>
 
@@ -51,8 +51,8 @@
 
 </script> 
 <!-- Formulaire -->
-<div class="row marron-clair">
-	<form class="form-horizontal col-xs-5 col-xs-offset-1" role="form" ng-submit="ContactCtrl.addcontact(contact)" method="post">
+<div class="row">
+	<form class="form-horizontal col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1" role="form" ng-submit="ContactCtrl.addcontact(contact)" method="post">
 
 		<div class="form-group row">
 			<label class="control-label"></label>  
@@ -83,7 +83,7 @@
 			<div class="col-sm-12 inputGroupContainer">
 				<div class="input-group">
 					<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-					<input name="email" placeholder=" Addresse@mail.com" class="form-control"  type="email" required
+					<input name="email" placeholder=" Adresse@mail.com" class="form-control"  type="email" required
 					ng-model="ContactCtrl.contact.Mail">
 				</div>
 			</div>
@@ -120,7 +120,7 @@
 		</center>
 	</form>
 
-	<div class="col-xs-5 gris-clair DivFicheContact">
+	<div class="col-sm-5 col-xs-12 gris-clair DivFicheContact">
 		<h2 class="HFicheContact">Fiche contact</h2>
 		<div class="DivDivFicheContact">
 			<p class="glyphicon glyphicon-user font"> {{ContactCtrl.ContactVueCtrlData[0].ficheContactName}}</p><br>
