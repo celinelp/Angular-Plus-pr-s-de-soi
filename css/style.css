@@ -363,7 +363,9 @@ footer > ul
 	height: 500 px;
 	margin: auto;
 }
-
+.atelierThematique{
+	text-align:left;
+}
 /*_____________________ apropos _____________________ */
 #pg-apropos {
 	background-image: url(../img/apropos.jpg);
