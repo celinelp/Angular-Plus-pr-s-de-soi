@@ -647,15 +647,22 @@ span.assoc {
 	text-align: left;
 	height: 270px;
 	padding-top: 15px;
-	padding-left: 380px;
+	padding-left: 200px;
 
 
 }
 img.img-responsive4 {
-	width: 80%;
+	width: 65%;
 	position: absolute;
-	right: 40px;
+	right: 90px;
+	top: 90px;
 }
 .approcheMagnet {
-	height: 490px;
+	height: 540px;
+}
+.text-mag3 {
+	
+}
+h2.text-mag3  {
+	font-size: 26spx;
 }
