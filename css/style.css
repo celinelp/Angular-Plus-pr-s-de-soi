@@ -116,7 +116,7 @@ body {
 	opacity: 1 !important;
 }
 #homePhraseAccroche{
-		margin-top: 20vh; 
+		margin-top: 20vh;
 }
 #homePhraseAccroche h1{
 	font-family: 'logo', cursive;
@@ -124,7 +124,7 @@ body {
 	color: white;
 }
 #decalagePhraseAccroche{
-	text-indent: 20px;
+	text-indent: -20px;
 }
 @media (max-width: 768px){
 	.navbar-brand {
@@ -134,7 +134,7 @@ body {
 		position: absolute;
 		top: 380px;
 		right: 10%;
-		margin-top: initial; 
+		margin-top: initial;
 	}
 	#homePhraseAccroche h1{
 		font-size: 1.5em;
@@ -187,7 +187,7 @@ footer > ul
 }
 .homeNewMarginTop
 {
-	margin-bottom: 5vh; 
+	margin-bottom: 5vh;
 }
 .accueil_btn_top , .accueil_btn_bottom
 	{
@@ -320,6 +320,7 @@ footer > ul
 	color: black;
 	float: none;
 	text-align: left;
+	font-size: 1.5em;
 }
 .activeLien{
 		color: yellow !important;
@@ -636,7 +637,7 @@ span.assoc {
 		top: 40px;
 	}
 /*_____________________ _____________________ */
-	
+
 /*_____________________ page magnetique _____________________ */
 #pg-magnetisme {
 	background-image: url(../img/magnetisme.jpg);
