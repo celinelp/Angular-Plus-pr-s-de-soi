@@ -29,7 +29,7 @@
 /* font */
 @font-face {
 	font-family: "logo";
-	src: url("../fonts/Kalam/Kalam-Regular.ttf") format("truetype");
+	src: url("../fonts/Dancing_Script/DancingScript-Regular.ttf") format("truetype");
 }
 @font-face {
 	font-family: "titre";
@@ -305,17 +305,21 @@ footer > ul
 #dietTexteRecette, #dietTexteConseil{
 	padding: 1em;
 	margin-right: 0;
+	text-align: center;
 }
 #dietTexteRecette h2, #dietTexteConseil h2{
 	font-style: bold;
+	text-align: left;
 }
 #dietTexteRecette ul, #dietTexteConseil ul{
 	display: block;
+	text-align: left;
 }
 #dietTexteRecette li, #dietTexteConseil li{
 	margin-bottom: .5em;
 	color: black;
 	float: none;
+	text-align: left;
 }
 .activeLien{
 		color: yellow !important;
