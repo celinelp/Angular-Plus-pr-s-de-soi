@@ -321,6 +321,7 @@ footer > ul
 		color: yellow !important;
 		background-color: #af7653 !important;
 	}
+
 /*_____________________ Page Atelier _____________________*/
 #pg-atelier {
 	background-image: url(../img/atelier.jpg);
@@ -632,3 +633,25 @@ span.assoc {
 	}
 /*_____________________ _____________________ */
 	
+/*_____________________ page magnetique _____________________ */
+#pg-magnetisme {
+	background-image: url(../img/magnetisme.jpg);
+	height: 300px;
+}
+.descriptifMagnet{
+	font-size: 18px;
+	text-align: left;
+	height: 270px;
+	padding-top: 15px;
+	padding-left: 380px;
+
+
+}
+img.img-responsive4 {
+	width: 80%;
+	position: absolute;
+	right: 40px;
+}
+.approcheMagnet {
+	height: 490px;
+}
