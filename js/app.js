@@ -1,6 +1,12 @@
 (function(){
-  var app = angular.module('plusPresDeSoi', ["ngRoute"], function($locationProvider){
-  });
+  var app = angular.module('plusPresDeSoi', ["ngRoute","ngSanitize"]);
+
+
+    app.run(function($rootScope) {
+      $rootScope.activeDietetique = 1;
+    });
+
+
 
   app.config(['$routeProvider',function($routeProvider){
     $routeProvider
@@ -17,7 +23,9 @@
       templateUrl : 'partials/contact/contact.html'
     })
     .when('/dietetique',{
-      templateUrl : 'partials/dietetique/dietetique.html'
+      templateUrl : 'partials/dietetique/dietetique.html',
+      controller : "dietController",
+      controllerAs : "storeDiet"
     })
     .when('/magnetisme',{
       templateUrl : 'partials/magnetisme/magnetisme.html'
@@ -26,12 +34,15 @@
       templateUrl : 'partials/mention/mention.html'
     });
   }]);
-  app.controller('imageHeader', function($location){
+  app.controller('imageHeader',["$location","$rootScope", function($location,$rootScope){
     this.url = $location.path();
     this.page = "pg-home";
     this.texte1 = "Comment je m'aime ?";
     this.texte2 = "Comment je mange ?";
-    this.changeImg = function (url){
+    this.changeImg = function (url,setActive = null){
+      if (setActive != null){
+        $rootScope.activeDietetique = setActive;
+      }
       switch (url) {
         case "/":
             $location.path('');
@@ -79,7 +90,7 @@
           this.page = "pg-home";
       }
       }
-    });
+    }]);
     app.controller('atelierCtrl', function($scope){
        $scope.presentation = objet;
        this.choiceElement = function(element){
@@ -137,9 +148,16 @@
       }];
 
 /*_____________________ HOME _____________________*/
-app.controller('HomeController', function(){
+app.controller('HomeController', function($rootScope){
   this.HomeVueCtrlData = HomeBackCtrldata;
+
+  this.setActiveDietetique = function(input){
+    $rootScope.activeDietetique = input;
+  }
+
 });
+
+
 
 var HomeBackCtrldata = [
   {
@@ -192,22 +210,46 @@ var ContactBackCtrldata = [
 
   ];
 /*____________________ DIETETIQUE ____________________*/
-app.controller('dietController', function(){
-  this.diet = dietData;
-});
+app.controller('dietController', ["$scope","$rootScope","$sce","$location", function($scope,$rootScope,$sce,$location){
+  $scope.tab = parseInt($rootScope.activeDietetique);
 
-var dietData = [
-  {
-    titreDescriptif : "Définition de la diététique",
-    texteDescriptif : "La diététique est la science de l'alimentation équilibrée. Elle permet de retrouver une alimentation équilibrée afin de trouver ou retrouver votre santé. Je vous aide à équilibrer vos repas, à répondre à vos besoins en quantité et en qualité, à retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie. Je ne conseille pas de restriction alimentaire avec la tête comme ce que préconisent  quasiment tous les régimes. L’objectif est de retrouver ses propres repères de faim et de satiété pour répondre à ses besoins On travaille sur le comportement alimentaire pour que les effets agissent sur du long terme. On abordera vos croyances et représentations, votre histoire, vos habitudes…"
+
+  this.changeTab = function(tab,hash){
+    $scope.tab = tab;
+    $location.hash(hash);
+    $location.hash('');
+
+    console.log(hash);
+  }
+
+
+
+  $scope.diet = [
+   {titreDescriptif : "Définition de la diététique",
+    texteDescriptif : "La diététique est la science de l'alimentation équilibrée. Elle permet de retrouver une alimentation équilibrée afin de trouver ou retrouver votre santé.  Je vous aide à équilibrer vos repas, à répondre à vos besoins en quantité et en qualité, à retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie. Je ne conseille pas de restriction alimentaire avec la tête comme ce que préconisent  quasiment tous les régimes. L’objectif est de retrouver ses propres repères de faim et de satiété pour répondre à ses besoins On travaille sur le comportement alimentaire pour que les effets agissent sur du long terme. On abordera vos croyances et représentations, votre histoire, vos habitudes…",
+    texteDescriptif2 : "La diététique est la science de l’alimentation équilibrée qui contribue à être en bonne santé.  Séance d’1 heure. Le suivi demande plusieurs mois de consultation et la fréquence dépend des besoins de chacun."
+
   },
-    recette = [{
 
+    aide = ["Équilibrer vos repas","Répondre à vos besoins en quantité et en qualité (goût de l’aliment, intérêt nutritionnel, choix des aliments)","Retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie (organisation, idées menu)","Avoir des idées pour varier, cuisiner facile, de saison, en faisant attention à votre budget","Continuer ou mettre en place une activité physique adaptée"],
+
+    monApproche = $sce.trustAsHtml("Je ne fais pas de « régime » mais je vous propose une <strong>alimentation équilibrée adaptée à vos besoins</strong>. Je vous propose d’aborder votre comportement alimentaire ainsi que vos croyances et représentations, votre histoire, vos habitudes. Je vous accompagnerais pour que vous puissiez mettre en place des changements petit à petit et ainsi vous sentir bien et prendre soin de votre santé.<br><br>Comment perdre du poids durablement ?<br><br> Pour perdre du poids de façon durable, il ne faut pas réduire les quantités avec sa tête mais retrouver <strong>ses repères sensoriels (faim, satiété)</strong> pour manger en fonction de ses besoins.  Agir sur l’alimentation est fondamental mais pas suffisant. Le fait de manger en grosse quantité ou pas assez, de ne pas varier, de ne pas aimer les fruits et légumes, de grignoter … est lié à notre rythme de vie  mais aussi à ce qui va influencer notre comportement alimentaire : stress, frustrations, situations subies ou « mal digérées », mal-être, inconscient, problèmes relationnels privés ou professionnels, « mots qu’on ravale »… et on compense ensuite par la nourriture. Tant que <strong>les problèmes à la source</strong> ne sont pas réglés , les changements alimentaires seront difficiles à mettre en place ou ne dureront pas dans le temps et la prise de poids pourrait reprendre. C’est pourquoi je propose en parallèle d’un suivi diététique, un accompagnement en magnétisme et/ou libération émotionnelle pour apprendre à s’aimer et à prendre « soin de soi ».  En résumé, je travaille sur le lien qu’il y a entre le comportement alimentaire, l’estime de soi et  nos émotions."),
+
+    recette = [{
+      titre : "MUFFINS COCO-CHOCOLAT AU TAHIN (sans beurre)",
+      nbPerso : "pour 6 muffins",
+      tempPrepa : "120 minutes",
+      ingredients : ["140 grs de farine","50 grs de sucre","1 sachet de levure chimique","40 grs de noix de coco en poudre","60 grs de pépites de chocolat noir (il est possible de faire des grosses pépites en coupant du chocolat à patisserie)",
+      "1/2 c/c de cannelle","1 c/s de tahin (se trouve en épicerie bio)","10 cl de lait","1 œuf"],
+      etapes : ["Préchauffer le four à 180° (Thermostat 6)","Mélanger la farine, la noix de coco, la levure, le sucre, le chocolat et la cannelle","A côté, mélanger le tahin, l’œuf et le lait","Ajouter les liquides (tahin, œuf et lait) aux ingrédients secs et homogénéiser la pâte","Etapes 2 Verser dans les moules à muffins et cuire 15-20 minutes","Attendre qu’ils aient refroidis pour démouler"]
     }],
-    conseil = [{
-      texte : "Bien mâcher permet de mieux sentir les goûts et d’arriver à satiété. Cela évite de manger trop. Respecter ses rythmes et heures... de repas et de sommeil  (le manque de sommeil pertube les centres de faim et de satiété). On conseille un temps de repas d’un minimum de 20 minutes pour laisser le temps à l’estomac de communiquer avec  le cerveau et de renseigner sur la satiété. Manger trop vite peut amener à manger des quantités supérieures à nos besoins."
-    }]
+
+    {
+      conseil : "Bien mâcher permet de mieux sentir les goûts et d’arriver à satiété. Cela évite de manger trop. Respecter ses rythmes et heures... de repas et de sommeil  (le manque de sommeil pertube les centres de faim et de satiété). On conseille un temps de repas d’un minimum de 20 minutes pour laisser le temps à l’estomac de communiquer avec  le cerveau et de renseigner sur la satiété. Manger trop vite peut amener à manger des quantités supérieures à nos besoins."
+    }
 ];
+
+}]);
 /*____________________ MAGNETISME ____________________*/
 
 app.controller('magnetController', function($scope,$sce){
@@ -253,4 +295,3 @@ $scope.temoignages = [
 ];
 });
 })();
-
