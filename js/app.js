@@ -225,7 +225,9 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location", func
 
   $scope.diet = [
    {titreDescriptif : "Définition de la diététique",
-    texteDescriptif : "La diététique est la science de l'alimentation équilibrée. Elle permet de retrouver une alimentation équilibrée afin de trouver ou retrouver votre santé.  Je vous aide à équilibrer vos repas, à répondre à vos besoins en quantité et en qualité, à retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie. Je ne conseille pas de restriction alimentaire avec la tête comme ce que préconisent  quasiment tous les régimes. L’objectif est de retrouver ses propres repères de faim et de satiété pour répondre à ses besoins On travaille sur le comportement alimentaire pour que les effets agissent sur du long terme. On abordera vos croyances et représentations, votre histoire, vos habitudes…"},
+    texteDescriptif : "La diététique est la science de l'alimentation équilibrée. Elle permet de retrouver une alimentation équilibrée afin de trouver ou retrouver votre santé.  Je vous aide à équilibrer vos repas, à répondre à vos besoins en quantité et en qualité, à retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie. Je ne conseille pas de restriction alimentaire avec la tête comme ce que préconisent  quasiment tous les régimes. L’objectif est de retrouver ses propres repères de faim et de satiété pour répondre à ses besoins On travaille sur le comportement alimentaire pour que les effets agissent sur du long terme. On abordera vos croyances et représentations, votre histoire, vos habitudes…",
+    texteDescriptif2 : "La diététique est la science de l’alimentation équilibrée qui contribue à être en bonne santé.  Séance d’1 heure. Le suivi demande plusieurs mois de consultation et la fréquence dépend des besoins de chacun."
+  },
 
     aide = ["Équilibrer vos repas","Répondre à vos besoins en quantité et en qualité (goût de l’aliment, intérêt nutritionnel, choix des aliments)","Retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie (organisation, idées menu)","Avoir des idées pour varier, cuisiner facile, de saison, en faisant attention à votre budget","Continuer ou mettre en place une activité physique adaptée"],
 
@@ -233,11 +235,11 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location", func
 
     recette = [{
       titre : "MUFFINS COCO-CHOCOLAT AU TAHIN (sans beurre)",
-      nbPerso : "",
-      tempPrepa : "",
-      nbParts : "",
-      /*etapes = [],
-      ingredients = []*/
+      nbPerso : "pour 6 muffins",
+      tempPrepa : "120 minutes",
+      ingredients : ["140 grs de farine","50 grs de sucre","1 sachet de levure chimique","40 grs de noix de coco en poudre","60 grs de pépites de chocolat noir (il est possible de faire des grosses pépites en coupant du chocolat à patisserie)",
+      "1/2 c/c de cannelle","1 c/s de tahin (se trouve en épicerie bio)","10 cl de lait","1 œuf"],
+      etapes : ["Préchauffer le four à 180° (Thermostat 6)","Mélanger la farine, la noix de coco, la levure, le sucre, le chocolat et la cannelle","A côté, mélanger le tahin, l’œuf et le lait","Ajouter les liquides (tahin, œuf et lait) aux ingrédients secs et homogénéiser la pâte","Etapes 2 Verser dans les moules à muffins et cuire 15-20 minutes","Attendre qu’ils aient refroidis pour démouler"]
     }],
 
     {
