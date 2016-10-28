@@ -126,6 +126,8 @@ body {
 #decalagePhraseAccroche{
 	text-indent: 20px;
 }
+
+}
 @media (max-width: 768px){
 	.navbar-brand {
 		font-size: 1.5em;
@@ -648,17 +650,20 @@ span.assoc {
 
 }
 img.img-responsive4 {
-	width: 65%;
+	width: 75%;
 	position: absolute;
-	right: 90px;
-	top: 90px;
+	right: 120px;
+	top: 110px;
 }
 .approcheMagnet {
-	height: 540px;
+	
+	padding-right: 50px;
 }
 .text-mag3 {
-	
+	width: 90%;
 }
 h2.text-mag3  {
-	font-size: 26spx;
+	font-size: 40px;
 }
+
+

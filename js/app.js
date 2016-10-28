@@ -199,7 +199,7 @@ app.controller('dietController', function(){
 var dietData = [
   {
     titreDescriptif : "Définition de la diététique",
-    texteDescriptif : "La diététique est la science de l'alimentation équilibrée. Elle permet de retrouver une alimentation équilibrée afin de trouver ou retrouver votre santé.  Je vous aide à équilibrer vos repas, à répondre à vos besoins en quantité et en qualité, à retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie. Je ne conseille pas de restriction alimentaire avec la tête comme ce que préconisent  quasiment tous les régimes. L’objectif est de retrouver ses propres repères de faim et de satiété pour répondre à ses besoins On travaille sur le comportement alimentaire pour que les effets agissent sur du long terme. On abordera vos croyances et représentations, votre histoire, vos habitudes…"
+    texteDescriptif : "La diététique est la science de l'alimentation équilibrée. Elle permet de retrouver une alimentation équilibrée afin de trouver ou retrouver votre santé. Je vous aide à équilibrer vos repas, à répondre à vos besoins en quantité et en qualité, à retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie. Je ne conseille pas de restriction alimentaire avec la tête comme ce que préconisent  quasiment tous les régimes. L’objectif est de retrouver ses propres repères de faim et de satiété pour répondre à ses besoins On travaille sur le comportement alimentaire pour que les effets agissent sur du long terme. On abordera vos croyances et représentations, votre histoire, vos habitudes…"
   },
     recette = [{
 
@@ -217,7 +217,7 @@ app.controller('magnetController', function($scope,$sce){
 $scope.magnetData = [
   {
     titreDescriptif : "Définition du magnétisme",
-    texteDescriptif : $sce.trustAsHtml("Le magnétisme est un soin d’énergie vitale qui permet de soigner les maux du corps et de l’esprit.<br> Il soulage les douleurs, zonas, verrues, brûlures, eczéma, troubles fonctionnels et nerveux, stress, insomnie, fatigue, deuil, …<br>Je suis un canal de l’énergie du ciel et de la terre et cette énergie va aider la personne à l’endroit où elle en a besoin.<br> La personne soignée reste habillée et est allongée sur une table de massage..<br><strong>Séance d’1 heure</strong>: La personne peut avoir besoin d’une ou plusieurs séances…<br><strong>Attention : le magnétisme ne se substitue pas à un suivi médical, ni à un traitement médicamenteux.</strong>")
+    texteDescriptif : $sce.trustAsHtml("Le magnétisme est un soin d’énergie vitale qui permet de soigner les maux du corps et de l’esprit.<br> Il soulage les douleurs, zonas, verrues, brûlures, eczéma, troubles fonctionnels et nerveux, stress, insomnie, fatigue, deuil, …<br>Je suis un canal de l’énergie du ciel et de la terre et cette énergie va aider la personne à l’endroit où elle en a besoin.<br> La personne soignée reste habillée et est allongée sur une table de massage..<br><strong>Séance d’1 heure</strong>: La personne peut avoir besoin d’une ou plusieurs séances…<br><strong>Attention : le magnétisme ne se substitue pas à un suivi médical, ni à un traitement médicamenteux.")
   }
 ];
 
