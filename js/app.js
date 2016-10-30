@@ -114,37 +114,37 @@
    {
       numeroAtelier : 'Atelier N° 1',
       titreAtelier : 'Alimentation équilibrée: ça veut dire quoi?',
-      detailAtelier : 'Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>'
+      detailAtelier : 'Objectif: Aborder ce qui influence notre comportement alimentaire, les croyances et les représentations.'
      },
    {
         numeroAtelier : 'Atelier N° 2',
         titreAtelier : 'Pourquoi on mange? Croyances et représentations',
         titreDetail : 'Pourquoi on mange? Croyances et représentations',
-        detailAtelier : 'Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>'
+        detailAtelier : 'objectif : Informer sur les différents groupes d’aliments, leurs apports et ce qu’est un repas équilibré. '
      },
   {
        numeroAtelier : 'Atelier N° 3',
-       titreAtelier : 'Comment s\'organiser? <br>Les menus...',
+       titreAtelier : 'Comment s\'organiser? Les menus...',
        titreDetail : 'Comment s\'organiser? <br>Les menus...',
-       detailAtelier : 'Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>'
+       detailAtelier : 'objectif : mettre en pratique de l’alimentation équilibrée sur une semaine : variété, idées de saison.'
      },
   {
        numeroAtelier : 'Atelier N° 4',
        titreAtelier : 'La lecture des étiquettes',
        titreDetail : 'La lecture des étiquettes',
-       detailAtelier : 'Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>'
+       detailAtelier : 'objectif : mettre en pratique de l’alimentation équilibrée sur une semaine : variété, idées de saison.'
      },
   {
        numeroAtelier : 'Atelier N° 5',
        titreAtelier : 'L\'alimentation de la femme',
        titreDetail : 'L\'alimentation de la femme',
-       detailAtelier : 'Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>'
+       detailAtelier : 'Objectif : Repérer les rythmes naturels de la femme et ses besoins nutritionnels, apprendre à choisir les aliments pour les respecter.'
      },
   {
        numeroAtelier : 'Atelier N° 6',
        titreAtelier : 'L\'estime de soi',
        titreDetail : 'L\'estime de soi',
-       detailAtelier : 'Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>Que faut il manger pour maigrir, est une question que se posent toutes les personnes qui cherchent à perdre du poids. Grâce à cet article, vous allez comprendre l’importance de manger équilibré et d’avoir des repas variés pour mieux perdre vos kilos en trop ou simplement pour garder votre ligne. Nos explications vont vous aider à mieux manger pour mincir plus rapidement.<br><br>'
+       detailAtelier : 'Objectif : -Permettre le débat, les échanges et les réflexions sur la minceur, le poids et les régimes<br>Aborder les fausses croyances- comprendre ce qu’ est l’estime de soi.'
       }];
 
 /*_____________________ HOME _____________________*/
@@ -259,7 +259,7 @@ app.controller('magnetController', function($scope,$sce){
 $scope.magnetData = [
   {
     titreDescriptif : "Définition du magnétisme",
-    texteDescriptif : $sce.trustAsHtml("Le magnétisme est un soin d’énergie vitale qui permet de soigner les maux du corps et de l’esprit.<br> Il soulage les douleurs, zonas, verrues, brûlures, eczéma, troubles fonctionnels et nerveux, stress, insomnie, fatigue, deuil, …<br>Je suis un canal de l’énergie du ciel et de la terre et cette énergie va aider la personne à l’endroit où elle en a besoin.<br> La personne soignée reste habillée et est allongée sur une table de massage..<br><strong>Séance d’1 heure</strong>: La personne peut avoir besoin d’une ou plusieurs séances…<br><strong>Attention : le magnétisme ne se substitue pas à un suivi médical, ni à un traitement médicamenteux.")
+    texteDescriptif : $sce.trustAsHtml("Le magnétisme est un soin d’énergie vitale qui permet de soigner les maux du corps et de l’esprit.<br> Il soulage les douleurs, zonas, verrues, brûlures, eczéma, troubles fonctionnels et nerveux, stress, insomnie, fatigue, deuil, …<br>Je suis un canal de l’énergie du ciel et de la terre et cette énergie va aider la personne à l’endroit où elle en a besoin.<br> La personne soignée reste habillée et est allongée sur une table de massage..<br><strong>Séance d’1 heure</strong>: La personne peut avoir besoin d’une ou plusieurs séances…<br><small>Attention : le magnétisme ne se substitue pas à un suivi médical, ni à un traitement médicamenteux.<samll>")
   }
 ];
 
@@ -292,6 +292,7 @@ $scope.temoignages = [
                   { id : "pierre",
                     texte:"Un grand merci à Mélina, qui m'a aidé dans tous les domaines.Son positivisme et son professionnalisme ont eu raison de mon enbompoint . J'étais un peu sceptique quant au mgnétisme et franchement je conseille à toute personne de tenter l'aventure, vous ne le regretterez pas.",
                   auteur:"Pierre LC."},
+
 ];
 });
 })();

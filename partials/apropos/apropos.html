@@ -17,13 +17,13 @@
           </div>
 
           <div class="row" >
-            <div class="col-xs-12 col-md-12 ">
+            <div class="col-xs-12 ">
               <blockquote ng-bind-html="aproposData[1].textCitation"></blockquote>
               </div>
             </div>
 
             <div class="row ">
-              <div class="col-xs-4 col-xs-4 partie-bio">
+              <div class="col-xs-4 col-md-4 partie-bio">
                <h2>Votre diététicienne est spécialisée en prévention et éducation pour la santé</h2>
                <ul>
                 <li class="prose">DUT génie biologique, option diététique, IUT Tours, septembre 1999.
@@ -60,7 +60,7 @@
           </div>
 
           <div class="row " >
-            <div class="col-xs-12 col-md-12 presse">
+            <div class="col-xs-12 col-md-4 presse">
               <h2>{{presse.titre}}</h2>
               <img class="img-responsive2" ng-src="{{presse.img}}">
               <p class="agglo">{{presse.lieu}}</p>
@@ -124,11 +124,12 @@
 
 
 
-          <div class="row accrocheContact">
-            <div class="col-xs-12">
-              <h3>Vous avez décidé de prendre soin de vous ? C'est le moment</h3>
-              <a class="boutonAccroche hvr-round-corners" href="contact.html">Me contacter</a>
+         
+            <div class="row accrocheContact">
+  <div class="col-xs-12">
+    <h3>Vous avez décidé de prendre soin de vous ? C'est le moment</h3>
+    <a class="boutonAccroche hvr-round-corners" ng-click="image.changeImg('/contact')">Me contacter</a>
 
-            </div>
+  </div>
           </div>
 </div>
