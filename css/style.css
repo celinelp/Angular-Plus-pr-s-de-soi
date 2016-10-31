@@ -40,7 +40,7 @@
 	src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
 }
 .font {
-	font-size: 1.1em !important;
+	font-size: 1.2em !important;
 }
 h1, h2, h3, h4{
 	font-family: 'titre', serif;
@@ -269,6 +269,7 @@ footer > ul
 #pg-dietetique {
 	background-image: url(../img/dietetique.jpg);
 	height: 320px;
+	background-position: right bottom;
 }
 .descriptifDietMagnet{
 	padding: 10px;
