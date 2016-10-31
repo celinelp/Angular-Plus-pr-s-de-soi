@@ -228,7 +228,7 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location", func
 
   $scope.diet = [
    {titreDescriptif : "Définition de la diététique",
-    texteDescriptif : "La diététique est la science de l'alimentation équilibrée. Elle permet de retrouver une alimentation équilibrée afin de trouver ou retrouver votre santé.  Je vous aide à équilibrer vos repas, à répondre à vos besoins en quantité et en qualité, à retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie. Je ne conseille pas de restriction alimentaire avec la tête comme ce que préconisent  quasiment tous les régimes. L’objectif est de retrouver ses propres repères de faim et de satiété pour répondre à ses besoins On travaille sur le comportement alimentaire pour que les effets agissent sur du long terme. On abordera vos croyances et représentations, votre histoire, vos habitudes…",
+    texteDescriptif : $sce.trustAsHtml("La diététique est la science de l'alimentation équilibrée.&nbsp;Elle permet de retrouver une alimentation équilibrée afin de trouver ou retrouver votre santé. <br> Je vous aide à équilibrer vos repas, à répondre à vos besoins en quantité et en qualité, à retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie.<br> Je ne conseille pas de restriction alimentaire avec la tête comme ce que préconisent  quasiment tous les régimes.<br> L’objectif est de retrouver ses propres repères de faim et de satiété pour répondre à ses besoins.<br> On travaille sur le comportement alimentaire pour que les effets agissent sur du long terme.<br> On abordera vos croyances et représentations, votre histoire, vos habitudes…"),
     texteDescriptif2 : "La diététique est la science de l’alimentation équilibrée qui contribue à être en bonne santé.  Séance d’1 heure. Le suivi demande plusieurs mois de consultation et la fréquence dépend des besoins de chacun."
 
   },
@@ -299,8 +299,8 @@ $scope.temoignages = [
                     texte:"Après une séance d’émotionnel sur une situation de licenciement abusif en juin : au cours de l’été, j'ai perdu 3 kgs et cela m'a permis du coup de mieux m'entendre avec mon nouveau patron. ",
                   auteur:"Céline."},
                   { id : "louiza",
-                    texte:"Mais quelle découverte, j'ai repris goût à la vie et sans Mélina je ne pourrais pas être totalement sereine face à mes petits bouts de chou. Je mange équilibré et je cuisine de bons repas aux enfants..",
-                  auteur:"Louiza MB."},
+                    texte:"J'ai commencé à voir Mélina Guillet fin août et je sens déjà un changement important dans ma manière de manger. D'emblée, elle m'a fait replonger dans des émotions plus ou moins récentes, de manière bienveillante. Depuis, je sens que quelque chose change en moi sans que j'aie d'efforts à fournir: j'ai simplement envie de prendre soin de moi, notamment en mangeant mieux (plus de fruits, de légumes, moins de biscuits...). En suivant ses conseils, je me sens rassasiée en fin de repas (ce qui n'était en fait plus vraiment le cas depuis longtemps). Avec une approche complémentaire entre les émotions et la diététique, j'ai envie de découvrir des goûts nouveaux et de me faire plaisir en me réconciliant avec mon corps..",
+                  auteur:"M."},
                   { id : "anna",
                     texte:"Ayant des horaires décalés, j'avais de gros problèmes d'insomnie ce qui m'empêchait d'être agréable avec mes clients. Je suis allée voir Mélina et elle m'a appris à être en phase avec moi même. Son énergie positive m'a permis de ne pas m'écrouler.",
                     auteur:"Anna P."},

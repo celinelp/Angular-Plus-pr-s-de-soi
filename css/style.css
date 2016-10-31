@@ -272,8 +272,10 @@ footer > ul
 }
 .descriptifDietMagnet{
 	padding: 10px;
-
 	text-align: center;
+	font-size: 1.3em;
+	padding-right: 100px;
+
 	
 
 }
@@ -665,20 +667,16 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 }
 
 .descriptifMagnet{
-	font-size: 18px;
-	text-align: left;
+	font-size: 1.2em;
+	text-align: center;
 	padding-top: 15px;
-
-
-
+	
 }
 
 img.img-responsive4 {
-	width: 75%;
+	width: 105%;
+	padding-top: 130px;
 	
-	position: absolute;
-	right: 120px;
-	top: 110px;
 	
 
 }
@@ -687,12 +685,14 @@ img.img-responsive4 {
 	padding-right: 50px;
 }
 .text-mag3 {
-
+	font-size: 1.2em;
 	width: 90%;
+	text-align: center;
+	position: relative;
+	left: 60px;
 }
 h2.text-mag3  {
 	font-size: 40px;
 
 }
-
 

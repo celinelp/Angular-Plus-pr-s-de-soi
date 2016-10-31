@@ -1,9 +1,9 @@
 <div class="vert row descriptifMagnet" ng-controller="dietController as dietCtrl">
 
 
-	<div class="col-xs-12 col md-12">
+	<div class=" col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
 		<h1>{{diet[0].titreDescriptif}}</h1>
-		<p>{{diet[0].texteDescriptif}}</p>
+		<p ng-bind-html="diet[0].texteDescriptif"></p>
 
 	</div>
 
@@ -27,7 +27,7 @@
 
 <div class="gris-clair row descriptifDietMagnet">
 
-	<div class=" col-xs-12">
+	<div class="col-xs-offset-1 col-xs-11 col md-offset-1 col-md-11">
 		<h1>Mon approche de la diététique :</h1>
 		<p ng-bind-html="diet[2]"></p>
 
