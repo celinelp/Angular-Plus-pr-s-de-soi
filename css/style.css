@@ -126,6 +126,8 @@ body {
 #decalagePhraseAccroche{
 	text-indent: -20px;
 }
+
+}
 @media (max-width: 768px){
 	.navbar-brand {
 		font-size: 1.5em;
@@ -174,7 +176,7 @@ footer > ul
 /*_____________________ _____________________ */
 #pg-contact {
 	background-image: url(../img/contact.jpg);
-	height: 300px;
+	height: 320px;
 }
 /*_____________________ Home  _____________________*/
 
@@ -266,10 +268,14 @@ footer > ul
 
 #pg-dietetique {
 	background-image: url(../img/dietetique.jpg);
-	height: 300px;
+	height: 320px;
 }
 .descriptifDietMagnet{
 	padding: 10px;
+
+	text-align: center;
+	
+
 }
 .descriptifDietMagnet h1{
 	text-align: center;
@@ -330,7 +336,7 @@ footer > ul
 /*_____________________ Page Atelier _____________________*/
 #pg-atelier {
 	background-image: url(../img/atelier.jpg);
-	height: 300px;
+	height: 320px;
 }
 .hfixed {
 	height: 300px;
@@ -350,6 +356,10 @@ footer > ul
 .caption {
 	padding:50px;
 	color: black !important;
+	font-size: 1.3em;
+}
+.caption h3 {
+	font-size: 1.8em;
 }
 .thumbnail{
 	color: black !important;
@@ -366,10 +376,19 @@ footer > ul
 .atelierThematique{
 	text-align:left;
 }
+.prof {
+	font-size: 1.3em;
+}
+.prof h1 {
+	font-size: 2.5em;
+}
+h3.theme {
+	font-style: underline;
+}
 /*_____________________ apropos _____________________ */
 #pg-apropos {
 	background-image: url(../img/apropos.jpg);
-	height: 340px;
+	height: 360px;
 }
 .img-responsive1 {
 	width: 85%;
@@ -413,9 +432,8 @@ footer > ul
 .parcours-bio h2 {
 	color: black;
 	padding-top: 30px
-	zztext-decoration :underline;
+	text-decoration :underline;
 	font-family: 'Josefin', serif;
-	text-indent: 10px;
 	font-weight: bolder;
 
 }
@@ -435,8 +453,8 @@ footer > ul
 .photo-bio h2 {
 	color: #6e5342;
 	position: relative;
-	left: 100px;
-	top: 30px;
+	left: 70px;
+	top: 50px;
 	text-align: center;
 
 	font-family: 'Josefin', serif;
@@ -448,7 +466,7 @@ h2.titre1 {
 
 }
 .partie-bio {
-	height: 700px;
+	height: 800px;
 	display: inline-block;
 	top: 90px;
 	padding-left: 100px;
@@ -524,7 +542,7 @@ h2.aproposTitre3 {
 .presse {
 	display: inline-block;
 	left: 150px;
-	bottom: -50px;
+	bottom: -40px;
 	clear: both;
 	width: 80%;
 }
@@ -576,7 +594,7 @@ span.assoc {
 	border-radius: 15px;
 	color: #fff;
 }
-.nav.nav-justified > li.active > a > .quote { opacity: 1; }
+zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 .nav.nav-justified > li > a > img { box-shadow: 0 0 0 5px #A97052; }
 .nav.nav-justified > li > a > img {
 	max-width: 80%;
@@ -645,25 +663,36 @@ span.assoc {
 	background-image: url(../img/magnetisme.jpg);
 	height: 300px;
 }
+
 .descriptifMagnet{
 	font-size: 18px;
 	text-align: left;
 	padding-top: 15px;
 
 
+
 }
+
 img.img-responsive4 {
-	width: 65%;
+	width: 75%;
+	
 	position: absolute;
-	right: 90px;
-	top: 90px;
+	right: 120px;
+	top: 110px;
+	
+
 }
 .approcheMagnet {
-	height: 540px;
+	
+	padding-right: 50px;
 }
 .text-mag3 {
 
+	width: 90%;
 }
 h2.text-mag3  {
-	font-size: 26spx;
+	font-size: 40px;
+
 }
+
+
