@@ -30,10 +30,15 @@ body
 }
 .contactTxt , .contactTxt2
 {
- font-size: 1.2em;
+ 
+}
+.btn
+{
+  padding: 10px;
 }
 .btn-envoie
 {
+  color:#6e5342;
   margin-top: 1em;
 }
 .contactTxt
@@ -43,7 +48,7 @@ body
 }
 .DivDivFicheContact
 {
-  text-align: center; line-height: 2.5em;
+  text-align: center; line-height: 2.5em; font-size: 1.2em;
 }
 .DivFicheContact
 {
