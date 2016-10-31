@@ -274,11 +274,12 @@ footer > ul
 	padding: 10px;
 
 	text-align: center;
-	
-
 }
 .descriptifDietMagnet h1{
 	text-align: center;
+}
+.descriptifDietListe{
+	text-align: left;
 }
 #dietTabs{
 	background-color: white;
@@ -332,6 +333,13 @@ footer > ul
 		color: yellow !important;
 		background-color: #af7653 !important;
 	}
+
+.chronique{
+	text-align: center;
+}
+.boutonchronique {
+	margin-bottom: 10px;
+}
 
 /*_____________________ Page Atelier _____________________*/
 #pg-atelier {
@@ -675,15 +683,15 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 
 img.img-responsive4 {
 	width: 75%;
-	
+
 	position: absolute;
 	right: 120px;
 	top: 110px;
-	
+
 
 }
 .approcheMagnet {
-	
+
 	padding-right: 50px;
 }
 .text-mag3 {
@@ -694,5 +702,3 @@ h2.text-mag3  {
 	font-size: 40px;
 
 }
-
-

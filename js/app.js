@@ -210,21 +210,23 @@ var ContactBackCtrldata = [
 
   ];
 /*____________________ DIETETIQUE ____________________*/
-app.controller('dietController', ["$scope","$rootScope","$sce","$location", function($scope,$rootScope,$sce,$location){
+app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anchorScroll", function($scope,$rootScope,$sce,$location,$anchorScroll){
   $scope.tab = parseInt($rootScope.activeDietetique);
 
-
-  this.changeTab = function(tab,hash){
+  /* remplissage panel tab conseil-recette */
+  this.changeTab = function(tab,hash,$anchorScroll){
     $scope.tab = tab;
-    $location.hash(hash);
-    $location.hash('');
-
-    console.log(hash);
   }
-
+  /* remplissage des modals chroniques */
   this.choiceDietElement = function(element){
      $scope.elementDietModal = element;
   }
+  /* ancre vers le tab recette-conseil */
+  /*if ($rootScope.activeDietetique === 2){
+    $location.hash('dietTabs');
+    $anchorScroll();
+  };*/
+
 
   $scope.diet = [
    {titreDescriptif : "Définition de la diététique",
@@ -283,6 +285,7 @@ $scope.magnetData = [
 
 /*____________________ APROPOS ____________________*/
 app.controller('AproposController', function($scope,$sce){
+  $scope.tab = "1";
 
 $scope.aproposData = [
  {imageBio: "img/melina9.jpg",
@@ -295,16 +298,16 @@ $scope.presse = {
                   lieu: "Votre Agglo- N°54 - Avril 2016"
 }
 $scope.temoignages = [
-                  { id : "celine",
+                  { id : "1",
                     texte:"Après une séance d’émotionnel sur une situation de licenciement abusif en juin : au cours de l’été, j'ai perdu 3 kgs et cela m'a permis du coup de mieux m'entendre avec mon nouveau patron. ",
                   auteur:"Céline."},
-                  { id : "louiza",
+                  { id : "2",
                     texte:"Mais quelle découverte, j'ai repris goût à la vie et sans Mélina je ne pourrais pas être totalement sereine face à mes petits bouts de chou. Je mange équilibré et je cuisine de bons repas aux enfants..",
                   auteur:"Louiza MB."},
-                  { id : "anna",
+                  { id : "3",
                     texte:"Ayant des horaires décalés, j'avais de gros problèmes d'insomnie ce qui m'empêchait d'être agréable avec mes clients. Je suis allée voir Mélina et elle m'a appris à être en phase avec moi même. Son énergie positive m'a permis de ne pas m'écrouler.",
                     auteur:"Anna P."},
-                  { id : "pierre",
+                  { id : "4",
                     texte:"Un grand merci à Mélina, qui m'a aidé dans tous les domaines.Son positivisme et son professionnalisme ont eu raison de mon enbompoint . J'étais un peu sceptique quant au mgnétisme et franchement je conseille à toute personne de tenter l'aventure, vous ne le regretterez pas.",
                   auteur:"Pierre LC."},
 

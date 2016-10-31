@@ -85,7 +85,7 @@
                 <div class="[ col-xs-4 col-sm-12 ]">
 
                   <ul class="[ nav nav-justified ]" id="nav-tabs" role="tablist">
-                    <li ng-repeat="temoignage in temoignages" role="presentation">
+                    <li ng-repeat="temoignage in temoignages" role="presentation" ng-class="{active : tab === temoignage.id}">
                       <a href="#{{temoignage.id}}" target="_self" aria-controls="{{temoignage.id}}" role="tab" data-toggle="tab">
 
                         <img class="img-circle" src="img/button4.png" />
@@ -97,22 +97,14 @@
 
                 <div class="[ col-xs-8 col-sm-12 col-md-8 col-md-12 ]">
 
-
                   <div class="tab-content" id="tabs-collapse">
 
-                    <div ng-repeat="temoignage in temoignages" role="tabpanel" class="tab-pane fade" id="{{temoignage.id}}">
+                    <div ng-repeat="temoignage in temoignages" role="tabpanel" class="tab-pane fade" id="{{temoignage.id}}" ng-class="{active : tab === temoignage.id, in : tab === temoignage.id}">
                       <div class="tab-inner">
                         <p class="lead">{{temoignage.texte}}</p>
                         <p class="text-uppercase"><strong>{{temoignage.auteur}}</strong></p>
-
                       </div>
                     </div>
-
-
-
-
-
-
                   </div>
                 </div>
               </div>
