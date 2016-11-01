@@ -300,7 +300,7 @@ $scope.presse = {
 $scope.temoignages = [
                   { id : "1",
                     texte:"Après une séance d’émotionnel sur une situation de licenciement abusif en juin : au cours de l’été, j'ai perdu 3 kgs et cela m'a permis du coup de mieux m'entendre avec mon nouveau patron. ",
-
+                    auteur:"Céline"},
                   { id : "louiza",
                     texte:"J'ai commencé à voir Mélina Guillet fin août et je sens déjà un changement important dans ma manière de manger. D'emblée, elle m'a fait replonger dans des émotions plus ou moins récentes, de manière bienveillante. Depuis, je sens que quelque chose change en moi sans que j'aie d'efforts à fournir: j'ai simplement envie de prendre soin de moi, notamment en mangeant mieux (plus de fruits, de légumes, moins de biscuits...). En suivant ses conseils, je me sens rassasiée en fin de repas (ce qui n'était en fait plus vraiment le cas depuis longtemps). Avec une approche complémentaire entre les émotions et la diététique, j'ai envie de découvrir des goûts nouveaux et de me faire plaisir en me réconciliant avec mon corps..",
                   auteur:"M."},
