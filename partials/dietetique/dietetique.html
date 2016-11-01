@@ -18,8 +18,22 @@
 		</ul>
 
 	</div>
-	<div class="col-xs-6">
+	<div class="col-xs-12 col-sm-6 player">
 
+		
+			<audio controls="controls"></audio>
+			<div id="p-bg" class=" jaune dropdown" >
+				<div class="dropdown-toggle"> <p> Liste d'audio  </p></div>
+					<span class=" glyphicon glyphicon-triangle-bottom"></span>
+				<ul class="dropdown-menu jaune">
+					<li class="p-list jaune" onclick="pickSong(0)">Qu'est ce que le goût ? </li>
+					<li class="p-list p-list-none jaune" onclick="pickSong(1)">Comment évolue le goût ?</li>
+					<li class="p-list p-list-none jaune" onclick="pickSong(2)">Comment développer le goût ?</li>
+					<li class="p-list p-list-none p-list-none jaune" onclick="pickSong(3)">Comment la société intervient sur le goût ?</li>
+					<li class="p-list p-list-none jaune" onclick="pickSong(4)">Pourquoi l'éducation au goût est importante ?</li>
+					<li class="p-list p-list-none p-list-bot jaune" onclick="pickSong(5)">Quart d'heure bien-être. Le cholestérol.</li>
+				</ul>
+		</div>
 	</div>
 
 </div>
@@ -42,27 +56,27 @@
 
 		<button ng-click="storeDiet.choiceDietElement(chronique)" type="button" class="boutonchronique boutonAccroche hvr-round-corners" data-toggle="modal" data-target="#myModal">
 			<p>Chronique du goût n°{{chronique.id}}<p>
-		</button>
+			</button>
 
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <object data="{{elementDietModal.pdf}}" type="application/pdf" title="" width="800" height="885"></object>
-		    </div>
-		  </div>
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<object data="{{elementDietModal.pdf}}" type="application/pdf" title="" width="800" height="885"></object>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 	</div>
 
-</div>
-
-<div class="row" id="dietTabs">
+	<div class="row" id="dietTabs">
 
 		<!-- Nav tabs -->
 		<ul class="nav marron-clair" role="tablist">
-				<li role="presentation" ng-class="{active : tab === 1}">
-					<a id="ongletRecette" ng-class="{activeLien : tab === 1}" ng-click="storeDiet.changeTab(1,'recette')" href="#recette" target="_self" aria-controls="recette" role="tab" data-toggle="tab" class="tabDietetique">Recette coup de coeur</a>
-				</li>
+			<li role="presentation" ng-class="{active : tab === 1}">
+				<a id="ongletRecette" ng-class="{activeLien : tab === 1}" ng-click="storeDiet.changeTab(1,'recette')" href="#recette" target="_self" aria-controls="recette" role="tab" data-toggle="tab" class="tabDietetique">Recette coup de coeur</a>
+			</li>
 			<li role="presentation" ng-class="{active : tab === 2}">
 				<a id="ongletConseil" ng-class="{activeLien : tab === 2}" ng-click="storeDiet.changeTab(2,'conseil')" href="#conseil" target="_self" aria-controls="conseil" role="tab" data-toggle="tab" class="tabDietetique">Conseil du jour</a>
 			</li>
@@ -98,12 +112,19 @@
 			</div>
 		</div>
 
-</div>
-
-<div class="row accrocheContact">
-	<div class="col-xs-12">
-		<h3>Vous avez décidé de prendre soin de vous ? C'est le moment</h3>
-		<a class="boutonAccroche hvr-round-corners" ng-click="image.changeImg('/contact')">Me contacter</a>
-
 	</div>
-</div>
+
+	<div class="row accrocheContact">
+		<div class="col-xs-12">
+			<h3>Vous avez décidé de prendre soin de vous ? C'est le moment</h3>
+			<a class="boutonAccroche hvr-round-corners" ng-click="image.changeImg('/contact')">Me contacter</a>
+
+		</div>
+	</div>
+	<!-- dropdown audio list --> 
+  <script type="text/javascript">jQuery(function($) {
+    $('.dropdown').hover(function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+    }, function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).delay(500).slideUp();
+    });});</script>
