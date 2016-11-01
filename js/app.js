@@ -201,7 +201,7 @@ var HomeBackCtrldata = [
 var ContactBackCtrldata = [
 
   {
-    adresse_1: "34 rue de la tannerie 28000 Chartres" ,
+    adresse_1: "34 rue de la Tannerie 28000 Chartres" ,
     adresse_2: "7 Rue du Préau 28300 Berchères-Saint-Germain",
     ficheContactName: " Guillet Mélina",
     ficheContactNum: " 06.72.31.97.12",
@@ -210,21 +210,23 @@ var ContactBackCtrldata = [
 
   ];
 /*____________________ DIETETIQUE ____________________*/
-app.controller('dietController', ["$scope","$rootScope","$sce","$location", function($scope,$rootScope,$sce,$location){
+app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anchorScroll", function($scope,$rootScope,$sce,$location,$anchorScroll){
   $scope.tab = parseInt($rootScope.activeDietetique);
 
-
-  this.changeTab = function(tab,hash){
+  /* remplissage panel tab conseil-recette */
+  this.changeTab = function(tab,hash,$anchorScroll){
     $scope.tab = tab;
-    $location.hash(hash);
-    $location.hash('');
-
-    console.log(hash);
   }
-
+  /* remplissage des modals chroniques */
   this.choiceDietElement = function(element){
      $scope.elementDietModal = element;
   }
+  /* ancre vers le tab recette-conseil */
+  /*if ($rootScope.activeDietetique === 2){
+    $location.hash('dietTabs');
+    $anchorScroll();
+  };*/
+
 
   $scope.diet = [
    {titreDescriptif : "Définition de la diététique",
@@ -283,6 +285,7 @@ $scope.magnetData = [
 
 /*____________________ APROPOS ____________________*/
 app.controller('AproposController', function($scope,$sce){
+  $scope.tab = "1";
 
 $scope.aproposData = [
  {imageBio: "img/melina9.jpg",
@@ -295,9 +298,9 @@ $scope.presse = {
                   
 }
 $scope.temoignages = [
-                  { id : "celine",
+                  { id : "1",
                     texte:"Après une séance d’émotionnel sur une situation de licenciement abusif en juin : au cours de l’été, j'ai perdu 3 kgs et cela m'a permis du coup de mieux m'entendre avec mon nouveau patron. ",
-                  auteur:"Céline."},
+
                   { id : "louiza",
                     texte:"J'ai commencé à voir Mélina Guillet fin août et je sens déjà un changement important dans ma manière de manger. D'emblée, elle m'a fait replonger dans des émotions plus ou moins récentes, de manière bienveillante. Depuis, je sens que quelque chose change en moi sans que j'aie d'efforts à fournir: j'ai simplement envie de prendre soin de moi, notamment en mangeant mieux (plus de fruits, de légumes, moins de biscuits...). En suivant ses conseils, je me sens rassasiée en fin de repas (ce qui n'était en fait plus vraiment le cas depuis longtemps). Avec une approche complémentaire entre les émotions et la diététique, j'ai envie de découvrir des goûts nouveaux et de me faire plaisir en me réconciliant avec mon corps..",
                   auteur:"M."},

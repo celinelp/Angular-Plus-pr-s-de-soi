@@ -40,7 +40,7 @@
 	src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
 }
 .font {
-	font-size: 1.1em;
+	font-size: 1.2em !important;
 }
 h1, h2, h3, h4{
 	font-family: 'titre', serif;
@@ -269,16 +269,20 @@ footer > ul
 #pg-dietetique {
 	background-image: url(../img/dietetique.jpg);
 	height: 320px;
+	background-position: right bottom;
 }
 .descriptifDietMagnet{
 	padding: 10px;
 	text-align: center;
 	font-size: 1.3em;
 	padding-right: 100px;
-	
+
 }
 .descriptifDietMagnet h1{
 	text-align: center;
+}
+.descriptifDietListe{
+	text-align: left;
 }
 #dietTabs{
 	background-color: white;
@@ -332,6 +336,13 @@ footer > ul
 		color: yellow !important;
 		background-color: #af7653 !important;
 	}
+
+.chronique{
+	text-align: center;
+}
+.boutonchronique {
+	margin-bottom: 10px;
+}
 
 /*_____________________ Page Atelier _____________________*/
 #pg-atelier {
@@ -662,18 +673,15 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 	font-size: 1.2em;
 	text-align: center;
 	padding-top: 15px;
-	
+
 }
 
 img.img-responsive4 {
 	width: 105%;
 	padding-top: 130px;
-	
-	
-
 }
 .approcheMagnet {
-	
+
 	padding-right: 50px;
 }
 .text-mag3 {
@@ -687,4 +695,3 @@ h2.text-mag3  {
 	font-size: 40px;
 
 }
-
