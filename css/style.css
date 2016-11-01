@@ -275,9 +275,7 @@ footer > ul
 	text-align: center;
 	font-size: 1.3em;
 	padding-right: 100px;
-
 	
-
 }
 .descriptifDietMagnet h1{
 	text-align: center;
@@ -393,7 +391,7 @@ h3.theme {
 	height: 360px;
 }
 .img-responsive1 {
-	width: 85%;
+	width: 100%;
 	padding-top: 130px;
 	padding-left: 120px;
 	float: right;
@@ -423,57 +421,56 @@ h3.theme {
 .fondParcours {
 	font-family: 'texte', sans-serif;
 	font-size-adjust: 20px;
-	font-size: 120%;
-	text-align: justify;
-	position: relative;
-	top: 40px;
-	line-height: 25px;
+	zzfont-size: 120%;
+	font-size: 17px;
+    
+	line-height: 28px;
 	color: #2E3837;
+	letter-spacing: 1px;
 
 }
 .parcours-bio h2 {
 	color: black;
-	padding-top: 30px
+	padding-bottom: 20px;
 	text-decoration :underline;
 	font-family: 'Josefin', serif;
 	font-weight: bolder;
+	zzoverflow: hidden;
 
 }
 .formation {
+	font-family: 'texte', sans-serif;
+	color: #2E3837;
 	float: right;
-	position: relative;
-	top: 50px;
-	line-height: 28px;
+	padding-top: 20px;
+	line-height: 26px;
 }
 
 .formation p {
-	padding-top: 10px;
+	padding: -10px;
 	font-size: 18px;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 }
 
 .photo-bio h2 {
 	color: #6e5342;
-	position: relative;
-	left: 70px;
-	top: 50px;
 	text-align: center;
-
 	font-family: 'Josefin', serif;
-}
 
+}
 h2.titre1 {
 	color: #6e5342;
+	font-weight: bold;
+	font-size: 32px;
+	padding-top: 20px;
 
 
 }
 .partie-bio {
-	height: 800px;
-	display: inline-block;
-	top: 90px;
-	padding-left: 100px;
-	line-height: 25px;
-	overflow: auto;
+	padding-top: 24px;
+	line-height: 24px;
+	color: #2E3837;
+	font-weight: bold;
 }
 
 .partie-bio h2 {
@@ -505,25 +502,24 @@ h4 {
 }
 blockquote {
 	font-family: 'Open', sans-serif;
-	position: relative;
-	top: 60px;
-	right: 90px;
 	font-size: 24px;
-	height: 160px;
 	background-color: #6e5342;
-	width: 110%;
+	width: 100%;
 	text-align: center;
 	color: #333;
-	padding-top: 25px;
-	margin-left: 90px;
-	letter-spacing: 03px;
+	padding: 25px;
+	margin-top: 40px;
+	letter-spacing: 02px;
 	font-weight: bold;
 	color: white;
 }
 
+
 h2.aproposTitre3 {
 	color: #6e5342;
 	font-weight: bold;
+	font-size: 1.8em;
+
 }
 
 .prose {
@@ -536,14 +532,11 @@ h2.aproposTitre3 {
 	font-size: 16px;
 }
 .avis-utilisateur{
-	position: relative;
-	top: 50px;
-	padding-top: 20px;
+	padding-top: -10px;
 }
 
 .presse {
-	display: inline-block;
-	left: 150px;
+	
 	bottom: -40px;
 	clear: both;
 	width: 80%;
@@ -638,25 +631,24 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 	p.lead {
 		font-size: 16px;
 		font-style: italic;
-		text-indent: 25px;
+	
 	}
 	.avis-utilisateur p {
 		font-size: 22px;
 		font-weight: bolder;
 	}
 	p.button {
-		background-color: #a9c04b;
-		border: none;
-		border-radius: 10px;
-		color: white;
-		padding: 15px 32px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		position: relative;
-		left: 60px;
-		top: 40px;
+	background-color: #FFF931;
+	border: none;
+	color: #6e5342 !important;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 20px;
+	margin-left: 70px;
+		
 	}
 /*_____________________ _____________________ */
 
