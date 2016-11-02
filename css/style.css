@@ -29,15 +29,15 @@
 /* font */
 @font-face {
 	font-family: "logo";
-	src: url("../fonts/Dancing_Script/DancingScript-Regular.ttf") format("truetype");
+	src: url("fonts/Dancing_Script/DancingScript-Regular.ttf") format("truetype");
 }
 @font-face {
 	font-family: "titre";
-	src: url('../fonts/Josefin_Slab/JosefinSlab-Regular.ttf') format("truetype");
+	src: url('fonts/Josefin_Slab/JosefinSlab-Regular.ttf') format("truetype");
 }
 @font-face {
 	font-family : "texte";
-	src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+	src: url('fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
 }
 .font {
 	font-size: 1.2em !important;
@@ -186,6 +186,8 @@ footer > ul
 	padding-top: 10px;
 	overflow: auto;
 	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 20px;
 }
 .homeNewMarginTop
 {
@@ -283,6 +285,8 @@ footer > ul
 	padding-top: 15px;
 	padding-bottom: 25px;
 	padding-left: 25px;
+	line-height: 24px;
+	letter-spacing: 1px;
 }
 .descriptifDiet h1 {
 	text-align: center;
@@ -290,11 +294,23 @@ footer > ul
 	font-size: 2.1em;
 }
 .dietApproche {
+
+	text-align: justify;
+	padding-left: 60px;
+
+}
+.dietApproche p {
+	padding-top: 15px;
+	padding-bottom: 25px;
+	line-height: 24px;
+	letter-spacing: 1px;
 	text-align: left;
-	
+	padding-left: 25px;
+
 }
 .descriptifDietMagnet h1{
 	text-align: center;
+	padding-top: 25px;
 }
 .dietTitre1 {
 	text-align: center;
@@ -354,15 +370,19 @@ footer > ul
 	text-align: left;
 	font-size: 1.5em;
 }
-#dietTexteConseil p{
+#dietTexteRecette p, #dietTexteConseil p{
 	font-size: 1.3em;
 }
 .activeLien
 {
 		color: yellow !important;
-		background-color: #af7653 !important;	
+		background-color: #af7653 !important;
 }
 
+.marron.chronique {
+	display: inline-block;
+	left: 80px;
+}
 .chronique{
 	text-align: center;
 	border-radius: 4px;
@@ -710,20 +730,7 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 		font-size: 22px;
 		font-weight: bolder;
 	}
-	p.button {
-		background-color: #a9c04b;
-		border: none;
-		border-radius: 10px;
-		color: white;
-		padding: 15px 32px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		position: relative;
-		left: 60px;
-		top: 40px;
-	}
+
 /*_____________________ _____________________ */
 /*_____________________ page magnetique _____________________ */
 #pg-magnetisme {
@@ -737,21 +744,23 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 	padding-top: 15px;
 	padding-bottom: 25px;
 	padding-left: 25px;
-	
+	line-height: 24px;
+	letter-spacing: 1px;
 
 }
 .descriptifMagnet h1 {
 	font-size: 2.1em;
+
 }
 .img-responsive4 {
 	width: 105%;
-	padding-top: 130px;
+	padding-top: 180px;
 	padding-left: 80px;
-		
+
 
 }
 .approcheMagnet {
-	
+
 	padding-right: 50px;
 	padding-bottom: 25px;
 }
@@ -768,17 +777,17 @@ h2.text-mag3  {
 	width: 150%;
 	float: right;
 	margin-right: 80px;
-	padding-top: 25px
+	padding-top: 20px;
 
 }
 p.text-mag3 {
 	color:#2E3837;
 	text-align: left;
-	padding-top: 20px;
 	padding-bottom: 20px;
+	line-height: 24px;
+	letter-spacing: 1px;
 
 }
 footer {
 	font-size: 1.1em;
 }
-
