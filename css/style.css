@@ -331,7 +331,7 @@ footer > ul
 	text-align: left;
 	font-size: 1.5em;
 }
-#dietTexteConseil p{
+#dietTexteRecette p, #dietTexteConseil p{
 	font-size: 1.3em;
 }
 .activeLien{
