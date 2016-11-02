@@ -11,7 +11,9 @@
   app.config(['$routeProvider',function($routeProvider){
     $routeProvider
     .when('/',{
-      templateUrl : 'partials/home/home.html'
+      templateUrl : 'partials/home/home.html',
+      controller : "HomeController",
+      controllerAs : "HomeCtrl"
     })
     .when('/apropos',{
       templateUrl : 'partials/apropos/apropos.html'
@@ -148,19 +150,15 @@
       }];
 
 /*_____________________ HOME _____________________*/
-app.controller('HomeController', function($rootScope){
-  this.HomeVueCtrlData = HomeBackCtrldata;
+app.controller('HomeController', function($rootScope, $scope, $sce){
 
   this.setActiveDietetique = function(input){
     $rootScope.activeDietetique = input;
   }
-
-});
-
-var HomeBackCtrldata = [
+  $scope.HomeVueCtrlData = [
   {
-    txtBgVert: '"On ne voit bien qu’avec le coeur,l’essentiel est invisible pour les yeux " St Exupéry, extrait Le Petit Prince.',
-    txtBgMarron: '"Le magnétisme, comme jadis l\'électricité ou la lumière, fait partie de ces énergies mystérieuses, dont on observe les effets sans en connaître les causes." Citation Anonyme'
+    txtBgVert:  $sce.trustAsHtml('"On ne voit bien qu’avec le coeur, l’essentiel est invisible pour les yeux" <br> St Exupéry, extrait Le Petit Prince.'),
+    txtBgMarron:  $sce.trustAsHtml('\"Le magnétisme, comme jadis l\'électricité ou la lumière, fait partie de ces énergies mystérieuses,<br> dont on observe les effets sans en connaître les causes.\" <br>Citation Anonyme ')
   },
     {
       imgAtelierMois: "img/homeAtelier.jpg",
@@ -173,6 +171,10 @@ var HomeBackCtrldata = [
       txtRecette: "Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de  colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d'accord sur une explication simple, évidente ou simplement plausible."
     }
 ];
+});
+
+
+
 
   /*____________________ CONTACT ____________________*/
   app.controller('ContactController', function(){
@@ -228,12 +230,14 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
 
   $scope.diet = [
    {titreDescriptif : "Définition de la diététique",
-    texteDescriptif : $sce.trustAsHtml("La diététique est la science de l'alimentation équilibrée.&nbsp;Elle permet de retrouver une alimentation équilibrée afin de trouver ou retrouver votre santé. <br> Je vous aide à équilibrer vos repas, à répondre à vos besoins en quantité et en qualité, à retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie.<br> Je ne conseille pas de restriction alimentaire avec la tête comme ce que préconisent  quasiment tous les régimes.<br> L’objectif est de retrouver ses propres repères de faim et de satiété pour répondre à ses besoins.<br> On travaille sur le comportement alimentaire pour que les effets agissent sur du long terme.<br> On abordera vos croyances et représentations, votre histoire, vos habitudes…"),
-    texteDescriptif2 : "La diététique est la science de l’alimentation équilibrée qui contribue à être en bonne santé.  Séance d’1 heure. Le suivi demande plusieurs mois de consultation et la fréquence dépend des besoins de chacun."
+   texteDescriptif : $sce.trustAsHtml("La diététique est la science de l’alimentation équilibrée qui contribue à être en bonne santé."),
+   texteDescriptif2 : $sce.trustAsHtml("<span style='font-size:20px;'><strong>Séance d’une heure:</strong> le suivi demande plusieurs mois de consultation et la fréquence dépend des besoins de chacun.</span>"),
 
   },
 
     aide = ["Équilibrer vos repas","Répondre à vos besoins en quantité et en qualité (goût de l’aliment, intérêt nutritionnel, choix des aliments)","Retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie (organisation, idées menu)","Avoir des idées pour varier, cuisiner facile, de saison, en faisant attention à votre budget","Continuer ou mettre en place une activité physique adaptée"],
+
+
 
     monApproche = $sce.trustAsHtml("Je ne fais pas de « régime » mais je vous propose une <strong>alimentation équilibrée adaptée à vos besoins</strong>.<br> Je vous propose d’aborder votre comportement alimentaire ainsi que vos croyances et représentations, votre histoire, vos habitudes.<br> Je vous accompagnerais pour que vous puissiez mettre en place des changements petit à petit et ainsi vous sentir bien et prendre soin de votre santé.<br>Comment perdre du poids durablement ?<br>Pour perdre du poids de façon durable, il ne faut pas réduire les quantités avec sa tête mais retrouver <strong>ses repères sensoriels (faim, satiété)</strong> pour manger en fonction de ses besoins.  Agir sur l’alimentation est fondamental mais pas suffisant. Le fait de manger en grosse quantité ou pas assez, de ne pas varier, de ne pas aimer les fruits et légumes, de grignoter … est lié à notre rythme de vie  mais aussi à ce qui va influencer notre comportement alimentaire : stress, frustrations, situations subies ou « mal digérées », mal-être, inconscient, problèmes relationnels privés ou professionnels, « mots qu’on ravale »… et on compense ensuite par la nourriture. Tant que <strong>les problèmes à la source</strong> ne sont pas réglés , les changements alimentaires seront difficiles à mettre en place ou ne dureront pas dans le temps et la prise de poids pourrait reprendre. C’est pourquoi je propose en parallèle d’un suivi diététique, un accompagnement en magnétisme et/ou libération émotionnelle pour apprendre à s’aimer et à prendre « soin de soi ».  En résumé, je travaille sur le lien qu’il y a entre le comportement alimentaire, l’estime de soi et  nos émotions."),
 
@@ -303,7 +307,7 @@ app.controller('magnetController', function($scope,$sce){
 $scope.magnetData = [
   {
     titreDescriptif : "Définition du magnétisme",
-    texteDescriptif : $sce.trustAsHtml("Le magnétisme est un soin d’énergie vitale qui permet de soigner les maux du corps et de l’esprit.<br> Il soulage les douleurs&nbsp;: zonas,&nbsp; verrues, brûlures, eczéma, troubles fonctionnels et nerveux, stress, insomnie, fatigue, deuil, …<br>Je suis un canal de l’énergie du ciel et de la terre et cette énergie va aider la personne à l’endroit où elle en a besoin.<br> La personne soignée reste habillée et est allongée sur une table de massage..<br><small>Attention : le magnétisme ne se substitue pas à un suivi médical, ni à un traitement médicamenteux.<samll><br><span style='font-size:20px;'>Séance d’1 heure: La personne peut avoir besoin d’une ou plusieurs séances</span>…")
+    texteDescriptif : $sce.trustAsHtml("Le magnétisme est un soin d’énergie vitale qui permet de soigner les maux du corps et de l’esprit.<br> Il soulage les douleurs&nbsp;: zonas,&nbsp; verrues, brûlures, eczéma, troubles fonctionnels et nerveux, stress, insomnie, fatigue, deuil, …<br>Je suis un canal de l’énergie du ciel et de la terre et cette énergie va aider la personne à l’endroit où elle en a besoin.<br> La personne soignée reste habillée et est allongée sur une table de massage..<br><small>Attention : le magnétisme ne se substitue pas à un suivi médical, ni à un traitement médicamenteux.<samll><br><span style='font-size:20px;'>Séance d’une heure: La personne peut avoir besoin d’une ou plusieurs séances</span>…")
   }
 ];
 
@@ -318,6 +322,7 @@ $scope.aproposData = [
  {imageBio: "img/melina9.jpg",
   textBio: $sce.trustAsHtml("Née en Mayenne, confrontée à l’âge de 11 ans à un problème de santé important, j’ai eu une véritable prise de conscience sur le fait que l’alimentation est une clé essentielle de notre SANTE. J‘ai commencé à 16 ans à faire un travail sur moi, pour vivre mieux, pour me connaître <br>et pour avancer. C’est à Tours que j’ai eu mon diplôme de diététique, en 1999. Je suis tombée amoureuse de cette ville et y ai vécu 10 ans.<br> Après mes études et pendant 7 ans,  j’ai travaillé en tant que diététicienne-téléconseillère dans un service consommateurs : j’ai beaucoup appris sur la communication et le conseil personnalisé. Par la suite, j’ai eu envie de réaliser des animations sur l’alimentation auprès de différents publics.<br> Malgré ma volonté de rester sur Tours, la vie m’a menée en Eure et Loir.<br> J’ai en effet trouvé le travail dont je rêvais à Dreux. En effet depuis fin 2007, je suis Chargée de prévention surpoids-obésité au Centre Hospitalier de Dreux où je réalise des animations auprès de différents publics.<br>Je réalise également des consultations de prévention et de prise en charge surpoids-obésité auprès des enfants et adolescents  et  la coordination de différents projets tels que ''&nbsp;<strong>la semaine du goût</strong>&nbsp;''.<br> La rencontre avec les différentes cultures a été une richesse que je n’aurais jamais soupçonnée. Je suis dans un domaine qui s’appelle l’éducation pour la santé. L’objectif est  d’accompagner les personnes vers des changements de comportement et d’informer sur les bienfaits d’une alimentation saine ainsi que la promotion de l’activité physique, sans jugement, ni dogmatisme ce qui leur permettra de faire des choix éclairés meilleurs pour leur santé morale et physique. Mon père était sourcier, je l’ai souvent suivi sur le terrain jusqu’au jour où  j’ai senti que je trouvais les sources aussi. Je n’ai jamais voulu utiliser mon don car je souhaitais être au clair avec moi-même et apprendre à me protéger.")},
   {textCitation: $sce.trustAsHtml('"On ne voit bien qu’avec le coeur,<br>l’essentiel est invisible pour les yeux" </br>St Exupéry. Extrait Le Petit Prince')}
+
 ];
 $scope.presse = {
                   titre: "Article Chartres-Agglo- N°54 - Avril 2016 !",

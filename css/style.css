@@ -275,13 +275,33 @@ footer > ul
 	padding: 10px;
 	text-align: center;
 	font-size: 1.3em;
+
+}
+.descriptifDiet {
+	font-size: 1.3em;
+	text-align: left;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	padding-left: 25px;
+}
+.descriptifDiet h1 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 2.1em;
 }
 .dietApproche {
 	text-align: left;
-
+	padding-left: 25px;
 }
 .descriptifDietMagnet h1{
 	text-align: center;
+}
+.dietTitre1 {
+	text-align: center;
+	padding-top: 25px;
+}
+.dietTitre2 {
+	padding-left: 30px;
 }
 .descriptifDietListe{
 	text-align: left;
@@ -343,6 +363,10 @@ footer > ul
 		background-color: #af7653 !important;
 }
 
+.marron.chronique {
+	display: inline-block;
+	left: 80px;
+}
 .chronique{
 	text-align: center;
 	border-radius: 4px;
@@ -446,7 +470,7 @@ h3.theme {
 	background-image: url(../img/apropos.jpg);
 	height: 360px;
 }
-.img-responsive1 {
+.img-melina {
 	width: 85%;
 	padding-top: 130px;
 	padding-left: 120px;
@@ -508,6 +532,7 @@ h3.theme {
 	color: #6e5342;
 	text-align: center;
 	font-family: 'Josefin', serif;
+	margin-left: 180px;
 
 }
 h2.titre1 {
@@ -689,20 +714,7 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 		font-size: 22px;
 		font-weight: bolder;
 	}
-	p.button {
-		background-color: #a9c04b;
-		border: none;
-		border-radius: 10px;
-		color: white;
-		padding: 15px 32px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		position: relative;
-		left: 60px;
-		top: 40px;
-	}
+
 /*_____________________ _____________________ */
 /*_____________________ page magnetique _____________________ */
 #pg-magnetisme {
@@ -717,8 +729,12 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 	padding-bottom: 25px;
 	padding-left: 25px;
 
+
 }
-img.img-responsive4 {
+.descriptifMagnet h1 {
+	font-size: 2.1em;
+}
+.img-responsive4 {
 	width: 105%;
 	padding-top: 130px;
 	padding-left: 80px;
