@@ -71,6 +71,7 @@ body {
 	background-color: #A97052;
 	color: white;
 	height: 150px;
+	padding-top: 20px;
 }
 .accrocheContact a {
 	color: white;
@@ -443,10 +444,10 @@ h3.theme {
 .parcours-bio h2 {
 	color: black;
 	padding-bottom: 20px;
-	text-decoration :underline;
+	font-size: 2.1em;
 	font-family: 'Josefin', serif;
 	font-weight: bolder;
-	zzoverflow: hidden;
+	
 
 }
 .formation {
@@ -671,14 +672,16 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 
 .descriptifMagnet{
 	font-size: 1.2em;
-	text-align: center;
-	padding-top: 15px;
+	text-align:left;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	
 
 }
 
 img.img-responsive4 {
-	width: 105%;
-	padding-top: 130px;
+	width: 110%;
+	padding-top: 200px;
 }
 .approcheMagnet {
 
@@ -688,10 +691,23 @@ img.img-responsive4 {
 	font-size: 1.2em;
 	width: 90%;
 	text-align: center;
-	position: relative;
-	left: 60px;
+	padding-bottom: 15px;
+
 }
 h2.text-mag3  {
 	font-size: 40px;
+	width: 150%;
+	float: right;
+	margin-right: 80px;
+	padding-top: 25px;
 
+}
+
+p.text-mag3 {
+	color:#2E3837;
+	text-align: left;
+
+}
+footer {
+	font-size: 1.1em;
 }
