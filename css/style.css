@@ -277,6 +277,10 @@ footer > ul
 	font-size: 1.3em;
 	padding-right: 100px;
 }
+.dietApproche {
+	text-align: left;
+	
+}
 .descriptifDietMagnet h1{
 	text-align: center;
 }
@@ -343,6 +347,7 @@ footer > ul
 	text-align: center;
 	border-radius: 4px;
 	padding-bottom: 20px;
+
 }
 .boutonchronique {
 	margin-bottom: 10px;
@@ -705,11 +710,12 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 }
 
 .descriptifMagnet{
-	font-size: 1.2em;
+	font-size: 1.3em;
 	text-align: center;
 	padding-top: 15px;
 	padding-bottom: 25px;
-	
+	padding-left: 25px;
+
 }
 
 img.img-responsive4 {
