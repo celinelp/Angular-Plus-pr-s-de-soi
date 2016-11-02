@@ -367,12 +367,12 @@ ul.dropdown-menu
 }
 .p-list
 {
-   border-bottom: 1px solid black ;
+   border-bottom: 1px solid #6e5342;
    padding:20px;
 }
 #p-bg
 {
-	color: black;
+	
 	transition-duration: 2s;
 	box-shadow: 0 6px 12px rgba(0,0,0,.175);
 	border-radius: 4px;
