@@ -231,7 +231,7 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
   $scope.diet = [
    {titreDescriptif : "Définition de la diététique",
    texteDescriptif : $sce.trustAsHtml("La diététique est la science de l’alimentation équilibrée qui contribue à être en bonne santé."),
-   texteDescriptif2 : $sce.trustAsHtml("<span style='font-size:20px;'><strong>Séance d’1 heure:</strong> le suivi demande plusieurs mois de consultation et la fréquence dépend des besoins de chacun.</span>"),
+   texteDescriptif2 : $sce.trustAsHtml("<span style='font-size:20px;'><strong>Séance d’une heure:</strong> le suivi demande plusieurs mois de consultation et la fréquence dépend des besoins de chacun.</span>"),
 
   },
 
@@ -268,7 +268,7 @@ app.controller('magnetController', function($scope,$sce){
 $scope.magnetData = [
   {
     titreDescriptif : "Définition du magnétisme",
-    texteDescriptif : $sce.trustAsHtml("Le magnétisme est un soin d’énergie vitale qui permet de soigner les maux du corps et de l’esprit.<br> Il soulage les douleurs&nbsp;: zonas,&nbsp; verrues, brûlures, eczéma, troubles fonctionnels et nerveux, stress, insomnie, fatigue, deuil, …<br>Je suis un canal de l’énergie du ciel et de la terre et cette énergie va aider la personne à l’endroit où elle en a besoin.<br> La personne soignée reste habillée et est allongée sur une table de massage..<br><small>Attention : le magnétisme ne se substitue pas à un suivi médical, ni à un traitement médicamenteux.<samll><br><span style='font-size:20px;'>Séance d’1 heure: La personne peut avoir besoin d’une ou plusieurs séances</span>…")
+    texteDescriptif : $sce.trustAsHtml("Le magnétisme est un soin d’énergie vitale qui permet de soigner les maux du corps et de l’esprit.<br> Il soulage les douleurs&nbsp;: zonas,&nbsp; verrues, brûlures, eczéma, troubles fonctionnels et nerveux, stress, insomnie, fatigue, deuil, …<br>Je suis un canal de l’énergie du ciel et de la terre et cette énergie va aider la personne à l’endroit où elle en a besoin.<br> La personne soignée reste habillée et est allongée sur une table de massage..<br><small>Attention : le magnétisme ne se substitue pas à un suivi médical, ni à un traitement médicamenteux.<samll><br><span style='font-size:20px;'>Séance d’une heure: La personne peut avoir besoin d’une ou plusieurs séances</span>…")
   }
 ];
 

@@ -291,6 +291,8 @@ footer > ul
 }
 .dietApproche {
 	text-align: left;
+	padding-left: 25px;
+
 	
 }
 .descriptifDietMagnet h1{
@@ -363,6 +365,10 @@ footer > ul
 		background-color: #af7653 !important;	
 }
 
+.marron.chronique {
+	display: inline-block;
+	left: 80px;
+}
 .chronique{
 	text-align: center;
 	border-radius: 4px;
@@ -710,20 +716,7 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 		font-size: 22px;
 		font-weight: bolder;
 	}
-	p.button {
-		background-color: #a9c04b;
-		border: none;
-		border-radius: 10px;
-		color: white;
-		padding: 15px 32px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		position: relative;
-		left: 60px;
-		top: 40px;
-	}
+	
 /*_____________________ _____________________ */
 /*_____________________ page magnetique _____________________ */
 #pg-magnetisme {
