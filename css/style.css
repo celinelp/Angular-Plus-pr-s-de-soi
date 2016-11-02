@@ -40,7 +40,7 @@
 	src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
 }
 .font {
-	font-size: 1.1em;
+	font-size: 1.2em !important;
 }
 h1, h2, h3, h4{
 	font-family: 'titre', serif;
@@ -269,6 +269,7 @@ footer > ul
 #pg-dietetique {
 	background-image: url(../img/dietetique.jpg);
 	height: 320px;
+	background-position: right bottom;
 }
 .descriptifDietMagnet{
 	padding: 10px;
@@ -344,7 +345,44 @@ footer > ul
 .boutonchronique {
 	margin-bottom: 10px;
 }
-
+/* Play_List_Audio*/
+.player
+{
+	margin: 20px auto;
+}
+audio
+{
+	background-color: black;
+	width: 100%;
+}
+  
+.p-list-bot
+{ 
+	border-bottom:none!important;
+}
+ul.dropdown-menu
+{
+	border-radius: 0 0 4px 4px;
+	width: 100%;
+}
+.p-list
+{
+   border-bottom: 1px solid black ;
+   padding:20px;
+}
+#p-bg
+{
+	color: black;
+	transition-duration: 2s;
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	border-radius: 4px;
+  	text-align: center;
+}
+#p-bg:hover
+{
+	transition-duration: 2s;
+	border-radius: 4px 4px 0 0;
+}
 /*_____________________ Page Atelier _____________________*/
 #pg-atelier {
 	background-image: url(../img/atelier.jpg);
