@@ -244,13 +244,8 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
     recette = [{
       titre : "Muffins coco-chocoloat au tahin (sans beurre)",
       nbPerso : "pour 6 muffins",
-      tempPrepa : "120 minutes",
-      ingredients : ["140 g de farine","50 g de sucre","1 sachet de levure chimique","40 g de noix de coco en poudre","60 g de pépites de chocolat noir (il est possible de faire des grosses pépites en coupant du chocolat à patisserie)",
-      "1/2 cuillère à café de cannelle","1 cuillère à soupe de tahin (se trouve en épicerie bio)","10 cl de lait","1 œuf"],
-      etapes : ["Préchauffer le four à 180° (Thermostat 6)","Mélanger la farine, la noix de coco, la levure, le sucre, le chocolat et la cannelle","A côté, mélanger le tahin, l’œuf et le lait","Ajouter les liquides (tahin, œuf et lait) aux ingrédients secs et homogénéiser la pâte","Etapes 2 Verser dans les moules à muffins et cuire 15-20 minutes","Attendre qu’ils aient refroidis pour démouler"]
-
-      ingredients : ["140 g de farine","50 g de sucre","1 sachet de levure chimique","40 g de noix de coco en poudre","60 g de pépites de chocolat noir (il est possible de faire des grosses pépites en coupant du chocolat à patisserie)",
-      "1/2 c/c de cannelle","1 cuillère à soupe de tahin (se trouve en épicerie bio)","10 cl de lait","1 œuf"],
+      ingredients : ["140 grs de farine","50 grs de sucre","1 sachet de levure chimique","40 grs de noix de coco en poudre","60 grs de pépites de chocolat noir (il est possible de faire des grosses pépites en coupant du chocolat à patisserie)",
+      "1/2 c/c de cannelle","1 c/s de tahin (se trouve en épicerie bio)","10 cl de lait","1 œuf"],
       etapes : ["Préchauffer le four à 180° (Thermostat 6)","Mélanger la farine, la noix de coco, la levure, le sucre, le chocolat et la cannelle","A côté, mélanger le tahin, l’œuf et le lait","Ajouter les liquides (tahin, œuf et lait) aux ingrédients secs et homogénéiser la pâte","Etapes 2 Verser dans les moules à muffins et cuire 15-20 minutes","Attendre qu’ils aient refroidis pour démouler"],
       image : "img/recetteMuffin.jpg"
     },{
@@ -271,10 +266,10 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
       titre : "Fenouils braisés",
       nbPerso : "pour 4 personnes",
       ingredients : ["1 citron","1 verre de vin blanc","1 branche de thym","2 gousses d’ail","sel, poivre","huile d’olive"],
-      etapes : ["Nettoyer les bulbes de fenouil, les couper en 2 dans la longueur","Faire chauffer 1 cuillère à soupe d’huile d’olive, y mettre les fenouils à revenir pendant 10 minutes environ. Ils doivent se colorer un peu","Au bout de 5 minutes, ajouter les gousses d’ail pelées et coupées en 2","Verser ensuite le jus de citron, le vin blanc, ajouter le thym et assaisonner","Cuire à couvert pendant environ 30 minutes : les fenouils doivent être tendres et confits et le jus très réduit","Accompagner par exemple de riz et de saumon pour un repas complet"],
+      etapes : ["Nettoyer les bulbes de fenouil, les couper en 2 dans la longueur","Faire chauffer 1 cuillère à soupe d’huile d’olive, y mettre les fenouils à revenir pendant 10 minutes environ. Ils doivent se colorer un peu","Au bout de 5 minutes, ajouter les gousses d’ail pelées et coupées en 2","Verser ensuite le jus de citron, le vin blanc, ajouter le thym et assaisonner","Cuire à couvert pendant environ 30 minutes : les fenouils doivent être tendres et confits et le jus très réduit","Accompagner par exemple de riz et de saumon pour un repas complet"],
       image : "img/recetteFenouil.jpg"
     },{
-      titre : "Cake d’automne (Ce dessert est très peu sucré et est délicieux. A tenter !)",
+      titre : "Cake d’automne (Ce dessert est très peu sucré et est délicieux. A tenter !)",
       nbPerso : "pour 8 personnes",
       ingredients : ["3 œufs","1 orange non traitée (bio)","1 pomme","60g d’abricots secs","40g de noix concassées","40 ml d’hule de pépins de raisons","200g de farine","1 sachet de levure  ou 1 c. à café de bicarbonate arrosé de jus de citron (pour activer le bicarbonate)","20g de cassonade","1 c. à café de cannelle"],
       etapes : ["Laver les fruits","Peler la pomme","Prélever le zeste de la moitié de l’orange","Dans un saladier, fouetter l’huile et le sucre","Ajouter les œufs battus un à un puis la cannelle, le zeste et le jus de l’orange","Incorporer la farine et mélanger jusqu’à ce que la préparation soit lisse","Ajouter les noix, les abricots et la pomme hachés","Verser dans un moule à cake anti-adhésif et cuire à th6/180°C, pendant 45 minutes","Laisser refroidir 5 min puis démouler"],
@@ -286,12 +281,11 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
       etapes : ["Dans une marmite, faites revenir à feu doux tous ces légumes dans l’huile, pendant 5 minutes environ","Remuez de temps en temps","Rincez les châtaignes","Ajoutez-les ainsi que le bouquet garni et l’eau","Salez et portez à ébullition","Puis réduisez le feu et laisser cuire à couvert pendant 40 minutes","Quand les châtaignes sont bien cuites, retirez la cocotte du feu et enlever le bouquet garni","Mixez finement et ajoutez la crème","Faites chauffer une poêle et faites-y revenir les lardons sans matière grasse, jusqu’à ce qu’ils soient dorés","Ajoutez-les au moment de servir"],
       image : "img/recetteChataigne.jpg"
     },{
-      titre : "Clafoutis aux pommes au lait végétal (facile et rapide !)",
+      titre : "Clafoutis aux pommes au lait végétal (facile et rapide !)",
       nbPerso : "pour 6 personnes",
-      ingredients : ["3  ou 4 pommes","3 œufs","100 g de sucre ( 5 c. à soupe bombées)","120 g farine (6 c. à soupe bombées)","1/2 L de lait végétal (riz, avoine, amande, …, mon « chouchou » : « riz épeautre noisette »)","pour ceux qui aiment, vous pouvez rajouter 1 c. à café de fleur d’oranger"],
+      ingredients : ["3  ou 4 pommes","3 œufs","100 g de sucre ( 5 c. à soupe bombées)","120 g farine (6 c. à soupe bombées)","1/2 L de lait végétal (riz, avoine, amande, …, mon « chouchou » : « riz épeautre noisette »)","pour ceux qui aiment, vous pouvez rajouter 1 c. à café de fleur d’oranger"],
       etapes : ["Coupez les pommes en lamelle et disposez les dans le plat","Mélangez tous les ingrédients et versez sur les pommes","Thermostat 6/7. Cuire 35 min"],
       image : "img/recetteClafoutis.jpg"
-
     }],
 
     {
