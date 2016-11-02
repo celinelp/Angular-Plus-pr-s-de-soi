@@ -29,15 +29,15 @@
 /* font */
 @font-face {
 	font-family: "logo";
-	src: url("../fonts/Dancing_Script/DancingScript-Regular.ttf") format("truetype");
+	src: url("fonts/Dancing_Script/DancingScript-Regular.ttf") format("truetype");
 }
 @font-face {
 	font-family: "titre";
-	src: url('../fonts/Josefin_Slab/JosefinSlab-Regular.ttf') format("truetype");
+	src: url('fonts/Josefin_Slab/JosefinSlab-Regular.ttf') format("truetype");
 }
 @font-face {
 	font-family : "texte";
-	src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+	src: url('fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
 }
 .font {
 	font-size: 1.2em !important;
@@ -278,7 +278,7 @@ footer > ul
 }
 .dietApproche {
 	text-align: left;
-	
+
 }
 .descriptifDietMagnet h1{
 	text-align: center;
@@ -340,7 +340,7 @@ footer > ul
 .activeLien
 {
 		color: yellow !important;
-		background-color: #af7653 !important;	
+		background-color: #af7653 !important;
 }
 
 .chronique{
@@ -722,11 +722,11 @@ img.img-responsive4 {
 	width: 105%;
 	padding-top: 130px;
 	padding-left: 80px;
-		
+
 
 }
 .approcheMagnet {
-	
+
 	padding-right: 50px;
 	padding-bottom: 25px;
 }
@@ -756,4 +756,3 @@ p.text-mag3 {
 footer {
 	font-size: 1.1em;
 }
-
