@@ -343,15 +343,12 @@ footer > ul
 .chronique{
 	text-align: center;
 	border-radius: 4px;
+	padding-bottom: 20px;
 }
 .boutonchronique {
 	margin-bottom: 10px;
 }
 /* Play_List_Audio*/
-.player
-{
-	margin: 20px auto;
-}
 audio
 {
 	background-color: black;
@@ -369,12 +366,13 @@ ul.dropdown-menu
 }
 .p-list
 {
-   border-bottom: 1px solid black ;
-   padding:20px;
+	color:#FFF;
+   border-bottom: 1px solid #6e5342;
+   padding: 20px;
 }
 #p-bg
 {
-	color: black;
+	color: #000;
 	transition-duration: 2s;
 	box-shadow: 0 6px 12px rgba(0,0,0,.175);
 	border-radius: 4px;

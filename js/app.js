@@ -161,8 +161,8 @@ app.controller('HomeController', function($rootScope){
 
 var HomeBackCtrldata = [
   {
-    txtBgVert: '"On ne voit bien qu’avec le coeur,l’essentiel est invisible pour les yeux " ST Exupéry, extrait Le Petit Prince.',
-    txtBgMarron: "Le magnétisme, comme jadis l'électricité ou la lumière, fait partie de ces énergies mystérieuses, dont on observe les effets sans en connaître les causes."
+    txtBgVert: '"On ne voit bien qu’avec le coeur,l’essentiel est invisible pour les yeux " St Exupéry, extrait Le Petit Prince.',
+    txtBgMarron: '"Le magnétisme, comme jadis l\'électricité ou la lumière, fait partie de ces énergies mystérieuses, dont on observe les effets sans en connaître les causes." Citation Anonyme'
   },
     {
       imgAtelierMois: "img/homeAtelier.jpg",
@@ -250,20 +250,10 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
 
     {
       conseil : "Bien mâcher permet de mieux sentir les goûts et d’arriver à satiété. Cela évite de manger trop. Respecter ses rythmes et heures... de repas et de sommeil  (le manque de sommeil pertube les centres de faim et de satiété). On conseille un temps de repas d’un minimum de 20 minutes pour laisser le temps à l’estomac de communiquer avec  le cerveau et de renseigner sur la satiété. Manger trop vite peut amener à manger des quantités supérieures à nos besoins."
-    },
-    chroniques = [{
-      id : "1",
-      pdf : "audio/chroniquesPdf1.pdf"
-    },
-    {
-      id : "2",
-      pdf : "audio/chroniquesPdf2.pdf"
-    },
-    {
-      id : "3",
-      pdf : "audio/chroniquesPdf3.pdf"
-    },
-  ]
+    },{
+    semaineDuGout : "pdf/semaineDuGout.pdf",
+    brinDeVie : "img/articleBrinDeVie.png"
+    }
 ];
 
 }]);
@@ -295,7 +285,7 @@ $scope.aproposData = [
 $scope.presse = {
                   titre: "Article Chartres-Agglo- N°54 - Avril 2016 !",
                   img : "img/pressemel.png",
-                  
+
 }
 $scope.temoignages = [
                   { id : "1",
