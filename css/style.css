@@ -484,18 +484,10 @@ h3.theme {
 }
 .parcours-bio h2 {
 	color: black;
-<<<<<<< HEAD
 	padding-bottom: 20px;
 	font-size: 2.1em;
 	font-family: 'Josefin', serif;
 	font-weight: bolder;
-	
-=======
-	padding-top: 30px
-	text-decoration :underline;
-	font-family: 'Josefin', serif;
-	font-weight: bolder;
->>>>>>> 9937b23e9991185c4d81a98349d94977b2740bd2
 
 }
 .formation {
@@ -735,7 +727,7 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 }
 
 img.img-responsive4 {
-	width: 110%;
+	width: 90%;
 	padding-top: 200px;
 }
 .approcheMagnet {
