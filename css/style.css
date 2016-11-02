@@ -276,7 +276,6 @@ footer > ul
 	padding: 10px;
 	text-align: center;
 	font-size: 1.3em;
-	padding-right: 100px;
 }
 .descriptifDietMagnet h1{
 	text-align: center;
@@ -366,12 +365,14 @@ ul.dropdown-menu
 }
 .p-list
 {
+	cursor: pointer;
 	color:#FFF;
    border-bottom: 1px solid #6e5342;
    padding: 20px;
 }
 #p-bg
 {
+
 	color: #000;
 	transition-duration: 2s;
 	box-shadow: 0 6px 12px rgba(0,0,0,.175);
@@ -420,7 +421,7 @@ ul.dropdown-menu
 	text-align: center;
 	background-color: #A97052;
 	color: white;
-	height: 500 px;
+	height: 500px;
 	margin: auto;
 }
 .atelierThematique{

@@ -21,45 +21,45 @@
 
 	<div class="col-xs-12 col-sm-6 marron chronique">
 
-			<h2>Article de la semaine du goût</h2>
+		<h2>Article de la semaine du goût</h2>
 
-				<button type="button" class="boutonchronique boutonAccroche hvr-round-corners" data-toggle="modal" data-target="#semaine">
-					<p>Ouvrir l'article<p>
-				</button>
+		<button type="button" class="boutonchronique boutonAccroche hvr-round-corners" data-toggle="modal" data-target="#semaine">
+			<p>Ouvrir l'article</p>
+		</button>
 
-				<div class="modal fade" id="semaine" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				  <div class="modal-dialog" role="document">
-				    <div class="modal-content">
-				      <object data="{{diet[5].semaineDuGout}}" type="application/pdf" title="" width="800" height="885"></object>
-				    </div>
-				  </div>
+		<div class="modal fade" id="semaine" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<object data="{{diet[5].semaineDuGout}}" type="application/pdf" title="" width="800" height="885"></object>
 				</div>
+			</div>
+		</div>
 
-				<h2>Article brin de vie</h2>
+		<h2>Article brin de vie</h2>
 
-					<button type="button" class="boutonchronique boutonAccroche hvr-round-corners" data-toggle="modal" data-target="#brin">
-						<p>Ouvrir l'article<p>
-					</button>
+		<button type="button" class="boutonchronique boutonAccroche hvr-round-corners" data-toggle="modal" data-target="#brin">
+			<p>Ouvrir l'article</p>
+		</button>
 
-					<div class="modal fade" id="brin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content">
-					      <img src="{{diet[5].brinDeVie}}" alt="Brin de Vie" ></img>
-					    </div>
-					  </div>
-					</div>
+		<div class="modal fade" id="brin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<img src="{{diet[5].brinDeVie}}" alt="Brin de Vie" ></img>
+				</div>
+			</div>
+		</div>
 
 		<audio controls="controls"></audio>
 		<div id="p-bg" class=" jaune dropdown" >
 			<div class="dropdown-toggle"> <p> Liste d'audio  </p></div>
 			<span class=" glyphicon glyphicon-triangle-bottom"></span>
 			<ul class="dropdown-menu vert">
-				<li class="p-list vert" onclick="pickSong(0)">Qu'est ce que le goût ? </li>
-				<li class="p-list p-list-none vert" onclick="pickSong(1)">Comment évolue le goût ?</li>
-				<li class="p-list p-list-none vert" onclick="pickSong(2)">Comment développer le goût ?</li>
-				<li class="p-list p-list-none p-list-none vert" onclick="pickSong(3)">Comment la société intervient sur le goût ?</li>
-				<li class="p-list p-list-none vert" onclick="pickSong(4)">Pourquoi l'éducation au goût est importante ?</li>
-				<li class="p-list p-list-none p-list-bot vert" onclick="pickSong(5)">Quart d'heure bien-être. Le cholestérol.</li>
+				<li class="p-list vert" onclick="pickSong(0)">Radio RTV.  Qu'est ce que le goût ? </li>
+				<li class="p-list p-list-none vert" onclick="pickSong(1)">Radio RTV.  Comment évolue le goût ?</li>
+				<li class="p-list p-list-none vert" onclick="pickSong(2)">Radio RTV.  Comment développer le goût ?</li>
+				<li class="p-list p-list-none p-list-none vert" onclick="pickSong(3)">Radio RTV.  Comment la société intervient sur le goût ?</li>
+				<li class="p-list p-list-none vert" onclick="pickSong(4)">Radio RTV.  Pourquoi l'éducation au goût est importante ?</li>
+				<li class="p-list p-list-none p-list-bot vert" onclick="pickSong(5)">Radio Grand Ciel.  Quart d'heure bien-être. Le cholestérol.</li>
 			</ul>
 		</div>
 	</div>
