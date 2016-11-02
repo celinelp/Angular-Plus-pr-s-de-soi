@@ -249,8 +249,8 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
       "1/2 cuillère à café de cannelle","1 cuillère à soupe de tahin (se trouve en épicerie bio)","10 cl de lait","1 œuf"],
       etapes : ["Préchauffer le four à 180° (Thermostat 6)","Mélanger la farine, la noix de coco, la levure, le sucre, le chocolat et la cannelle","A côté, mélanger le tahin, l’œuf et le lait","Ajouter les liquides (tahin, œuf et lait) aux ingrédients secs et homogénéiser la pâte","Etapes 2 Verser dans les moules à muffins et cuire 15-20 minutes","Attendre qu’ils aient refroidis pour démouler"]
 
-      ingredients : ["140 grs de farine","50 grs de sucre","1 sachet de levure chimique","40 grs de noix de coco en poudre","60 grs de pépites de chocolat noir (il est possible de faire des grosses pépites en coupant du chocolat à patisserie)",
-      "1/2 c/c de cannelle","1 c/s de tahin (se trouve en épicerie bio)","10 cl de lait","1 œuf"],
+      ingredients : ["140 g de farine","50 g de sucre","1 sachet de levure chimique","40 g de noix de coco en poudre","60 g de pépites de chocolat noir (il est possible de faire des grosses pépites en coupant du chocolat à patisserie)",
+      "1/2 c/c de cannelle","1 cuillère à soupe de tahin (se trouve en épicerie bio)","10 cl de lait","1 œuf"],
       etapes : ["Préchauffer le four à 180° (Thermostat 6)","Mélanger la farine, la noix de coco, la levure, le sucre, le chocolat et la cannelle","A côté, mélanger le tahin, l’œuf et le lait","Ajouter les liquides (tahin, œuf et lait) aux ingrédients secs et homogénéiser la pâte","Etapes 2 Verser dans les moules à muffins et cuire 15-20 minutes","Attendre qu’ils aient refroidis pour démouler"],
       image : "img/recetteMuffin.jpg"
     },{
