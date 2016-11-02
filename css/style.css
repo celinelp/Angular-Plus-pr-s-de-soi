@@ -275,7 +275,6 @@ footer > ul
 	padding: 10px;
 	text-align: center;
 	font-size: 1.3em;
-	padding-right: 100px;
 }
 .dietApproche {
 	text-align: left;
@@ -338,10 +337,11 @@ footer > ul
 #dietTexteConseil p{
 	font-size: 1.3em;
 }
-.activeLien{
+.activeLien
+{
 		color: yellow !important;
-		background-color: #af7653 !important;
-	}
+		background-color: #af7653 !important;	
+}
 
 .chronique{
 	text-align: center;
@@ -370,13 +370,14 @@ ul.dropdown-menu
 }
 .p-list
 {
+	cursor: pointer;
 	color:#FFF;
-   border-bottom: 1px solid #6e5342;
-   padding: 20px;
+   	border-bottom: 1px solid #6e5342;
+   	padding: 20px;
 }
 #p-bg
 {
-	color: #000;
+	color: #6e5342;
 	transition-duration: 2s;
 	box-shadow: 0 6px 12px rgba(0,0,0,.175);
 	border-radius: 4px;
@@ -424,7 +425,7 @@ ul.dropdown-menu
 	text-align: center;
 	background-color: #A97052;
 	color: white;
-	height: 500 px;
+	height: 500px;
 	margin: auto;
 }
 .atelierThematique{
@@ -717,7 +718,6 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 	padding-left: 25px;
 
 }
-
 img.img-responsive4 {
 	width: 105%;
 	padding-top: 130px;
