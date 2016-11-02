@@ -113,26 +113,26 @@
     var objet = [
    {
       numeroAtelier : 'Atelier N° 1',
-      titreAtelier : 'Alimentation équilibrée: ça veut dire quoi?',
+      titreAtelier : 'Alimentation équilibrée : ça veut dire quoi ?',
       detailAtelier : 'Objectif: Aborder ce qui influence notre comportement alimentaire, les croyances et les représentations.'
      },
    {
         numeroAtelier : 'Atelier N° 2',
-        titreAtelier : 'Pourquoi on mange? Croyances et représentations',
-        titreDetail : 'Pourquoi on mange? Croyances et représentations',
+        titreAtelier : 'Pourquoi on mange ? Croyances et représentations',
+        titreDetail : 'Pourquoi on mange ? Croyances et représentations',
         detailAtelier : 'objectif : Informer sur les différents groupes d’aliments, leurs apports et ce qu’est un repas équilibré. '
      },
   {
        numeroAtelier : 'Atelier N° 3',
-       titreAtelier : 'Comment s\'organiser? Les menus...',
-       titreDetail : 'Comment s\'organiser? <br>Les menus...',
-       detailAtelier : 'objectif : mettre en pratique de l’alimentation équilibrée sur une semaine : variété, idées de saison.'
+       titreAtelier : 'Comment s\'organiser ? Les menus...',
+       titreDetail : 'Comment s\'organiser ? Les menus...',
+       detailAtelier : 'objectif : Mettre en pratique de l’alimentation équilibrée sur une semaine : variété, idées de saison.'
      },
   {
        numeroAtelier : 'Atelier N° 4',
        titreAtelier : 'La lecture des étiquettes',
        titreDetail : 'La lecture des étiquettes',
-       detailAtelier : 'objectif : mettre en pratique de l’alimentation équilibrée sur une semaine : variété, idées de saison.'
+       detailAtelier : 'objectif : Mettre en pratique de l’alimentation équilibrée sur une semaine : variété, idées de saison.'
      },
   {
        numeroAtelier : 'Atelier N° 5',
@@ -144,7 +144,7 @@
        numeroAtelier : 'Atelier N° 6',
        titreAtelier : 'L\'estime de soi',
        titreDetail : 'L\'estime de soi',
-       detailAtelier : 'Objectif : -Permettre le débat, les échanges et les réflexions sur la minceur, le poids et les régimes<br>Aborder les fausses croyances- comprendre ce qu’ est l’estime de soi.'
+       detailAtelier : 'Objectif : Permettre le débat, les échanges et les réflexions sur la minceur, le poids et les régimes, aborder les fausses croyances et mieux comprendre ce qu’ est l’estime de soi.'
       }];
 
 /*_____________________ HOME _____________________*/
@@ -250,20 +250,10 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
 
     {
       conseil : "Bien mâcher permet de mieux sentir les goûts et d’arriver à satiété. Cela évite de manger trop. Respecter ses rythmes et heures... de repas et de sommeil  (le manque de sommeil pertube les centres de faim et de satiété). On conseille un temps de repas d’un minimum de 20 minutes pour laisser le temps à l’estomac de communiquer avec  le cerveau et de renseigner sur la satiété. Manger trop vite peut amener à manger des quantités supérieures à nos besoins."
-    },
-    chroniques = [{
-      id : "1",
-      pdf : "audio/chroniquesPdf1.pdf"
-    },
-    {
-      id : "2",
-      pdf : "audio/chroniquesPdf2.pdf"
-    },
-    {
-      id : "3",
-      pdf : "audio/chroniquesPdf3.pdf"
-    },
-  ]
+    },{
+    semaineDuGout : "pdf/semaineDuGout.pdf",
+    brinDeVie : "img/articleBrinDeVie.png"
+    }
 ];
 
 }]);
@@ -295,7 +285,7 @@ $scope.aproposData = [
 $scope.presse = {
                   titre: "Article Chartres-Agglo- N°54 - Avril 2016 !",
                   img : "img/pressemel.png",
-                  
+
 }
 $scope.temoignages = [
                   { id : "1",

@@ -21,22 +21,33 @@
 
 	<div class="col-xs-12 col-sm-6 marron chronique">
 
-		<h2>Les chroniques du goût</h2>
+			<h2>Article de la semaine du goût</h2>
 
-		<div ng-repeat="chronique in diet[5]">
+				<button type="button" class="boutonchronique boutonAccroche hvr-round-corners" data-toggle="modal" data-target="#semaine">
+					<p>Ouvrir l'article<p>
+				</button>
 
-			<button ng-click="storeDiet.choiceDietElement(chronique)" type="button" class="boutonchronique boutonAccroche hvr-round-corners" data-toggle="modal" data-target="#myModal">
-				<p>Chronique du goût n°{{chronique.id}}</p>
-			</button>
-
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<object data="{{elementDietModal.pdf}}" type="application/pdf" title="" width="800" height="885"></object>
-					</div>
+				<div class="modal fade" id="semaine" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <object data="{{diet[5].semaineDuGout}}" type="application/pdf" title="" width="800" height="885"></object>
+				    </div>
+				  </div>
 				</div>
-			</div>
-		</div>
+
+				<h2>Article brin de vie</h2>
+
+					<button type="button" class="boutonchronique boutonAccroche hvr-round-corners" data-toggle="modal" data-target="#brin">
+						<p>Ouvrir l'article<p>
+					</button>
+
+					<div class="modal fade" id="brin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <img src="{{diet[5].brinDeVie}}" alt="Brin de Vie" ></img>
+					    </div>
+					  </div>
+					</div>
 
 		<audio controls="controls"></audio>
 		<div id="p-bg" class=" jaune dropdown" >
