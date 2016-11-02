@@ -73,7 +73,7 @@
         case "/apropos":
             $location.path('apropos');
             this.page = "pg-apropos";
-            this.texte1 = "Qui suis-je ?";
+            this.texte1 = "";
             this.texte2 = "";
             break;
         case "/contact":
@@ -155,7 +155,6 @@ app.controller('HomeController', function($rootScope, $scope, $sce){
   this.setActiveDietetique = function(input){
     $rootScope.activeDietetique = input;
   }
-
   $scope.HomeVueCtrlData = [
   {
     txtBgVert:  $sce.trustAsHtml('"On ne voit bien qu’avec le coeur, l’essentiel est invisible pour les yeux" <br> St Exupéry, extrait Le Petit Prince.'),
@@ -238,21 +237,66 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
 
     aide = ["Équilibrer vos repas","Répondre à vos besoins en quantité et en qualité (goût de l’aliment, intérêt nutritionnel, choix des aliments)","Retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie (organisation, idées menu)","Avoir des idées pour varier, cuisiner facile, de saison, en faisant attention à votre budget","Continuer ou mettre en place une activité physique adaptée"],
 
-  
+
 
     monApproche = $sce.trustAsHtml("Je ne fais pas de « régime » mais je vous propose une <strong>alimentation équilibrée adaptée à vos besoins</strong>. Je vous propose d’aborder votre comportement alimentaire ainsi que vos croyances et représentations, votre histoire, vos habitudes.<br> Je vous accompagnerais pour que vous puissiez mettre en place des changements petit à petit et ainsi vous sentir bien et prendre soin de votre santé.<br><br><center><span style='font-size:22px;'>Comment perdre du poids durablement ?</span></center><br>Pour perdre du poids de façon durable, il ne faut pas réduire les quantités avec sa tête mais retrouver <strong>ses repères sensoriels ( faim, satiété )</strong> pour manger en fonction de ses besoins. <br> Agir sur l’alimentation est fondamental mais pas suffisant. Le fait de manger en grosse quantité ou pas assez, de ne pas varier, de ne pas aimer les fruits et légumes, de grignoter … est lié à notre rythme de vie  mais aussi à ce qui va influencer notre comportement alimentaire : stress, frustrations, situations subies ou « mal digérées », mal-être, inconscient, problèmes relationnels privés ou professionnels, « mots qu’on ravale »… et on compense ensuite par la nourriture. Tant que <strong>les problèmes à la source</strong> ne sont pas réglés , les changements alimentaires seront difficiles à mettre en place ou ne dureront pas dans le temps et la prise de poids pourrait reprendre. C’est pourquoi je propose en parallèle d’un suivi diététique, un accompagnement en magnétisme et/ou libération émotionnelle pour apprendre à s’aimer et à prendre « soin de soi ».  En résumé, je travaille sur le lien qu’il y a entre le comportement alimentaire, l’estime de soi et  nos émotions."),
 
     recette = [{
-      titre : "MUFFINS COCO-CHOCOLAT AU TAHIN (sans beurre)",
+      titre : "Muffins coco-chocoloat au tahin (sans beurre)",
       nbPerso : "pour 6 muffins",
       tempPrepa : "120 minutes",
       ingredients : ["140 g de farine","50 g de sucre","1 sachet de levure chimique","40 g de noix de coco en poudre","60 g de pépites de chocolat noir (il est possible de faire des grosses pépites en coupant du chocolat à patisserie)",
       "1/2 cuillère à café de cannelle","1 cuillère à soupe de tahin (se trouve en épicerie bio)","10 cl de lait","1 œuf"],
       etapes : ["Préchauffer le four à 180° (Thermostat 6)","Mélanger la farine, la noix de coco, la levure, le sucre, le chocolat et la cannelle","A côté, mélanger le tahin, l’œuf et le lait","Ajouter les liquides (tahin, œuf et lait) aux ingrédients secs et homogénéiser la pâte","Etapes 2 Verser dans les moules à muffins et cuire 15-20 minutes","Attendre qu’ils aient refroidis pour démouler"]
+
+      ingredients : ["140 grs de farine","50 grs de sucre","1 sachet de levure chimique","40 grs de noix de coco en poudre","60 grs de pépites de chocolat noir (il est possible de faire des grosses pépites en coupant du chocolat à patisserie)",
+      "1/2 c/c de cannelle","1 c/s de tahin (se trouve en épicerie bio)","10 cl de lait","1 œuf"],
+      etapes : ["Préchauffer le four à 180° (Thermostat 6)","Mélanger la farine, la noix de coco, la levure, le sucre, le chocolat et la cannelle","A côté, mélanger le tahin, l’œuf et le lait","Ajouter les liquides (tahin, œuf et lait) aux ingrédients secs et homogénéiser la pâte","Etapes 2 Verser dans les moules à muffins et cuire 15-20 minutes","Attendre qu’ils aient refroidis pour démouler"],
+      image : "img/recetteMuffin.jpg"
+    },{
+      titre : "Soupe de panais aux pommes et épices",
+      nbPerso : "pour 4 personnes",
+      ingredients : ["300 g de panais","1 petite pomme de terre (100g)","2 pommes","2 gousses d’ail","1 pincée de cumin",
+      "1 pincée de curry","1 pincée de cardamome","1 pincée de coriandre","1 noix de beurre salé"],
+      etapes : ["Laver et éplucher le panais","Eplucher l’ail, la pomme de terre ainsi que la pomme puis l’épépiner","Couper en morceaux le panais, la pomme de terre et la pomme","Faire revenir rapidement avec le beurre, l’ail, le panias, la pomme de terre et la pomme","Recouvrir d’eau avec du gros sel et laisser cuire à couvert 30 min environ","Mixer","Ajouter les épices","Servir bien chaud"],
+      image : "img/recettePanais.jpg"
+    },{
+      titre : "Crumble de flocons d’avoine aux 3 fruits",
+      nbPerso : "pour 6 personnes",
+      ingredients : ["3 pommes","2 poires","4 pruneaux","1 citron","60g de flocons d’avoine",
+      "60g de beurre","30g de farine","30g de sucre"],
+      etapes : ["Laver et éplucher les fruits","Couper les poires et les pommes en cubes","Les déposer dans un plat à gratin","Y ajouter les pruneaux macérés dans le jus de citron","Mélanger dans un saladier les flocons d’avoine, la farine, le sucre et le beurre froid en cubes","Emietter la préparation avec les doigts pour obtenir une texture sableuse et la répartir sur les fruits","Faire cuire 15 à 20 minutes à Th6/180°C jusqu’à coloration du crumble","Tous les fruits peuvent convenir à la préparation de ce dessert"],
+      image : "img/recetteAvoine.jpg"
+    },{
+      titre : "Fenouils braisés",
+      nbPerso : "pour 4 personnes",
+      ingredients : ["1 citron","1 verre de vin blanc","1 branche de thym","2 gousses d’ail","sel, poivre","huile d’olive"],
+      etapes : ["Nettoyer les bulbes de fenouil, les couper en 2 dans la longueur","Faire chauffer 1 cuillère à soupe d’huile d’olive, y mettre les fenouils à revenir pendant 10 minutes environ. Ils doivent se colorer un peu","Au bout de 5 minutes, ajouter les gousses d’ail pelées et coupées en 2","Verser ensuite le jus de citron, le vin blanc, ajouter le thym et assaisonner","Cuire à couvert pendant environ 30 minutes : les fenouils doivent être tendres et confits et le jus très réduit","Accompagner par exemple de riz et de saumon pour un repas complet"],
+      image : "img/recetteFenouil.jpg"
+    },{
+      titre : "Cake d’automne (Ce dessert est très peu sucré et est délicieux. A tenter !)",
+      nbPerso : "pour 8 personnes",
+      ingredients : ["3 œufs","1 orange non traitée (bio)","1 pomme","60g d’abricots secs","40g de noix concassées","40 ml d’hule de pépins de raisons","200g de farine","1 sachet de levure  ou 1 c. à café de bicarbonate arrosé de jus de citron (pour activer le bicarbonate)","20g de cassonade","1 c. à café de cannelle"],
+      etapes : ["Laver les fruits","Peler la pomme","Prélever le zeste de la moitié de l’orange","Dans un saladier, fouetter l’huile et le sucre","Ajouter les œufs battus un à un puis la cannelle, le zeste et le jus de l’orange","Incorporer la farine et mélanger jusqu’à ce que la préparation soit lisse","Ajouter les noix, les abricots et la pomme hachés","Verser dans un moule à cake anti-adhésif et cuire à th6/180°C, pendant 45 minutes","Laisser refroidir 5 min puis démouler"],
+      image : "img/recetteCake.jpg"
+    },{
+      titre : "Velouté de châtaignes aux lardons",
+      nbPerso : "pour 6 personnes",
+      ingredients : ["500 g de châtaignes","300 g de lardons","1 oignon","1 carotte en rondelles","1 branche de céleri","2 c. à café d’huile d’olive","3 gousses d’ail hachées","Sel, poivre","2 c. à soupe de crème fraiche","1 bouquet de coriandre fraîche et persil"],
+      etapes : ["Dans une marmite, faites revenir à feu doux tous ces légumes dans l’huile, pendant 5 minutes environ","Remuez de temps en temps","Rincez les châtaignes","Ajoutez-les ainsi que le bouquet garni et l’eau","Salez et portez à ébullition","Puis réduisez le feu et laisser cuire à couvert pendant 40 minutes","Quand les châtaignes sont bien cuites, retirez la cocotte du feu et enlever le bouquet garni","Mixez finement et ajoutez la crème","Faites chauffer une poêle et faites-y revenir les lardons sans matière grasse, jusqu’à ce qu’ils soient dorés","Ajoutez-les au moment de servir"],
+      image : "img/recetteChataigne.jpg"
+    },{
+      titre : "Clafoutis aux pommes au lait végétal (facile et rapide !)",
+      nbPerso : "pour 6 personnes",
+      ingredients : ["3  ou 4 pommes","3 œufs","100 g de sucre ( 5 c. à soupe bombées)","120 g farine (6 c. à soupe bombées)","1/2 L de lait végétal (riz, avoine, amande, …, mon « chouchou » : « riz épeautre noisette »)","pour ceux qui aiment, vous pouvez rajouter 1 c. à café de fleur d’oranger"],
+      etapes : ["Coupez les pommes en lamelle et disposez les dans le plat","Mélangez tous les ingrédients et versez sur les pommes","Thermostat 6/7. Cuire 35 min"],
+      image : "img/recetteClafoutis.jpg"
+
     }],
 
     {
-      conseil : "Bien mâcher permet de mieux sentir les goûts et d’arriver à satiété. Cela évite de manger trop. Respecter ses rythmes et heures... de repas et de sommeil  (le manque de sommeil pertube les centres de faim et de satiété). On conseille un temps de repas d’un minimum de 20 minutes pour laisser le temps à l’estomac de communiquer avec  le cerveau et de renseigner sur la satiété. Manger trop vite peut amener à manger des quantités supérieures à nos besoins."
+      conseil : "Bien mâcher permet de mieux sentir les goûts et d’arriver à satiété. Cela évite de manger trop. Respecter ses rythmes et heures... de repas et de sommeil  (le manque de sommeil pertube les centres de faim et de satiété). On conseille un temps de repas d’un minimum de 20 minutes pour laisser le temps à l’estomac de communiquer avec  le cerveau et de renseigner sur la satiété. Manger trop vite peut amener à manger des quantités supérieures à nos besoins.",
+      conseil2 : "Diminuer le sucre dans vos recettes. Vous pouvez  baisser de 20 à 30 g voire la moitié de la quantité de sucre pour certains desserts. Manger moins sucré est une habitude."
     },{
     semaineDuGout : "pdf/semaineDuGout.pdf",
     brinDeVie : "img/articleBrinDeVie.png"

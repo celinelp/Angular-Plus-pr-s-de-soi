@@ -29,15 +29,15 @@
 /* font */
 @font-face {
 	font-family: "logo";
-	src: url("../fonts/Dancing_Script/DancingScript-Regular.ttf") format("truetype");
+	src: url("fonts/Dancing_Script/DancingScript-Regular.ttf") format("truetype");
 }
 @font-face {
 	font-family: "titre";
-	src: url('../fonts/Josefin_Slab/JosefinSlab-Regular.ttf') format("truetype");
+	src: url('fonts/Josefin_Slab/JosefinSlab-Regular.ttf') format("truetype");
 }
 @font-face {
 	font-family : "texte";
-	src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+	src: url('fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
 }
 .font {
 	font-size: 1.2em !important;
@@ -294,6 +294,7 @@ footer > ul
 	font-size: 2.1em;
 }
 .dietApproche {
+<<<<<<< HEAD
 	text-align: justify;
 	padding-left: 60px;
 
@@ -303,6 +304,9 @@ footer > ul
 	padding-bottom: 25px;
 	line-height: 24px;
 	letter-spacing: 1px;
+	text-align: left;
+	padding-left: 25px;
+
 }
 .descriptifDietMagnet h1{
 	text-align: center;
@@ -366,13 +370,13 @@ footer > ul
 	text-align: left;
 	font-size: 1.5em;
 }
-#dietTexteConseil p{
+#dietTexteRecette p, #dietTexteConseil p{
 	font-size: 1.3em;
 }
 .activeLien
 {
 		color: yellow !important;
-		background-color: #af7653 !important;	
+		background-color: #af7653 !important;
 }
 
 .marron.chronique {
@@ -726,7 +730,7 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 		font-size: 22px;
 		font-weight: bolder;
 	}
-	
+
 /*_____________________ _____________________ */
 /*_____________________ page magnetique _____________________ */
 #pg-magnetisme {
@@ -742,7 +746,6 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 	padding-left: 25px;
 	line-height: 24px;
 	letter-spacing: 1px;
-	
 
 }
 .descriptifMagnet h1 {
@@ -753,11 +756,11 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 	width: 105%;
 	padding-top: 180px;
 	padding-left: 80px;
-		
+
 
 }
 .approcheMagnet {
-	
+
 	padding-right: 50px;
 	padding-bottom: 25px;
 }
@@ -788,4 +791,3 @@ p.text-mag3 {
 footer {
 	font-size: 1.1em;
 }
-
