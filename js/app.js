@@ -157,8 +157,6 @@ app.controller('HomeController', function($rootScope){
 
 });
 
-
-
 var HomeBackCtrldata = [
   {
     txtBgVert: '"On ne voit bien qu’avec le coeur,l’essentiel est invisible pour les yeux " St Exupéry, extrait Le Petit Prince.',
