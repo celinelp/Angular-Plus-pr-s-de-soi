@@ -123,15 +123,14 @@ body {
 	font-family: 'logo', cursive;
 	font-weight: bold;
 	color: white;
+	font-size: 4em;
 }
 #decalagePhraseAccroche{
 	text-indent: -20px;
 }
-
-}
 @media (max-width: 768px){
 	.navbar-brand {
-		font-size: 1.5em;
+		font-size: 2em;
 	}
 	#homePhraseAccroche{
 		position: absolute;
@@ -140,7 +139,7 @@ body {
 		margin-top: initial;
 	}
 	#homePhraseAccroche h1{
-		font-size: 1.5em;
+		font-size: 2em;
 	}
 }
 .nav a:not(.tabDietetique) {
@@ -483,19 +482,10 @@ h3.theme {
 }
 .parcours-bio h2 {
 	color: black;
-<<<<<<< HEAD
 	padding-bottom: 20px;
 	font-size: 2.1em;
 	font-family: 'Josefin', serif;
 	font-weight: bolder;
-	
-=======
-	padding-top: 30px
-	text-decoration :underline;
-	font-family: 'Josefin', serif;
-	font-weight: bolder;
->>>>>>> 9937b23e9991185c4d81a98349d94977b2740bd2
-
 }
 .formation {
 	float: right;
@@ -729,12 +719,12 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 	text-align:left;
 	padding-top: 20px;
 	padding-bottom: 30px;
-	
+
 
 }
 
 img.img-responsive4 {
-	width: 110%;
+	width: 90%;
 	padding-top: 200px;
 }
 .approcheMagnet {
