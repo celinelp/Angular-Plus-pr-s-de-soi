@@ -342,6 +342,7 @@ footer > ul
 
 .chronique{
 	text-align: center;
+	border-radius: 4px;
 }
 .boutonchronique {
 	margin-bottom: 10px;
@@ -356,9 +357,9 @@ audio
 	background-color: black;
 	width: 100%;
 }
-  
+
 .p-list-bot
-{ 
+{
 	border-bottom:none!important;
 }
 ul.dropdown-menu
