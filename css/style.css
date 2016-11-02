@@ -330,6 +330,9 @@ footer > ul
 	text-align: left;
 	font-size: 1.5em;
 }
+#dietTexteConseil p{
+	font-size: 1.3em;
+}
 .activeLien{
 		color: yellow !important;
 		background-color: #af7653 !important;
@@ -387,6 +390,7 @@ footer > ul
 }
 .prof {
 	font-size: 1.3em;
+	border-radius: 4px;
 }
 .prof h1 {
 	font-size: 2.5em;
