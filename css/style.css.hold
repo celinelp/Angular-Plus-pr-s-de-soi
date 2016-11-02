@@ -26,36 +26,6 @@
 	font-weight: bold;
 }
 
-/* Bouton modal mes ateliers*/
-.btn.btn-primary {
-		background-color: #FFF931 !important;
-    color: #6e5342;
-		font-weight : bold;
-		padding:15px;
-
-}
-/* Caption atelier*/
-.caption {
-    padding: 50px;
-    color: marron-clair;
-		font-weight: normal;
-}
-
-
-
-
-/*Bandeau particuliers et professioneles*/
-.coin {
-background-color: #a9c04b;
-border:1px solid #a9c04b;
-padding:15px;
-font-weight : bold;
-/*arrondir les coins en haut à gauche et en bas à droite*/
--moz-border-radius:10px 0;
--webkit-border-radius:10px 0;
-border-radius:10px 0;
-color: white;
-}
 /* font */
 @font-face {
 	font-family: "logo";
@@ -70,7 +40,7 @@ color: white;
 	src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
 }
 .font {
-	font-size: 1.1em;
+	font-size: 1.2em !important;
 }
 h1, h2, h3, h4{
 	font-family: 'titre', serif;
@@ -95,16 +65,13 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 }
-/* bandeau haut mes ateliers*/
-.bandeauHautAtelier{
-padding-top: 30px;
-}
 /* bandeau btn "Me contacter" */
 .accrocheContact {
 	text-align: center;
 	background-color: #A97052;
 	color: white;
 	height: 150px;
+	padding-top: 20px;
 }
 .accrocheContact a {
 	color: white;
@@ -156,13 +123,14 @@ padding-top: 30px;
 	font-family: 'logo', cursive;
 	font-weight: bold;
 	color: white;
+	font-size: 4em;
 }
 #decalagePhraseAccroche{
 	text-indent: -20px;
 }
 @media (max-width: 768px){
 	.navbar-brand {
-		font-size: 1.5em;
+		font-size: 2em;
 	}
 	#homePhraseAccroche{
 		position: absolute;
@@ -171,7 +139,7 @@ padding-top: 30px;
 		margin-top: initial;
 	}
 	#homePhraseAccroche h1{
-		font-size: 1.5em;
+		font-size: 2em;
 	}
 }
 .nav a:not(.tabDietetique) {
@@ -208,7 +176,7 @@ footer > ul
 /*_____________________ _____________________ */
 #pg-contact {
 	background-image: url(../img/contact.jpg);
-	height: 300px;
+	height: 320px;
 }
 /*_____________________ Home  _____________________*/
 
@@ -218,7 +186,6 @@ footer > ul
 	padding-top: 10px;
 	overflow: auto;
 	text-align: center;
-	margin-bottom: 20px;
 }
 .homeNewMarginTop
 {
@@ -301,13 +268,23 @@ footer > ul
 
 #pg-dietetique {
 	background-image: url(../img/dietetique.jpg);
-	height: 300px;
+	height: 320px;
+	background-position: right bottom;
 }
 .descriptifDietMagnet{
 	padding: 10px;
+	text-align: center;
+	font-size: 1.3em;
+}
+.dietApproche {
+	text-align: left;
+	
 }
 .descriptifDietMagnet h1{
 	text-align: center;
+}
+.descriptifDietListe{
+	text-align: left;
 }
 #dietTabs{
 	background-color: white;
@@ -357,17 +334,64 @@ footer > ul
 	text-align: left;
 	font-size: 1.5em;
 }
-.activeLien{
+#dietTexteConseil p{
+	font-size: 1.3em;
+}
+.activeLien
+{
 		color: yellow !important;
-		background-color: #af7653 !important;
-	}
+		background-color: #af7653 !important;	
+}
 
+.chronique{
+	text-align: center;
+	border-radius: 4px;
+	padding-bottom: 20px;
+
+}
+.boutonchronique {
+	margin-bottom: 10px;
+}
+/* Play_List_Audio*/
+.audio
+{
+	background-color: black;
+	width: 100%;
+}
+
+.p-list-bot
+{
+	border-bottom:none!important;
+}
+ul.dropdown-menu
+{
+	border-radius: 0 0 4px 4px;
+	width: 100%;
+}
+.p-list
+{
+	cursor: pointer;
+	color:#FFF;
+   	border-bottom: 1px solid #6e5342;
+   	padding: 20px;
+}
+#p-bg
+{
+	color: #6e5342;
+	transition-duration: 2s;
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	border-radius: 4px;
+  	text-align: center;
+}
+#p-bg:hover
+{
+	transition-duration: 2s;
+	border-radius: 4px 4px 0 0;
+}
 /*_____________________ Page Atelier _____________________*/
-
-
 #pg-atelier {
 	background-image: url(../img/atelier.jpg);
-	height: 300px;
+	height: 320px;
 }
 .hfixed {
 	height: 300px;
@@ -387,6 +411,10 @@ footer > ul
 .caption {
 	padding:50px;
 	color: black !important;
+	font-size: 1.3em;
+}
+.caption h3 {
+	font-size: 1.8em;
 }
 .thumbnail{
 	color: black !important;
@@ -397,18 +425,26 @@ footer > ul
 	text-align: center;
 	background-color: #A97052;
 	color: white;
-	height: 500 px;
+	height: 500px;
 	margin: auto;
 }
-
 .atelierThematique{
 	text-align:left;
 }
-
+.prof {
+	font-size: 1.3em;
+	border-radius: 4px;
+}
+.prof h1 {
+	font-size: 2.5em;
+}
+h3.theme {
+	font-style: underline;
+}
 /*_____________________ apropos _____________________ */
 #pg-apropos {
 	background-image: url(../img/apropos.jpg);
-	height: 340px;
+	height: 360px;
 }
 .img-responsive1 {
 	width: 85%;
@@ -443,56 +479,51 @@ footer > ul
 	font-size-adjust: 20px;
 	font-size: 120%;
 	text-align: justify;
-	position: relative;
-	top: 40px;
 	line-height: 25px;
 	color: #2E3837;
 
 }
 .parcours-bio h2 {
 	color: black;
-	padding-top: 30px
-	zztext-decoration :underline;
+	padding-bottom: 20px;
+	font-size: 2.1em;
 	font-family: 'Josefin', serif;
-	text-indent: 10px;
 	font-weight: bolder;
-
 }
 .formation {
+	font-family: 'texte', sans-serif;
+	color: #2E3837;
 	float: right;
-	position: relative;
-	top: 50px;
-	line-height: 28px;
+	padding-top: 20px;
+	line-height: 26px;
 }
 
 .formation p {
-	padding-top: 10px;
+	padding: -10px;
 	font-size: 18px;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 }
 
 .photo-bio h2 {
 	color: #6e5342;
-	position: relative;
-	left: 100px;
-	top: 30px;
 	text-align: center;
-
 	font-family: 'Josefin', serif;
-}
 
+}
 h2.titre1 {
 	color: #6e5342;
+	font-weight: bold;
+	font-size: 32px;
+	padding-top: 20px;
 
 
 }
+
 .partie-bio {
-	height: 700px;
-	display: inline-block;
-	top: 90px;
-	padding-left: 100px;
-	line-height: 25px;
-	overflow: auto;
+	padding-top: 24px;
+	line-height: 24px;
+	color: #2E3837;
+	font-weight: bold;
 }
 
 .partie-bio h2 {
@@ -524,18 +555,14 @@ h4 {
 }
 blockquote {
 	font-family: 'Open', sans-serif;
-	position: relative;
-	top: 60px;
-	right: 90px;
 	font-size: 24px;
-	height: 160px;
 	background-color: #6e5342;
-	width: 110%;
+	width: 100%;
 	text-align: center;
 	color: #333;
-	padding-top: 25px;
-	margin-left: 90px;
-	letter-spacing: 03px;
+	padding: 25px;
+	margin-top: 40px;
+	letter-spacing: 02px;
 	font-weight: bold;
 	color: white;
 }
@@ -543,6 +570,8 @@ blockquote {
 h2.aproposTitre3 {
 	color: #6e5342;
 	font-weight: bold;
+	font-size: 1.8em;
+
 }
 
 .prose {
@@ -554,16 +583,13 @@ h2.aproposTitre3 {
 	font-weight: bold;
 	font-size: 16px;
 }
-.avis-utilisateur{
-	position: relative;
-	top: 50px;
-	padding-top: 20px;
+.avis-utilisateur {
+	padding-top: -10px;
 }
 
+
 .presse {
-	display: inline-block;
-	left: 150px;
-	bottom: -50px;
+	bottom: -40px;
 	clear: both;
 	width: 80%;
 }
@@ -615,7 +641,7 @@ span.assoc {
 	border-radius: 15px;
 	color: #fff;
 }
-.nav.nav-justified > li.active > a > .quote { opacity: 1; }
+zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 .nav.nav-justified > li > a > img { box-shadow: 0 0 0 5px #A97052; }
 .nav.nav-justified > li > a > img {
 	max-width: 80%;
@@ -678,54 +704,56 @@ span.assoc {
 		top: 40px;
 	}
 /*_____________________ _____________________ */
-
 /*_____________________ page magnetique _____________________ */
 #pg-magnetisme {
 	background-image: url(../img/magnetisme.jpg);
 	height: 300px;
 }
+
 .descriptifMagnet{
-	font-size: 18px;
-	text-align: left;
-	height: 270px;
+	font-size: 1.3em;
+	text-align: center;
 	padding-top: 15px;
-	padding-left: 200px;
+	padding-bottom: 25px;
+	padding-left: 25px;
 
 }
 img.img-responsive4 {
-	width: 65%;
-	position: absolute;
-	right: 90px;
-	top: 90px;
+	width: 105%;
+	padding-top: 130px;
+	padding-left: 80px;
+		
+
 }
 .approcheMagnet {
-	height: 540px;
-
-.text-mag3
-}
-
- {
-
-}
-h2.text-mag3  {
-	font-size: 26spx;
-}
-
-{
-width: 75%;
-	position: absolute;
-	right: 120px;
-	top: 110px;
-}
-
-.approcheMagnet {
-
+	
 	padding-right: 50px;
+	padding-bottom: 25px;
 }
 .text-mag3 {
-
+	font-size: 1.2em;
 	width: 90%;
+	text-align: center;
+	position: relative;
+	left: 60px;
+
 }
 h2.text-mag3  {
 	font-size: 40px;
+	width: 150%;
+	float: right;
+	margin-right: 80px;
+	padding-top: 25px
+
 }
+p.text-mag3 {
+	color:#2E3837;
+	text-align: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+footer {
+	font-size: 1.1em;
+}
+
