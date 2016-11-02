@@ -71,7 +71,7 @@
         case "/apropos":
             $location.path('apropos');
             this.page = "pg-apropos";
-            this.texte1 = "Qui suis-je ?";
+            this.texte1 = "";
             this.texte2 = "";
             break;
         case "/contact":
