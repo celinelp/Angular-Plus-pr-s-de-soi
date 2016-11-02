@@ -19,7 +19,7 @@
 
 	</div>
 
-	<div class="col-xs-12 col-sm-6 marron chronique player">
+	<div class="col-xs-12 col-sm-6 marron chronique">
 
 			<h2>Article de la semaine du goût</h2>
 
@@ -49,78 +49,78 @@
 					  </div>
 					</div>
 
-			<audio controls="controls"></audio>
-			<div id="p-bg" class=" jaune dropdown" >
-				<div class="dropdown-toggle"> <p> Liste d'audio  </p></div>
-					<span class=" glyphicon glyphicon-triangle-bottom"></span>
-				<ul class="dropdown-menu jaune">
-					<li class="p-list jaune" onclick="pickSong(0)">Qu'est ce que le goût ? </li>
-					<li class="p-list p-list-none jaune" onclick="pickSong(1)">Comment évolue le goût ?</li>
-					<li class="p-list p-list-none jaune" onclick="pickSong(2)">Comment développer le goût ?</li>
-					<li class="p-list p-list-none p-list-none jaune" onclick="pickSong(3)">Comment la société intervient sur le goût ?</li>
-					<li class="p-list p-list-none jaune" onclick="pickSong(4)">Pourquoi l'éducation au goût est importante ?</li>
-					<li class="p-list p-list-none p-list-bot jaune" onclick="pickSong(5)">Quart d'heure bien-être. Le cholestérol.</li>
-				</ul>
+		<audio controls="controls"></audio>
+		<div id="p-bg" class=" jaune dropdown" >
+			<div class="dropdown-toggle"> <p> Liste d'audio  </p></div>
+			<span class=" glyphicon glyphicon-triangle-bottom"></span>
+			<ul class="dropdown-menu vert">
+				<li class="p-list vert" onclick="pickSong(0)">Qu'est ce que le goût ? </li>
+				<li class="p-list p-list-none vert" onclick="pickSong(1)">Comment évolue le goût ?</li>
+				<li class="p-list p-list-none vert" onclick="pickSong(2)">Comment développer le goût ?</li>
+				<li class="p-list p-list-none p-list-none vert" onclick="pickSong(3)">Comment la société intervient sur le goût ?</li>
+				<li class="p-list p-list-none vert" onclick="pickSong(4)">Pourquoi l'éducation au goût est importante ?</li>
+				<li class="p-list p-list-none p-list-bot vert" onclick="pickSong(5)">Quart d'heure bien-être. Le cholestérol.</li>
+			</ul>
 		</div>
 	</div>
 
 </div>
 
-	<div class="row" id="dietTabs">
+<div class="row" id="dietTabs">
 
-		<!-- Nav tabs -->
-		<ul class="nav marron-clair" role="tablist">
-			<li role="presentation" ng-class="{active : tab === 1}">
-				<a id="ongletRecette" ng-class="{activeLien : tab === 1}" ng-click="storeDiet.changeTab(1,'recette')" href="#recette" target="_self" aria-controls="recette" role="tab" data-toggle="tab" class="tabDietetique">Recette coup de coeur</a>
-			</li>
-			<li role="presentation" ng-class="{active : tab === 2}">
-				<a id="ongletConseil" ng-class="{activeLien : tab === 2}" ng-click="storeDiet.changeTab(2,'conseil')" href="#conseil" target="_self" aria-controls="conseil" role="tab" data-toggle="tab" class="tabDietetique">Conseil du jour</a>
-			</li>
-		</ul>
+	<!-- Nav tabs -->
+	<ul class="nav marron-clair" role="tablist">
+		<li role="presentation" ng-class="{active : tab === 1}">
+			<a id="ongletRecette" ng-class="{activeLien : tab === 1}" ng-click="storeDiet.changeTab(1,'recette')" href="#recette" target="_self" aria-controls="recette" role="tab" data-toggle="tab" class="tabDietetique">Recette coup de coeur</a>
+		</li>
+		<li role="presentation" ng-class="{active : tab === 2}">
+			<a id="ongletConseil" ng-class="{activeLien : tab === 2}" ng-click="storeDiet.changeTab(2,'conseil')" href="#conseil" target="_self" aria-controls="conseil" role="tab" data-toggle="tab" class="tabDietetique">Conseil du jour</a>
+		</li>
+	</ul>
 
-		<!-- Tab panes -->
-		<div class="tab-content">
-			<div ng-class="{active : tab === 1, in : tab === 1}" id="recette" role="tabpanel" class="tab-pane fade">
-				<div class="row" id="dietTexteRecette">
-					<h1>{{diet[3][0].titre}}</h1>
-					<p><span class="glyphicon glyphicon-user" aria-hidden="true"></span> : {{diet[3][0].nbPerso}} - <span class="glyphicon glyphicon-time" aria-hidden="true"></span> : {{diet[3][0].tempPrepa}}</p>
-					<div class="col-xs-12 col-md-6">
-						<img class="img-responsive" src="img/recette.jpg">
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<div ng-class="{active : tab === 1, in : tab === 1}" id="recette" role="tabpanel" class="tab-pane fade">
+			<div class="row" id="dietTexteRecette">
+				<h1>{{diet[3][0].titre}}</h1>
+				<p><span class="glyphicon glyphicon-user" aria-hidden="true"></span> : {{diet[3][0].nbPerso}} - <span class="glyphicon glyphicon-time" aria-hidden="true"></span> : {{diet[3][0].tempPrepa}}</p>
+				<div class="col-xs-12 col-md-6">
+					<img class="img-responsive" src="img/recette.jpg">
 
-						<h2>Ingrédients :</h2><br>
-						<ul>
-							<li ng-repeat="ingr in diet[3][0].ingredients">- {{ingr}}</li>
-						</ul>
-					</div>
-					<div class="col-xs-12 col-md-6">
-
-						<h2>Etapes:</h2><br>
-						<ol>
-							<li ng-repeat="etap in diet[3][0].etapes">{{etap}}</li>
-						</ol>
-					</div>
+					<h2>Ingrédients :</h2><br>
+					<ul>
+						<li ng-repeat="ingr in diet[3][0].ingredients">- {{ingr}}</li>
+					</ul>
 				</div>
-			</div>
-			<div ng-class="{active : tab === 2, in : tab === 2}" id="conseil" role="tabpanel" class="tab-pane fade">
-				<div id="dietTexteConseil">
-					<p>{{diet[4].conseil}}</p>
+				<div class="col-xs-12 col-md-6">
+
+					<h2>Etapes:</h2><br>
+					<ol>
+						<li ng-repeat="etap in diet[3][0].etapes">{{etap}}</li>
+					</ol>
 				</div>
 			</div>
 		</div>
-
-	</div>
-
-	<div class="row accrocheContact">
-		<div class="col-xs-12">
-			<h3>Vous avez décidé de prendre soin de vous ? C'est le moment</h3>
-			<a class="boutonAccroche hvr-round-corners" ng-click="image.changeImg('/contact')">Me contacter</a>
-
+		<div ng-class="{active : tab === 2, in : tab === 2}" id="conseil" role="tabpanel" class="tab-pane fade">
+			<div id="dietTexteConseil">
+				<p>{{diet[4].conseil}}</p>
+			</div>
 		</div>
 	</div>
-	<!-- dropdown audio list -->
-  <script type="text/javascript">jQuery(function($) {
-    $('.dropdown').hover(function() {
-      $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
-    }, function() {
-      $(this).find('.dropdown-menu').first().stop(true, true).delay(500).slideUp();
-    });});</script>
+
+</div>
+
+<div class="row accrocheContact">
+	<div class="col-xs-12">
+		<h3>Vous avez décidé de prendre soin de vous ? C'est le moment</h3>
+		<a class="boutonAccroche hvr-round-corners" ng-click="image.changeImg('/contact')">Me contacter</a>
+
+	</div>
+</div>
+<!-- dropdown audio list -->
+<script type="text/javascript">jQuery(function($) {
+	$('.dropdown').hover(function() {
+		$(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+	}, function() {
+		$(this).find('.dropdown-menu').first().stop(true, true).delay(500).slideUp();
+	});});</script>

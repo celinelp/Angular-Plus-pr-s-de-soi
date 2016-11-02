@@ -161,8 +161,8 @@ app.controller('HomeController', function($rootScope){
 
 var HomeBackCtrldata = [
   {
-    txtBgVert: '"On ne voit bien qu’avec le coeur,l’essentiel est invisible pour les yeux " ST Exupéry, extrait Le Petit Prince.',
-    txtBgMarron: "Le magnétisme, comme jadis l'électricité ou la lumière, fait partie de ces énergies mystérieuses, dont on observe les effets sans en connaître les causes."
+    txtBgVert: '"On ne voit bien qu’avec le coeur,l’essentiel est invisible pour les yeux " St Exupéry, extrait Le Petit Prince.',
+    txtBgMarron: '"Le magnétisme, comme jadis l\'électricité ou la lumière, fait partie de ces énergies mystérieuses, dont on observe les effets sans en connaître les causes." Citation Anonyme'
   },
     {
       imgAtelierMois: "img/homeAtelier.jpg",
