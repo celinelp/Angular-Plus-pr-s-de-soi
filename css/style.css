@@ -186,6 +186,8 @@ footer > ul
 	padding-top: 10px;
 	overflow: auto;
 	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 20px;
 }
 .homeNewMarginTop
 {
@@ -283,6 +285,8 @@ footer > ul
 	padding-top: 15px;
 	padding-bottom: 25px;
 	padding-left: 25px;
+	line-height: 24px;
+	letter-spacing: 1px;
 }
 .descriptifDiet h1 {
 	text-align: center;
@@ -290,13 +294,19 @@ footer > ul
 	font-size: 2.1em;
 }
 .dietApproche {
-	text-align: left;
-	padding-left: 25px;
+	text-align: justify;
+	padding-left: 60px;
 
-	
+}
+.dietApproche p {
+	padding-top: 15px;
+	padding-bottom: 25px;
+	line-height: 24px;
+	letter-spacing: 1px;
 }
 .descriptifDietMagnet h1{
 	text-align: center;
+	padding-top: 25px;
 }
 .dietTitre1 {
 	text-align: center;
@@ -730,15 +740,18 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 	padding-top: 15px;
 	padding-bottom: 25px;
 	padding-left: 25px;
+	line-height: 24px;
+	letter-spacing: 1px;
 	
 
 }
 .descriptifMagnet h1 {
 	font-size: 2.1em;
+
 }
 .img-responsive4 {
 	width: 105%;
-	padding-top: 130px;
+	padding-top: 180px;
 	padding-left: 80px;
 		
 
@@ -761,14 +774,15 @@ h2.text-mag3  {
 	width: 150%;
 	float: right;
 	margin-right: 80px;
-	padding-top: 25px
+	padding-top: 20px;
 
 }
 p.text-mag3 {
 	color:#2E3837;
 	text-align: left;
-	padding-top: 20px;
 	padding-bottom: 20px;
+	line-height: 24px;
+	letter-spacing: 1px;
 
 }
 footer {
