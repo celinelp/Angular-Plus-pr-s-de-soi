@@ -11,7 +11,9 @@
   app.config(['$routeProvider',function($routeProvider){
     $routeProvider
     .when('/',{
-      templateUrl : 'partials/home/home.html'
+      templateUrl : 'partials/home/home.html',
+      controller : "HomeController",
+      controllerAs : "HomeCtrl"
     })
     .when('/apropos',{
       templateUrl : 'partials/apropos/apropos.html'
@@ -148,21 +150,16 @@
       }];
 
 /*_____________________ HOME _____________________*/
-app.controller('HomeController', function($rootScope){
-  this.HomeVueCtrlData = HomeBackCtrldata;
+app.controller('HomeController', function($rootScope, $scope, $sce){
 
   this.setActiveDietetique = function(input){
     $rootScope.activeDietetique = input;
   }
 
-});
-
-
-
-var HomeBackCtrldata = [
+  $scope.HomeVueCtrlData = [
   {
-    txtBgVert: '"On ne voit bien qu’avec le coeur,l’essentiel est invisible pour les yeux " St Exupéry, extrait Le Petit Prince.',
-    txtBgMarron: '"Le magnétisme, comme jadis l\'électricité ou la lumière, fait partie de ces énergies mystérieuses, dont on observe les effets sans en connaître les causes." Citation Anonyme'
+    txtBgVert:  $sce.trustAsHtml('"On ne voit bien qu’avec le coeur, l’essentiel est invisible pour les yeux" <br> St Exupéry, extrait Le Petit Prince.'),
+    txtBgMarron:  $sce.trustAsHtml('\"Le magnétisme, comme jadis l\'électricité ou la lumière, fait partie de ces énergies mystérieuses,<br> dont on observe les effets sans en connaître les causes.\" <br>Citation Anonyme ')
   },
     {
       imgAtelierMois: "img/homeAtelier.jpg",
@@ -175,6 +172,10 @@ var HomeBackCtrldata = [
       txtRecette: "Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de  colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d'accord sur une explication simple, évidente ou simplement plausible."
     }
 ];
+});
+
+
+
 
   /*____________________ CONTACT ____________________*/
   app.controller('ContactController', function(){
