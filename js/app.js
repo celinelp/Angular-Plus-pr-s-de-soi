@@ -262,10 +262,10 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
       titre : "Fenouils braisés",
       nbPerso : "pour 4 personnes",
       ingredients : ["1 citron","1 verre de vin blanc","1 branche de thym","2 gousses d’ail","sel, poivre","huile d’olive"],
-      etapes : ["Nettoyer les bulbes de fenouil, les couper en 2 dans la longueur","Faire chauffer 1 cuillère à soupe d’huile d’olive, y mettre les fenouils à revenir pendant 10 minutes environ. Ils doivent se colorer un peu","Au bout de 5 minutes, ajouter les gousses d’ail pelées et coupées en 2","Verser ensuite le jus de citron, le vin blanc, ajouter le thym et assaisonner","Cuire à couvert pendant environ 30 minutes : les fenouils doivent être tendres et confits et le jus très réduit","Accompagner par exemple de riz et de saumon pour un repas complet"],
+      etapes : ["Nettoyer les bulbes de fenouil, les couper en 2 dans la longueur","Faire chauffer 1 cuillère à soupe d’huile d’olive, y mettre les fenouils à revenir pendant 10 minutes environ. Ils doivent se colorer un peu","Au bout de 5 minutes, ajouter les gousses d’ail pelées et coupées en 2","Verser ensuite le jus de citron, le vin blanc, ajouter le thym et assaisonner","Cuire à couvert pendant environ 30 minutes : les fenouils doivent être tendres et confits et le jus très réduit","Accompagner par exemple de riz et de saumon pour un repas complet"],
       image : "img/recetteFenouil.jpg"
     },{
-      titre : "Cake d’automne (Ce dessert est très peu sucré et est délicieux. A tenter !)",
+      titre : "Cake d’automne (Ce dessert est très peu sucré et est délicieux. A tenter !)",
       nbPerso : "pour 8 personnes",
       ingredients : ["3 œufs","1 orange non traitée (bio)","1 pomme","60g d’abricots secs","40g de noix concassées","40 ml d’hule de pépins de raisons","200g de farine","1 sachet de levure  ou 1 c. à café de bicarbonate arrosé de jus de citron (pour activer le bicarbonate)","20g de cassonade","1 c. à café de cannelle"],
       etapes : ["Laver les fruits","Peler la pomme","Prélever le zeste de la moitié de l’orange","Dans un saladier, fouetter l’huile et le sucre","Ajouter les œufs battus un à un puis la cannelle, le zeste et le jus de l’orange","Incorporer la farine et mélanger jusqu’à ce que la préparation soit lisse","Ajouter les noix, les abricots et la pomme hachés","Verser dans un moule à cake anti-adhésif et cuire à th6/180°C, pendant 45 minutes","Laisser refroidir 5 min puis démouler"],
@@ -277,9 +277,9 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
       etapes : ["Dans une marmite, faites revenir à feu doux tous ces légumes dans l’huile, pendant 5 minutes environ","Remuez de temps en temps","Rincez les châtaignes","Ajoutez-les ainsi que le bouquet garni et l’eau","Salez et portez à ébullition","Puis réduisez le feu et laisser cuire à couvert pendant 40 minutes","Quand les châtaignes sont bien cuites, retirez la cocotte du feu et enlever le bouquet garni","Mixez finement et ajoutez la crème","Faites chauffer une poêle et faites-y revenir les lardons sans matière grasse, jusqu’à ce qu’ils soient dorés","Ajoutez-les au moment de servir"],
       image : "img/recetteChataigne.jpg"
     },{
-      titre : "Clafoutis aux pommes au lait végétal (facile et rapide !)",
+      titre : "Clafoutis aux pommes au lait végétal (facile et rapide !)",
       nbPerso : "pour 6 personnes",
-      ingredients : ["3  ou 4 pommes","3 œufs","100 g de sucre ( 5 c. à soupe bombées)","120 g farine (6 c. à soupe bombées)","1/2 L de lait végétal (riz, avoine, amande, …, mon « chouchou » : « riz épeautre noisette »)","pour ceux qui aiment, vous pouvez rajouter 1 c. à café de fleur d’oranger"],
+      ingredients : ["3  ou 4 pommes","3 œufs","100 g de sucre ( 5 c. à soupe bombées)","120 g farine (6 c. à soupe bombées)","1/2 L de lait végétal (riz, avoine, amande, …, mon « chouchou » : « riz épeautre noisette »)","pour ceux qui aiment, vous pouvez rajouter 1 c. à café de fleur d’oranger"],
       etapes : ["Coupez les pommes en lamelle et disposez les dans le plat","Mélangez tous les ingrédients et versez sur les pommes","Thermostat 6/7. Cuire 35 min"],
       image : "img/recetteClafoutis.jpg"
     }],
@@ -318,6 +318,7 @@ $scope.aproposData = [
  {imageBio: "img/melina9.jpg",
   textBio: $sce.trustAsHtml("Née en Mayenne, confrontée à l’âge de 11 ans à un problème de santé important, j’ai eu une véritable prise de conscience sur le fait que l’alimentation est une clé essentielle de notre SANTE. J‘ai commencé à 16 ans à faire un travail sur moi, pour vivre mieux, pour me connaître <br>et pour avancer. C’est à Tours que j’ai eu mon diplôme de diététique, en 1999. Je suis tombée amoureuse de cette ville et y ai vécu 10 ans.<br> Après mes études et pendant 7 ans,  j’ai travaillé en tant que diététicienne-téléconseillère dans un service consommateurs : j’ai beaucoup appris sur la communication et le conseil personnalisé. Par la suite, j’ai eu envie de réaliser des animations sur l’alimentation auprès de différents publics.<br> Malgré ma volonté de rester sur Tours, la vie m’a menée en Eure et Loir.<br> J’ai en effet trouvé le travail dont je rêvais à Dreux. En effet depuis fin 2007, je suis Chargée de prévention surpoids-obésité au Centre Hospitalier de Dreux où je réalise des animations auprès de différents publics.<br>Je réalise également des consultations de prévention et de prise en charge surpoids-obésité auprès des enfants et adolescents  et  la coordination de différents projets tels que ''&nbsp;<strong>la semaine du goût</strong>&nbsp;''.<br> La rencontre avec les différentes cultures a été une richesse que je n’aurais jamais soupçonnée. Je suis dans un domaine qui s’appelle l’éducation pour la santé. L’objectif est  d’accompagner les personnes vers des changements de comportement et d’informer sur les bienfaits d’une alimentation saine ainsi que la promotion de l’activité physique, sans jugement, ni dogmatisme ce qui leur permettra de faire des choix éclairés meilleurs pour leur santé morale et physique. Mon père était sourcier, je l’ai souvent suivi sur le terrain jusqu’au jour où  j’ai senti que je trouvais les sources aussi. Je n’ai jamais voulu utiliser mon don car je souhaitais être au clair avec moi-même et apprendre à me protéger.")},
   {textCitation: $sce.trustAsHtml('"On ne voit bien qu’avec le coeur,<br>l’essentiel est invisible pour les yeux" </br>St Exupéry. Extrait Le Petit Prince')}
+
 
 ];
 $scope.presse = {
