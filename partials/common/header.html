@@ -13,11 +13,11 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a ng-click="image.changeImg('/')"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-					<li><a ng-click="image.changeImg('/dietetique')">Diététique</a></li>
-					<li><a ng-click="image.changeImg('/magnetisme')">Magnétisme</a></li>
-					<li><a ng-click="image.changeImg('/atelier')">Mes ateliers</a></li>
-					<li><a ng-click="image.changeImg('/apropos')">A propos</a></li>
-					<li><a ng-click="image.changeImg('/contact')">Contact</a></li>
+					<li><a ng-class="{activeLienNavBar : image.page === 'pg-dietetique'}" ng-click="image.changeImg('/dietetique')">Diététique</a></li>
+					<li><a ng-class="{activeLienNavBar : image.page === 'pg-magnetisme'}" ng-click="image.changeImg('/magnetisme')">Magnétisme</a></li>
+					<li><a ng-class="{activeLienNavBar : image.page === 'pg-atelier'}" ng-click="image.changeImg('/atelier')">Mes ateliers</a></li>
+					<li><a ng-class="{activeLienNavBar : image.page === 'pg-apropos'}" ng-click="image.changeImg('/apropos')">A propos</a></li>
+					<li><a ng-class="{activeLienNavBar : image.page === 'pg-contact'}" ng-click="image.changeImg('/contact')">Contact</a></li>
 				</ul>
 			</div>
 		</nav>

@@ -116,6 +116,18 @@ body {
 	color: white !important;
 	opacity: 1 !important;
 }
+.navbar-brand:hover {
+	color: #FFF931 !important;
+}
+.navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #FFF931 !important;
+}
+.navbar-nav > li > a {
+	color : white !important;
+}
+.activeLienNavBar{
+	text-decoration: underline;
+}
 #homePhraseAccroche{
 		margin-top: 20vh;
 }
@@ -130,7 +142,7 @@ body {
 }
 @media (max-width: 768px){
 	.navbar-brand {
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 	#homePhraseAccroche{
 		position: absolute;
@@ -139,12 +151,8 @@ body {
 		margin-top: initial;
 	}
 	#homePhraseAccroche h1{
-		font-size: 2em;
+		font-size: 1.5em;
 	}
-}
-.nav a:not(.tabDietetique) {
-	color: white !important;
-	opacity: 1 !important;
 }
 .nav > li > a:focus, .nav > li > a:hover {
 	text-decoration: none;
@@ -381,7 +389,6 @@ footer > ul
 
 .marron.chronique {
 	display: inline-block;
-	left: 80px;
 }
 .chronique{
 	text-align: center;
@@ -392,7 +399,7 @@ footer > ul
 .boutonchronique {
 	margin-bottom: 10px;
 }
-/* Play_List_Audio*/
+/* Play_List_Audio */
 .audio
 {
 	background-color: black;
@@ -410,8 +417,9 @@ ul.dropdown-menu
 }
 .p-list
 {
+	width: 100%;
 	cursor: pointer;
-	color:#FFF;
+	color:black;
    	border-bottom: 1px solid #6e5342;
    	padding: 20px;
 }
@@ -610,7 +618,6 @@ h4 {
 	font-size: 1.4em;
 	font-weight: bold;
 	padding-top: 55px;
-
 }
 
 .customtitle1 {
