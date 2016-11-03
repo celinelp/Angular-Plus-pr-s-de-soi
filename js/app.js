@@ -1,12 +1,9 @@
 (function(){
   var app = angular.module('plusPresDeSoi', ["ngRoute","ngSanitize"]);
 
-
     app.run(function($rootScope) {
       $rootScope.activeDietetique = 1;
     });
-
-
 
   app.config(['$routeProvider',function($routeProvider){
     $routeProvider
@@ -36,14 +33,20 @@
       templateUrl : 'partials/mention/mention.html'
     });
   }]);
-  app.controller('imageHeader',["$location","$rootScope", function($location,$rootScope){
+
+  app.controller('imageHeader',["$location","$rootScope","$anchorScroll", function($location,$rootScope,$anchorScroll){
     this.url = $location.path();
     this.page = "pg-home";
     this.texte1 = "Comment je m'aime ?";
     this.texte2 = "Comment je mange ?";
-    this.changeImg = function (url,setActive = null){
+    this.changeImg = function (url,setActive = null,ancre = null){
       if (setActive != null){
         $rootScope.activeDietetique = setActive;
+      }
+      if (ancre != null) {
+        $location.hash('dietTabs');
+        $anchorScroll.yOffset = 0;
+        $anchorScroll();
       }
       switch (url) {
         case "/":
@@ -221,11 +224,6 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
   this.choiceDietElement = function(element){
      $scope.elementDietModal = element;
   }
-  /* ancre vers le tab recette-conseil */
-  /*if ($rootScope.activeDietetique === 2){
-    $location.hash('dietTabs');
-    $anchorScroll();
-  };*/
 
 
   $scope.diet = [
@@ -236,8 +234,6 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
   },
 
     aide = ["Équilibrer vos repas","Répondre à vos besoins en quantité et en qualité (goût de l’aliment, intérêt nutritionnel, choix des aliments)","Retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie (organisation, idées menu)","Avoir des idées pour varier, cuisiner facile, de saison, en faisant attention à votre budget","Continuer ou mettre en place une activité physique adaptée"],
-
-
 
     monApproche = $sce.trustAsHtml("Je ne fais pas de « régime » mais je vous propose une <strong>alimentation équilibrée adaptée à vos besoins</strong>.<br> Je vous propose d’aborder votre comportement alimentaire ainsi que vos croyances et représentations, votre histoire, vos habitudes.<br> Je vous accompagnerais pour que vous puissiez mettre en place des changements petit à petit et ainsi vous sentir bien et prendre soin de votre santé.<br>Comment perdre du poids durablement ?<br>Pour perdre du poids de façon durable, il ne faut pas réduire les quantités avec sa tête mais retrouver <strong>ses repères sensoriels (faim, satiété)</strong> pour manger en fonction de ses besoins.  Agir sur l’alimentation est fondamental mais pas suffisant. Le fait de manger en grosse quantité ou pas assez, de ne pas varier, de ne pas aimer les fruits et légumes, de grignoter … est lié à notre rythme de vie  mais aussi à ce qui va influencer notre comportement alimentaire : stress, frustrations, situations subies ou « mal digérées », mal-être, inconscient, problèmes relationnels privés ou professionnels, « mots qu’on ravale »… et on compense ensuite par la nourriture. Tant que <strong>les problèmes à la source</strong> ne sont pas réglés , les changements alimentaires seront difficiles à mettre en place ou ne dureront pas dans le temps et la prise de poids pourrait reprendre. C’est pourquoi je propose en parallèle d’un suivi diététique, un accompagnement en magnétisme et/ou libération émotionnelle pour apprendre à s’aimer et à prendre « soin de soi ».  En résumé, je travaille sur le lien qu’il y a entre le comportement alimentaire, l’estime de soi et  nos émotions."),
 

@@ -116,6 +116,18 @@ body {
 	color: white !important;
 	opacity: 1 !important;
 }
+.navbar-brand:hover {
+	color: #FFF931 !important;
+}
+.navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #FFF931 !important;
+}
+.navbar-nav > li > a {
+	color : white !important;
+}
+.activeLienNavBar{
+	text-decoration: underline;
+}
 #homePhraseAccroche{
 		margin-top: 20vh;
 }
@@ -141,10 +153,6 @@ body {
 	#homePhraseAccroche h1{
 		font-size: 2em;
 	}
-}
-.nav a:not(.tabDietetique) {
-	color: white !important;
-	opacity: 1 !important;
 }
 .nav > li > a:focus, .nav > li > a:hover {
 	text-decoration: none;
