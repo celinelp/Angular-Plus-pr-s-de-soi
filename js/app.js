@@ -160,18 +160,18 @@ app.controller('HomeController', function($rootScope, $scope, $sce){
   }
   $scope.HomeVueCtrlData = [
   {
-    txtBgVert:  $sce.trustAsHtml('"On ne voit bien qu’avec le coeur, l’essentiel est invisible pour les yeux" <br> St Exupéry, extrait Le Petit Prince.'),
+    txtBgVert:  $sce.trustAsHtml('"On ne voit bien qu’ avec le coeur, l’ essentiel est invisible pour les yeux". <br> St Exupéry, extrait Le Petit Prince.'),
     txtBgMarron:  $sce.trustAsHtml('\"Le magnétisme, comme jadis l\'électricité ou la lumière, fait partie de ces énergies mystérieuses,<br> dont on observe les effets sans en connaître les causes.\" <br>Citation Anonyme ')
   },
     {
       imgAtelierMois: "img/homeAtelier.jpg",
-      txtAtelierMois: "Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de  colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d'accord sur une explication simple, évidente ou simplement plausible.",
+      txtAtelierMois: " Voici des ateliers en groupe pour vous permettre de changer vos habitudes, de mettre en pratique et<br> d’échanger sur l’alimentation et l’estime de soi.<br><strong>Ateliers seuls ou par cycle de 6 </strong>:<br> un thème différent chaque mois.",
 
       imgConseil: "img/homeConseil.jpg",
-      txtConseil: "Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de  colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d\'accord sur une explication simple, évidente ou simplement plausible.",
+      txtConseil: "Quelques <strong>trucs et astuces </strong>pour commencer à changer<br>vos habitudes et votre organisation.<br>Pour mieux manger et contribuer à rester en forme<br>ou à la retrouver.<br><br>",
 
       imgRecette: "img/homeRecette.jpg",
-      txtRecette: "Depuis plus de deux siècles, il règne à son sujet une énorme confusion. Des centaines de livres en ont traité, des milliers de débats, de  colloques ont réuni praticiens et chercheurs pour en parler, sans parvenir à se mettre d'accord sur une explication simple, évidente ou simplement plausible."
+      txtRecette: "Varier son alimentation et continuer à se faire plaisir : <br>c’est possible → voici des recettes que j’aime <br>et que j’ai choisi de partager avec vous.<br><br><strong> A découvrir pour réveiller vos papilles !</strong>"
     }
 ];
 });
@@ -235,13 +235,13 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
 
     aide = ["Équilibrer vos repas","Répondre à vos besoins en quantité et en qualité (goût de l’aliment, intérêt nutritionnel, choix des aliments)","Retrouver le plaisir dans votre alimentation, tout en m’adaptant à vos goûts et à votre rythme de vie (organisation, idées menu)","Avoir des idées pour varier, cuisiner facile, de saison, en faisant attention à votre budget","Continuer ou mettre en place une activité physique adaptée"],
 
-    monApproche = $sce.trustAsHtml("Je ne fais pas de « régime » mais je vous propose une <strong>alimentation équilibrée adaptée à vos besoins</strong>.<br> Je vous propose d’aborder votre comportement alimentaire ainsi que vos croyances et représentations, votre histoire, vos habitudes.<br> Je vous accompagnerais pour que vous puissiez mettre en place des changements petit à petit et ainsi vous sentir bien et prendre soin de votre santé.<br>Comment perdre du poids durablement ?<br>Pour perdre du poids de façon durable, il ne faut pas réduire les quantités avec sa tête mais retrouver <strong>ses repères sensoriels (faim, satiété)</strong> pour manger en fonction de ses besoins.  Agir sur l’alimentation est fondamental mais pas suffisant. Le fait de manger en grosse quantité ou pas assez, de ne pas varier, de ne pas aimer les fruits et légumes, de grignoter … est lié à notre rythme de vie  mais aussi à ce qui va influencer notre comportement alimentaire : stress, frustrations, situations subies ou « mal digérées », mal-être, inconscient, problèmes relationnels privés ou professionnels, « mots qu’on ravale »… et on compense ensuite par la nourriture. Tant que <strong>les problèmes à la source</strong> ne sont pas réglés , les changements alimentaires seront difficiles à mettre en place ou ne dureront pas dans le temps et la prise de poids pourrait reprendre. C’est pourquoi je propose en parallèle d’un suivi diététique, un accompagnement en magnétisme et/ou libération émotionnelle pour apprendre à s’aimer et à prendre « soin de soi ».  En résumé, je travaille sur le lien qu’il y a entre le comportement alimentaire, l’estime de soi et  nos émotions."),
+    monApproche = $sce.trustAsHtml("Je ne fais pas de « régime » mais je vous propose une <strong>alimentation équilibrée adaptée à vos besoins</strong>. Je vous propose d’aborder votre comportement alimentaire ainsi que vos croyances et représentations, votre histoire, vos habitudes.<br> Je vous accompagnerais pour que vous puissiez mettre en place des changements petit à petit et ainsi vous sentir bien et prendre soin de votre santé.<br><br><center><span style='font-size:22px;'>Comment perdre du poids durablement ?</span></center><br>Pour perdre du poids de façon durable, il ne faut pas réduire les quantités avec sa tête mais retrouver <strong>ses repères sensoriels ( faim, satiété )</strong> pour manger en fonction de ses besoins. <br> Agir sur l’alimentation est fondamental mais pas suffisant. Le fait de manger en grosse quantité ou pas assez, de ne pas varier, de ne pas aimer les fruits et légumes, de grignoter … est lié à notre rythme de vie  mais aussi à ce qui va influencer notre comportement alimentaire : stress, frustrations, situations subies ou « mal digérées », mal-être, inconscient, problèmes relationnels privés ou professionnels, « mots qu’on ravale »… et on compense ensuite par la nourriture. Tant que <strong>les problèmes à la source</strong> ne sont pas réglés , les changements alimentaires seront difficiles à mettre en place ou ne dureront pas dans le temps et la prise de poids pourrait reprendre. C’est pourquoi je propose en parallèle d’un suivi diététique, un accompagnement en magnétisme et/ou libération émotionnelle pour apprendre à s’aimer et à prendre « soin de soi ».<br>En résumé, je travaille sur le lien qu’il y a entre le comportement alimentaire, l’estime de soi et  nos émotions."),
 
     recette = [{
       titre : "Muffins coco-chocoloat au tahin (sans beurre)",
       nbPerso : "pour 6 muffins",
-      ingredients : ["140 grs de farine","50 grs de sucre","1 sachet de levure chimique","40 grs de noix de coco en poudre","60 grs de pépites de chocolat noir (il est possible de faire des grosses pépites en coupant du chocolat à patisserie)",
-      "1/2 c/c de cannelle","1 c/s de tahin (se trouve en épicerie bio)","10 cl de lait","1 œuf"],
+      ingredients : ["140 g de farine","50 g de sucre","1 sachet de levure chimique","40 g de noix de coco en poudre","60 g de pépites de chocolat noir (il est possible de faire des grosses pépites en coupant du chocolat à patisserie)",
+      "1/2 c/c de cannelle","1 c. à soupe de tahin (se trouve en épicerie bio)","10 cl de lait","1 œuf"],
       etapes : ["Préchauffer le four à 180° (Thermostat 6)","Mélanger la farine, la noix de coco, la levure, le sucre, le chocolat et la cannelle","A côté, mélanger le tahin, l’œuf et le lait","Ajouter les liquides (tahin, œuf et lait) aux ingrédients secs et homogénéiser la pâte","Etapes 2 Verser dans les moules à muffins et cuire 15-20 minutes","Attendre qu’ils aient refroidis pour démouler"],
       image : "img/recetteMuffin.jpg"
     },{
@@ -262,7 +262,7 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
       titre : "Fenouils braisés",
       nbPerso : "pour 4 personnes",
       ingredients : ["1 citron","1 verre de vin blanc","1 branche de thym","2 gousses d’ail","sel, poivre","huile d’olive"],
-      etapes : ["Nettoyer les bulbes de fenouil, les couper en 2 dans la longueur","Faire chauffer 1 cuillère à soupe d’huile d’olive, y mettre les fenouils à revenir pendant 10 minutes environ. Ils doivent se colorer un peu","Au bout de 5 minutes, ajouter les gousses d’ail pelées et coupées en 2","Verser ensuite le jus de citron, le vin blanc, ajouter le thym et assaisonner","Cuire à couvert pendant environ 30 minutes : les fenouils doivent être tendres et confits et le jus très réduit","Accompagner par exemple de riz et de saumon pour un repas complet"],
+      etapes : ["Nettoyer les bulbes de fenouil, les couper en 2 dans la longueur","Faire chauffer 1 c. à soupe d’huile d’olive, y mettre les fenouils à revenir pendant 10 minutes environ. Ils doivent se colorer un peu","Au bout de 5 minutes, ajouter les gousses d’ail pelées et coupées en 2","Verser ensuite le jus de citron, le vin blanc, ajouter le thym et assaisonner","Cuire à couvert pendant environ 30 minutes : les fenouils doivent être tendres et confits et le jus très réduit","Accompagner par exemple de riz et de saumon pour un repas complet"],
       image : "img/recetteFenouil.jpg"
     },{
       titre : "Cake d’automne (Ce dessert est très peu sucré et est délicieux. A tenter !)",
@@ -285,9 +285,16 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
     }],
 
     {
-      conseil : "Bien mâcher permet de mieux sentir les goûts et d’arriver à satiété. Cela évite de manger trop. Respecter ses rythmes et heures... de repas et de sommeil  (le manque de sommeil pertube les centres de faim et de satiété). On conseille un temps de repas d’un minimum de 20 minutes pour laisser le temps à l’estomac de communiquer avec  le cerveau et de renseigner sur la satiété. Manger trop vite peut amener à manger des quantités supérieures à nos besoins.",
-      conseil2 : "Diminuer le sucre dans vos recettes. Vous pouvez  baisser de 20 à 30 g voire la moitié de la quantité de sucre pour certains desserts. Manger moins sucré est une habitude."
-    },{
+      conseil : "Pensez aux légumes de saison et achetez «local» le plus possible, c’est normalement meilleur marché. En saison, les légumes ont plus de goût et sont plus riches en vitamines et minéraux.. On peut penser que si ça pousse à certaines périodes de l’année, c’est que la nature nous offre ce qui nous convient le mieux  à ce moment là…",
+      conseil2 : "Pensez à mettre ou ajouter des crudités dans vos menus. Les légumes crus permettent d’apporter plus de vitamines (car elles ne sont pas éliminées par la cuisson) et demandent une mastication plus longue, très bonne pour la digestion et la satiété..",
+      conseil3 : "Réalisez des « commissions menus familiales » le week-end : en se regroupant pendant ½ h à 1H en famille. Réalisez ainsi vos menus pour quelques jours ou pour la semaine d’après en alternant les préparations simples et celle qui demandent un peu plus de temps (type quiche, gratin,…) les jours où c’est possible. Faites votre liste de courses en fonction. Vous gagnerez du temps et de l’énergie pour le reste de la semaine et cela vous évitera de vous poser la question : « mais qu’est ce que je vais faire à manger ce soir ? ».",
+      conseil4 : "Variez vos repas et les légumes, une certaine routine peut s’installer avec l’impression de manger toujours les mêmes choses. Allez chercher sur internet ou demander à vos enfants/compagnon de trouver une recette différente de temps en temps. Cela peut être 1X par semaine ou 1 X par mois à votre rythme.  Le plaisir vient aussi lorsque l’alimentation est variée..",
+      conseil5 : "Diminuer le sucre dans vos recettes. Vous pouvez baisser de 20 à 30 g voire la moitié de la quantité de sucre pour certains desserts. Vous pouvez le faire progressivement, dans la durée. Manger moins sucré devient une habitude, meilleure pour la santé.",
+      conseil6 : "Respecter ses rythmes et heures de repas… et de sommeil (le manque de sommeil perturbe les centres de la faim et de la satiété).",
+      conseil7 : "On conseille un temps de repas d’un minimum de 20 minutes pour laisser le temps à l’estomac de communiquer avec  le cerveau et de renseigner sur la satiété. Manger trop vite peut amener à manger des quantités supérieures à nos besoins.  Il est également important de bien mâcher : cela permet de mieux sentir les goûts et de sentir la satiété. Cela évite de manger « trop » ."
+
+    },
+    {
     semaineDuGout : "pdf/semaineDuGout.pdf",
     brinDeVie : "img/articleBrinDeVie.png"
     }
