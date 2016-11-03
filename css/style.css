@@ -412,7 +412,6 @@ footer > ul
 
 .marron.chronique {
 	display: inline-block;
-	left: 80px;
 }
 .chronique{
 	text-align: center;
@@ -423,7 +422,7 @@ footer > ul
 .boutonchronique {
 	margin-bottom: 10px;
 }
-/* Play_List_Audio*/
+/* Play_List_Audio */
 .audio
 {
 	background-color: black;
@@ -441,8 +440,9 @@ ul.dropdown-menu
 }
 .p-list
 {
+	width: 100%;
 	cursor: pointer;
-	color:#FFF;
+	color:black;
    	border-bottom: 1px solid #6e5342;
    	padding: 20px;
 }
