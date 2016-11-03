@@ -32,8 +32,8 @@
     color: #6e5342;
 		font-weight : bold;
 		padding:15px;
-
 }
+
 /* Caption atelier*/
 .caption {
     padding: 50px;
@@ -41,33 +41,32 @@
 		font-weight: normal;
 }
 
-
-
-
 /*Bandeau particuliers et professioneles*/
 .coin {
 background-color: #a9c04b;
 border:1px solid #a9c04b;
 padding:15px;
 font-weight : bold;
+
 /*arrondir les coins en haut à gauche et en bas à droite*/
 -moz-border-radius:10px 0;
 -webkit-border-radius:10px 0;
 border-radius:10px 0;
 color: white;
 }
+
 /* font */
 @font-face {
 	font-family: "logo";
-	src: url("../fonts/Dancing_Script/DancingScript-Regular.ttf") format("truetype");
+	src: url("fonts/Dancing_Script/DancingScript-Regular.ttf") format("truetype");
 }
 @font-face {
 	font-family: "titre";
-	src: url('../fonts/Josefin_Slab/JosefinSlab-Regular.ttf') format("truetype");
+	src: url('fonts/Josefin_Slab/JosefinSlab-Regular.ttf') format("truetype");
 }
 @font-face {
 	font-family : "texte";
-	src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+	src: url('fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
 }
 .font {
 	font-size: 1.1em;
@@ -218,7 +217,8 @@ footer > ul
 	padding-top: 10px;
 	overflow: auto;
 	text-align: center;
-	margin-bottom: 20px;
+	padding-top: 25px;
+	padding-bottom: 20px;
 }
 .homeNewMarginTop
 {
@@ -296,18 +296,61 @@ footer > ul
 	  margin-top: -60px;
 	  padding:60px 30px 30px 30px;
 	}
-}
+
 /*_____________ dietetique - recette et conseil _____________*/
 
 #pg-dietetique {
 	background-image: url(../img/dietetique.jpg);
-	height: 300px;
+	height: 320px;
+	background-position: right bottom;
 }
 .descriptifDietMagnet{
 	padding: 10px;
+	text-align: center;
+	font-size: 1.3em;
+}
+.descriptifDiet {
+	font-size: 1.3em;
+	text-align: left;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	padding-left: 25px;
+	line-height: 24px;
+	letter-spacing: 1px;
+}
+.descriptifDiet h1 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 2.1em;
+}
+.dietApproche {
+
+	text-align: justify;
+	padding-left: 60px;
+
+}
+.dietApproche p {
+	padding-top: 15px;
+	padding-bottom: 25px;
+	line-height: 24px;
+	letter-spacing: 1px;
+	text-align: left;
+	padding-left: 25px;
+
 }
 .descriptifDietMagnet h1{
 	text-align: center;
+	padding-top: 25px;
+}
+.dietTitre1 {
+	text-align: center;
+	padding-top: 25px;
+}
+.dietTitre2 {
+	padding-left: 30px;
+}
+.descriptifDietListe{
+	text-align: left;
 }
 #dietTabs{
 	background-color: white;
@@ -357,14 +400,85 @@ footer > ul
 	text-align: left;
 	font-size: 1.5em;
 }
-.activeLien{
+#dietTexteRecette p, #dietTexteConseil p{
+	font-size: 1.3em;
+}
+
+.activeLien
+{
 		color: yellow !important;
 		background-color: #af7653 !important;
-	}
+}
+
+.marron.chronique {
+	display: inline-block;
+	left: 80px;
+}
+.chronique{
+	text-align: center;
+	border-radius: 4px;
+	padding-bottom: 20px;
+
+}
+.boutonchronique {
+	margin-bottom: 10px;
+}
+/* Play_List_Audio*/
+.audio
+{
+	background-color: black;
+	width: 100%;
+}
+
+.p-list-bot
+{
+	border-bottom:none!important;
+}
+ul.dropdown-menu
+{
+	border-radius: 0 0 4px 4px;
+	width: 100%;
+}
+.p-list
+{
+	cursor: pointer;
+	color:#FFF;
+   	border-bottom: 1px solid #6e5342;
+   	padding: 20px;
+}
+#p-bg
+{
+	color: #6e5342;
+	transition-duration: 2s;
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	border-radius: 4px;
+  	text-align: center;
+}
+#p-bg:hover
+{
+	transition-duration: 2s;
+	border-radius: 4px 4px 0 0;
+}
 
 /*_____________________ Page Atelier _____________________*/
+#dietTexteRecette p, #dietTexteConseil p{
+	font-size: 1.3em;
+}
+.activeLien
+{
+		color: yellow !important;
+		background-color: #af7653 !important;
+}
 
-
+.marron.chronique {
+	display: inline-block;
+	left: 80px;
+}
+.chronique{
+	text-align: center;
+	border-radius: 4px;
+	padding-bottom: 20px;
+}
 #pg-atelier {
 	background-image: url(../img/atelier.jpg);
 	height: 300px;
@@ -387,6 +501,11 @@ footer > ul
 .caption {
 	padding:50px;
 	color: black !important;
+	font-size: 1.3em;
+}
+
+.caption h3 {
+	font-size: 1.8em;
 }
 .thumbnail{
 	color: black !important;
@@ -405,17 +524,26 @@ footer > ul
 	text-align:left;
 }
 
+.prof {
+	font-size: 1.3em;
+	border-radius: 4px;
+}
+.prof h1 {
+	font-size: 2.5em;
+}
+h3.theme {
+	font-style: underline;
+
 /*_____________________ apropos _____________________ */
 #pg-apropos {
 	background-image: url(../img/apropos.jpg);
-	height: 340px;
+	height: 360px;
 }
-.img-responsive1 {
+.img-melina {
 	width: 85%;
 	padding-top: 130px;
 	padding-left: 120px;
 	float: right;
-
 }
 .apropos {
 	background-color: #e7dcc6;
@@ -424,10 +552,8 @@ footer > ul
 	width: 540px;
 	padding-bottom: 45px;
 	float: left;
-
 }
 .bio {
-
 	position: relative;
 	bottom: 200px;
 	right: 80px;
@@ -435,64 +561,56 @@ footer > ul
 	height: 500px;
 	width: 100%;
 	float: right;
-
 }
 
 .fondParcours {
-	font-family: 'texte', sans-serif;
-	font-size-adjust: 20px;
-	font-size: 120%;
-	text-align: justify;
-	position: relative;
-	top: 40px;
-	line-height: 25px;
-	color: #2E3837;
-
+		font-family: 'texte', sans-serif;
+		font-size-adjust: 20px;
+		font-size: 120%;
+		text-align: justify;
+		line-height: 25px;
+		color: #2E3837;
 }
 .parcours-bio h2 {
 	color: black;
-	padding-top: 30px
-	zztext-decoration :underline;
-	font-family: 'Josefin', serif;
-	text-indent: 10px;
-	font-weight: bolder;
-
+		padding-bottom: 20px;
+		font-size: 2.1em;
+		font-family: 'Josefin', serif;
+		font-weight: bolder;
 }
 .formation {
+	font-family: 'texte', sans-serif;
+	color: #2E3837;
 	float: right;
-	position: relative;
-	top: 50px;
-	line-height: 28px;
+	padding-top: 20px;
+	line-height: 26px
 }
 
 .formation p {
-	padding-top: 10px;
+	padding-top: -10px;
 	font-size: 18px;
 	letter-spacing: 2px;
 }
 
 .photo-bio h2 {
 	color: #6e5342;
-	position: relative;
-	left: 100px;
-	top: 30px;
 	text-align: center;
-
 	font-family: 'Josefin', serif;
+	margin-left: 180px;
 }
 
 h2.titre1 {
 	color: #6e5342;
-
-
+	font-weight: bold;
+	font-size: 32px;
+	padding-top: 20px;
 }
+
 .partie-bio {
-	height: 700px;
-	display: inline-block;
-	top: 90px;
-	padding-left: 100px;
-	line-height: 25px;
-	overflow: auto;
+	padding-top: 24px;
+	line-height: 24px;
+	color: #2E3837;
+	font-weight: bold
 }
 
 .partie-bio h2 {
@@ -501,13 +619,11 @@ h2.titre1 {
 	font-weight: bold;
 }
 
-
 h4 {
 	display: block;
 	font-size: 1.4em;
 	font-weight: bold;
 	padding-top: 55px;
-
 }
 
 .customtitle1 {
@@ -522,20 +638,17 @@ h4 {
 	position: relative;
 	top: 40px;
 }
+
 blockquote {
 	font-family: 'Open', sans-serif;
-	position: relative;
-	top: 60px;
-	right: 90px;
 	font-size: 24px;
-	height: 160px;
 	background-color: #6e5342;
-	width: 110%;
+	width: 100%;
 	text-align: center;
 	color: #333;
-	padding-top: 25px;
-	margin-left: 90px;
-	letter-spacing: 03px;
+	padding: 25px;
+	margin-top: 40px;
+	letter-spacing: 02px;
 	font-weight: bold;
 	color: white;
 }
@@ -543,6 +656,7 @@ blockquote {
 h2.aproposTitre3 {
 	color: #6e5342;
 	font-weight: bold;
+	font-size: 1.8em;
 }
 
 .prose {
@@ -555,15 +669,11 @@ h2.aproposTitre3 {
 	font-size: 16px;
 }
 .avis-utilisateur{
-	position: relative;
-	top: 50px;
-	padding-top: 20px;
+	padding-top: -10px;
 }
 
 .presse {
-	display: inline-block;
-	left: 150px;
-	bottom: -50px;
+	bottom: -40px;
 	clear: both;
 	width: 80%;
 }
@@ -663,69 +773,64 @@ span.assoc {
 		font-size: 22px;
 		font-weight: bolder;
 	}
-	p.button {
-		background-color: #a9c04b;
-		border: none;
-		border-radius: 10px;
-		color: white;
-		padding: 15px 32px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		position: relative;
-		left: 60px;
-		top: 40px;
-	}
+
 /*_____________________ _____________________ */
 
 /*_____________________ page magnetique _____________________ */
+
 #pg-magnetisme {
 	background-image: url(../img/magnetisme.jpg);
 	height: 300px;
 }
+
 .descriptifMagnet{
-	font-size: 18px;
-	text-align: left;
-	height: 270px;
+	font-size: 1.3em;
+	text-align: center;
 	padding-top: 15px;
-	padding-left: 200px;
-
-}
-img.img-responsive4 {
-	width: 65%;
-	position: absolute;
-	right: 90px;
-	top: 90px;
-}
-.approcheMagnet {
-	height: 540px;
-
-.text-mag3
+	padding-bottom: 25px;
+	padding-left: 25px;
+	line-height: 24px;
+	letter-spacing: 1px;
 }
 
- {
+.descriptifMagnet h1 {
+	font-size: 2.1em;
 
 }
-h2.text-mag3  {
-	font-size: 26spx;
-}
-
-{
-width: 75%;
-	position: absolute;
-	right: 120px;
-	top: 110px;
+.img-responsive4 {
+	width: 105%;
+	padding-top: 180px;
+	padding-left: 80px;
 }
 
 .approcheMagnet {
-
 	padding-right: 50px;
+	padding-bottom: 25px;
 }
 .text-mag3 {
-
+	font-size: 1.2em;
 	width: 90%;
+	text-align: center;
+	position: relative;
+	left: 60px;
+
 }
 h2.text-mag3  {
 	font-size: 40px;
+	width: 150%;
+	float: right;
+	margin-right: 80px;
+	padding-top: 20px;
+
+}
+p.text-mag3 {
+	color:#2E3837;
+	text-align: left;
+	padding-bottom: 20px;
+	line-height: 24px;
+	letter-spacing: 1px;
+
+}
+footer {
+	font-size: 1.1em;
 }
