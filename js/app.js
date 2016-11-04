@@ -66,45 +66,53 @@
             this.page = "pg-home";
             this.texte1 = "Comment je m'aime ?";
             this.texte2 = "Comment je mange ?";
+            $anchorScroll()
             break;
         case "/dietetique":
             $location.path('dietetique');
             this.page = "pg-dietetique";
             this.texte1 = "";
             this.texte2 = "";
+            $anchorScroll()
             break;
         case "/magnetisme":
             $location.path('magnetisme');
             this.page = "pg-magnetisme";
             this.texte1 = "";
             this.texte2 = "";
+            $anchorScroll()
             break;
         case "/atelier":
             $location.path('atelier');
             this.page = "pg-atelier";
             this.texte1 = "";
             this.texte2 = "";
+            $anchorScroll()
             break;
         case "/apropos":
             $location.path('apropos');
             this.page = "pg-apropos";
             this.texte1 = "";
             this.texte2 = "";
+            $anchorScroll()
             break;
         case "/contact":
             $location.path('contact');
             this.page = "pg-contact";
             this.texte1 = "";
             this.texte2 = "";
+            $anchorScroll()
             break;
         case "/mention":
             $location.path('mention');
             this.page = "pg-apropos";
             this.texte1 = "";
             this.texte2 = "";
+            $anchorScroll()
             break;
         default:
           this.page = "pg-home";
+          $anchorScroll()
       }
       }
     }]);
