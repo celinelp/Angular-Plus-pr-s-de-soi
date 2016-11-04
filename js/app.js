@@ -47,7 +47,7 @@
     .when('/magnetisme',{
       templateUrl : 'partials/magnetisme/magnetisme.html',
       controller : "magnetController"
-      
+
     })
     .when('/mention',{
       templateUrl : 'partials/mention/mention.html'
@@ -253,7 +253,7 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
   $scope.diet = [
    {titreDescriptif : "Définition de la diététique",
    texteDescriptif : $sce.trustAsHtml("La diététique est la science de l’alimentation équilibrée qui contribue à être en bonne santé.")
-   
+
 
   },
 
@@ -334,7 +334,7 @@ app.controller('magnetController', function($scope,$sce){
 $scope.magnetData = [
   {
     titreDescriptif : "Définition du magnétisme",
-    texteDescriptif : $sce.trustAsHtml("Le magnétisme est un soin d’énergie vitale qui permet de soigner les maux du corps et de l’esprit.<br> Il soulage les douleurs&nbsp;: zonas,&nbsp; verrues, brûlures, eczéma, troubles fonctionnels et nerveux, stress, insomnie, fatigue, deuil, …<br>Je suis un canal de l’énergie du ciel et de la terre et cette énergie va aider la personne à l’endroit où elle en a besoin.<br> La personne soignée reste habillée et est allongée sur une table de massage..<br><small>Attention : le magnétisme ne se substitue pas à un suivi médical, ni à un traitement médicamenteux."),
+    texteDescriptif : $sce.trustAsHtml("Le magnétisme est un soin d’énergie vitale qui permet de soigner les maux du corps et de l’esprit.<br> Il soulage les douleurs&nbsp;: zonas,&nbsp; verrues, brûlures, eczéma, troubles fonctionnels et nerveux, stress, insomnie, fatigue, deuil…<br>Je suis un canal de l’énergie du ciel et de la terre et cette énergie va aider la personne à l’endroit où elle en a besoin.<br> La personne soignée reste habillée et est allongée sur une table de massage...<br><small>Attention : le magnétisme ne se substitue pas à un suivi médical, ni à un traitement médicamenteux."),
     texteApproche: $sce.trustAsHtml("Le magnétisme permet de se détendre, de s’apaiser, de se retrouver.<br> Ce travail permet aussi de se réénergiser. Cela permet également de prendre conscience et de rendre plus « claires » certaines   difficultés qui provoquent <strong>insomnie, stress, douleurs</strong>…Le travail que je propose en magnétisme peut-être complété par un travail de libération émotionnelle. <br>Au cours de l’enfance ou tout au long de notre vie de nombreuses émotions (colère, tristesse…) sont restées bloquées ou enfouies au plus profond de nous-mêmes : problèmes relationnels, harcèlement, deuil, colère, tristesse, difficulté à se positionner, à dire « non »….<br> Tant qu’elles restent bloquées, elles nous empêchent d’avancer et de vivre pleinement notre vie, librement.<br> Je propose un accompagnement pour travailler sur ces émotions et enfin vous retrouver plus « vrai ». Le travail se fait grâce à la mise en situation de moments vécus difficiles présents ou passés par l’expression de sons ou de mots.<br>La force des émotions bloquées ou de souffrance gardées au fond de soi est incroyable, les problèmes liées à l’alimentation (surpoids, préoccupation excessive du poids, troubles du comportement, maigreur…) peuvent-être la conséquence de ces émotions non exprimées qui « pèsent» au fil des années.<br> Le fait de libérer ces « blocages » va contribuer, par exemple,  à la perte de poids ultérieure en parallèle des changements d’habitude alimentaire mais parfois même sans rien changer dans l’alimentation.<br>Le magnétisme et le travail émotionnel permettent des prises de conscience afin de pouvoir avancer, faire des choix et agir pour vivre mieux.")
   }
 ];
