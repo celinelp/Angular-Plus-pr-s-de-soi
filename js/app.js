@@ -1,8 +1,22 @@
 (function(){
   var app = angular.module('plusPresDeSoi', ["ngRoute","ngSanitize"]);
 
-    app.run(function($rootScope) {
+    app.run(function($rootScope,$anchorScroll,$location) {
       $rootScope.activeDietetique = 1;
+      $rootScope.lienHome = false;
+      $rootScope.$watch(function(){
+          return $location.path()
+      },function(newPath){
+        let tabPath = newPath.split('/');
+        if(tabPath[1] == 'dietetique' && $rootScope.lienHome){
+          $location.hash('dietTabs');
+          $anchorScroll();
+        }
+        else{
+          $location.hash('');
+          $rootScope.lienHome = false;
+        }
+      });
     });
 
   app.config(['$routeProvider',function($routeProvider){
@@ -39,14 +53,10 @@
     this.page = "pg-home";
     this.texte1 = "Comment je m'aime ?";
     this.texte2 = "Comment je mange ?";
-    this.changeImg = function (url,setActive = null,ancre = null){
+    this.changeImg = function (url,setActive = null){
       if (setActive != null){
         $rootScope.activeDietetique = setActive;
-      }
-      if (ancre != null) {
-        $location.hash('dietTabs');
-        $anchorScroll.yOffset = 0;
-        $anchorScroll();
+        $rootScope.lienHome = true;
       }
       switch (url) {
         case "/":
