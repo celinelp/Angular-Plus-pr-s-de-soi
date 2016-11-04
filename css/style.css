@@ -465,6 +465,37 @@ ul.dropdown-menu
 	color: black !important;
 	background-color: #e7dcc6 !important;
 }
+/* Bouton modal mes ateliers*/
+.btn.btn-primary {
+background-color: #FFF931 !important;
+color: #6e5342;
+font-weight : bold;
+padding:15px;
+}
+/* Caption atelier*/
+   .caption {
+    padding: 50px;
+    color: marron-clair;
+   font-weight: normal;
+}
+
+/*Bandeau particuliers et professionnels*/
+.coin {
+background-color: #a9c04b;
+border:1px solid #a9c04b;
+padding:15px;
+font-weight : bold;
+/*arrondir les coins en haut à gauche et en bas à droite*/
+-moz-border-radius:10px 0;
+-webkit-border-radius:10px 0;
+border-radius:10px 0;
+color: white;
+}
+
+/* bandeau haut mes ateliers*/
+.bandeauHautAtelier{
+padding-top: 30px;
+}
 .lesProfessionels {
 	padding: 40px;
 	text-align: center;
