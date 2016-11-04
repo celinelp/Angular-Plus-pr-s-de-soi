@@ -1,8 +1,22 @@
 (function(){
   var app = angular.module('plusPresDeSoi', ["ngRoute","ngSanitize"]);
 
-    app.run(function($rootScope) {
+    app.run(function($rootScope,$anchorScroll,$location) {
       $rootScope.activeDietetique = 1;
+      $rootScope.lienHome = false;
+      $rootScope.$watch(function(){
+          return $location.path()
+      },function(newPath){
+        let tabPath = newPath.split('/');
+        if(tabPath[1] == 'dietetique' && $rootScope.lienHome){
+          $location.hash('dietTabs');
+          $anchorScroll();
+        }
+        else{
+          $location.hash('');
+          $rootScope.lienHome = false;
+        }
+      });
     });
 
   app.config(['$routeProvider',function($routeProvider){
@@ -18,7 +32,9 @@
       controllerAs : "apropos"
     })
     .when('/atelier',{
-      templateUrl : 'partials/atelier/atelier.html'
+      templateUrl : 'partials/atelier/atelier.html',
+      controller: "atelierCtrl",
+      controllerAs: "store"
     })
     .when('/contact',{
       templateUrl : 'partials/contact/contact.html'
@@ -43,14 +59,10 @@
     this.page = "pg-home";
     this.texte1 = "Comment je m'aime ?";
     this.texte2 = "Comment je mange ?";
-    this.changeImg = function (url,setActive = null,ancre = null){
+    this.changeImg = function (url,setActive = null){
       if (setActive != null){
         $rootScope.activeDietetique = setActive;
-      }
-      if (ancre != null) {
-        $location.hash('dietTabs');
-        $anchorScroll.yOffset = 0;
-        $anchorScroll();
+        $rootScope.lienHome = true;
       }
       switch (url) {
         case "/":
@@ -283,7 +295,7 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
     },{
       titre : "Clafoutis aux pommes au lait végétal (facile et rapide !)",
       nbPerso : "pour 6 personnes",
-      ingredients : ["3  ou 4 pommes","3 œufs","100 g de sucre ( 5 c. à soupe bombées)","120 g farine (6 c. à soupe bombées)","1/2 L de lait végétal (riz, avoine, amande, …, mon « chouchou » : « riz épeautre noisette »)","pour ceux qui aiment, vous pouvez rajouter 1 c. à café de fleur d’oranger"],
+      ingredients : ["3  ou 4 pommes","3 œufs","80 g de sucre ( 5 c. à soupe bombées)","120 g farine (6 c. à soupe bombées)","1/2 L de lait végétal (riz, avoine, amande, …, mon « chouchou » : « riz épeautre noisette »)","pour ceux qui aiment, vous pouvez rajouter 1 c. à café de fleur d’oranger"],
       etapes : ["Coupez les pommes en lamelle et disposez les dans le plat","Mélangez tous les ingrédients et versez sur les pommes","Thermostat 6/7. Cuire 35 min"],
       image : "img/recetteClafoutis.jpg"
     }],

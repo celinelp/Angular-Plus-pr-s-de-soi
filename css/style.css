@@ -1,23 +1,19 @@
 /*___________________________________ All page ___________________________________*/
 /* palette des couleurs */
-
 .jaune{
 	background-color: #FFF931 !important;
 }
 .vert{
 	background-color: #a9c04b !important;
 }
-
 .marron{
 	background-color: #6e5342 !important;
 	color: white;
 }
 .marron-clair{
-
 	background-color: #af7653 !important;
 	color: white;
 }
-
 .gris-clair{
 	background-color: #e7dcc6 !important;
 	color: black;
@@ -25,7 +21,6 @@
 .bold {
 	font-weight: bold;
 }
-
 /* font */
 @font-face {
 	font-family: "logo";
@@ -36,7 +31,7 @@
 	src: url('fonts/Josefin_Slab/JosefinSlab-Regular.ttf') format("truetype");
 }
 @font-face {
-	font-family : "texte";
+	font-family: "texte";
 	src: url('fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
 }
 .font {
@@ -44,6 +39,7 @@
 }
 h1, h2, h3, h4{
 	font-family: 'titre', serif;
+	font-weight: bold;
 }
 
 p, a{
@@ -52,11 +48,9 @@ p, a{
 a:hover {
 	cursor: pointer;
 }
-
 body {
 	overflow-x: hidden;
 }
-
 #pg-home, #pg-magnetisme, #pg-dietetique, #pg-atelier, #pg-apropos, #pg-contact {
 	background-image: url(../img/home.jpg);
 	background-repeat: no-repeat;
@@ -82,6 +76,7 @@ body {
 	background-color: #FFF931;
 	border: none;
 	color: #6e5342 !important;
+	font-weight: bold;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -115,9 +110,6 @@ body {
 	font-size: 3em;
 	color: white !important;
 	opacity: 1 !important;
-}
-.navbar-brand:hover {
-	color: #FFF931 !important;
 }
 .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 	color: #FFF931 !important;
@@ -201,20 +193,19 @@ footer > ul
 {
 	margin-bottom: 5vh;
 }
+.accueil_btn_top:hover,.accueil_btn_bottom:hover  {background-color: #FFF931 !important; color:#6e5342; }
 .accueil_btn_top , .accueil_btn_bottom
 	{
-		color: white;
 		border: none;
 		display:inline-block;
-		font-size: 16px;
 		width: 200px;
 		height: 100px;
 		margin: auto;
 		font-size: 2em;
 	}
 	.acc_btn_top_txt, .acc_btn_bot_txt{ font-family: "titre"; font-size: 1.1em}
-	.acc_btn_top_txt{margin-bottom: -30px;  color:#e7dcc6 ;}
-	.acc_btn_bot_txt{margin-bottom: 30px;  color:#6e5342 ; }
+	.acc_btn_top_txt{margin-bottom: -30px; }
+	.acc_btn_bot_txt{margin-bottom: 30px;  color:#6e5342; }
 	.accueil_btn_top
 	{
 		border-radius: 100px 100px 0 0;
@@ -238,7 +229,6 @@ footer > ul
 	{
 		line-height: 2em;
 		font-size: 1.5em;
-		color: #e7dcc6;
 		margin-top: -100px;
 		padding:100px 50px 50px 50px;
 		text-align: center;
@@ -254,16 +244,15 @@ footer > ul
 	.accueil_btn_top, .accueil_btn_top > a
 	{
 	   border-radius: 60px 60px 0 0;
-	   color: #FFF !important;
+
 	}
 	.accueil_btn_bottom, .accueil_btn_bottom > a
 	{
 	    border-radius: 0px 0px 60px  60px;
-	    color: #000 !important;
-	}
+	 }
 	.accueil_txt
 	{
-		font-size: 1.2em;
+	  font-size: 1.2em;
 	  padding:30px 30px 60px 30px;
 	  margin-bottom:-60px;
 	}
@@ -358,6 +347,10 @@ footer > ul
 	height: auto;
 	display: block;
 }
+#ongletRecette:hover, #ongletConseil:hover{
+	background-color: #FFF931;
+	color: #6e5342;
+}
 #dietTexteRecette, #dietTexteConseil{
 	padding: 1em;
 	margin-right: 0;
@@ -383,8 +376,8 @@ footer > ul
 }
 .activeLien
 {
-		color: yellow !important;
-		background-color: #af7653 !important;
+		color: white !important;
+		background-color: #a9c04b !important;
 }
 
 .marron.chronique {
@@ -444,9 +437,16 @@ ul.dropdown-menu
 .hfixed {
 	height: 300px;
 }
-.atelierBandeTransition{
-	text-align: center;
+
+.atelierBandeTransition2{
+	width: 95%;
+	margin: auto;
 	padding-top: 35px;
+}
+.atelierBandeTransition p{
+	font-size: 1.3em;
+	text-align: center;
+	width: 80%
 }
 .btn-primary{
 	border:none !important;
@@ -503,7 +503,10 @@ padding-top: 30px;
 	padding: 40px;
 	text-align: center;
 	color: white;
-	margin: auto;
+}
+.lesProfessionels p, .lesProfessionels li{
+	font-size: 1.3em;
+
 }
 .atelierThematique{
 	text-align:left;
