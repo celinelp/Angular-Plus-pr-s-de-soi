@@ -142,26 +142,26 @@
     var objet = [
    {
       numeroAtelier : 'Atelier N° 1',
-      titreAtelier : 'Alimentation équilibrée: ça veut dire quoi?',
+      titreAtelier : 'Alimentation équilibrée: ça veut dire quoi ?',
       detailAtelier : 'Objectif: Aborder ce qui influence notre comportement alimentaire, les croyances et les représentations.'
      },
    {
         numeroAtelier : 'Atelier N° 2',
-        titreAtelier : 'Pourquoi on mange? Croyances et représentations',
-        titreDetail : 'Pourquoi on mange? Croyances et représentations',
+        titreAtelier : 'Pourquoi on mange ? Croyances et représentations',
+        titreDetail : 'Pourquoi on mange ? Croyances et représentations',
         detailAtelier : 'objectif : Informer sur les différents groupes d’aliments, leurs apports et ce qu’est un repas équilibré. '
      },
   {
        numeroAtelier : 'Atelier N° 3',
        titreAtelier : 'Comment s\'organiser? Les menus...',
        titreDetail : 'Comment s\'organiser? <br>Les menus...',
-       detailAtelier : 'objectif : mettre en pratique de l’alimentation équilibrée sur une semaine : variété, idées de saison.'
+       detailAtelier : 'objectif : Mettre en pratique de l’alimentation équilibrée sur une semaine : variété, idées de saison.'
      },
   {
        numeroAtelier : 'Atelier N° 4',
        titreAtelier : 'La lecture des étiquettes',
        titreDetail : 'La lecture des étiquettes',
-       detailAtelier : 'objectif : mettre en pratique de l’alimentation équilibrée sur une semaine : variété, idées de saison.'
+       detailAtelier : 'objectif : Mettre en pratique de l’alimentation équilibrée sur une semaine : variété, idées de saison.'
      },
   {
        numeroAtelier : 'Atelier N° 5',
@@ -173,7 +173,7 @@
        numeroAtelier : 'Atelier N° 6',
        titreAtelier : 'L\'estime de soi',
        titreDetail : 'L\'estime de soi',
-       detailAtelier : 'Objectif : -Permettre le débat, les échanges et les réflexions sur la minceur, le poids et les régimes<br>Aborder les fausses croyances- comprendre ce qu’ est l’estime de soi.'
+       detailAtelier : 'Objectif : Permettre le débat, les échanges et les réflexions sur la minceur, le poids et les régimes. Aborder les fausses croyances, comprendre ce qu’ est l’estime de soi.'
       }];
 
 /*_____________________ HOME _____________________*/
