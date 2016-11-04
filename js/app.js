@@ -30,7 +30,9 @@
       templateUrl : 'partials/apropos/apropos.html'
     })
     .when('/atelier',{
-      templateUrl : 'partials/atelier/atelier.html'
+      templateUrl : 'partials/atelier/atelier.html',
+      controller: "atelierCtrl",
+      controllerAs: "store"
     })
     .when('/contact',{
       templateUrl : 'partials/contact/contact.html'
@@ -289,7 +291,7 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
     },{
       titre : "Clafoutis aux pommes au lait végétal (facile et rapide !)",
       nbPerso : "pour 6 personnes",
-      ingredients : ["3  ou 4 pommes","3 œufs","100 g de sucre ( 5 c. à soupe bombées)","120 g farine (6 c. à soupe bombées)","1/2 L de lait végétal (riz, avoine, amande, …, mon « chouchou » : « riz épeautre noisette »)","pour ceux qui aiment, vous pouvez rajouter 1 c. à café de fleur d’oranger"],
+      ingredients : ["3  ou 4 pommes","3 œufs","80 g de sucre ( 5 c. à soupe bombées)","120 g farine (6 c. à soupe bombées)","1/2 L de lait végétal (riz, avoine, amande, …, mon « chouchou » : « riz épeautre noisette »)","pour ceux qui aiment, vous pouvez rajouter 1 c. à café de fleur d’oranger"],
       etapes : ["Coupez les pommes en lamelle et disposez les dans le plat","Mélangez tous les ingrédients et versez sur les pommes","Thermostat 6/7. Cuire 35 min"],
       image : "img/recetteClafoutis.jpg"
     }],

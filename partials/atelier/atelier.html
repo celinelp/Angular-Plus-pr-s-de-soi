@@ -1,63 +1,66 @@
-<div class="row atelierBandeTransition gris-clair">
+  <div class="row atelierBandeTransition gris-clair">
 
-  <h1><span class="coin">Pour les particuliers :</span></h1><br><br>
-  <h3>Voici les ateliers que je peux vous proposer .</h3>
-  <h3>Les Vendredis soir de 18h30 à 20h00</h3>
-  <h3>Une fois par mois : 20,00 € par séance . Cycle de 6 séances à 110,00 € .</h3>
-  <h3>Pour plus de renseignements, n’hésitez pas à me contacter .</h3><br><br>
-</div>
+    <h1><span class="coin">Pour les particuliers :</span></h1><br><br>
+    <p>Voici les ateliers que je peux vous proposer.</p>
+    <p>Les Vendredis soirs de 18h00 à 20h00</p>
+    <p>Une fois par mois : 20,00 € par séance . Cycle de 6 séances à 110,00 € .</p>
+    <p>Pour plus de renseignements, n’hésitez pas à me contacter .</p><br><br>
+  </div>
 
-<div id="icontent" class="row marron-clair" ng-controller="atelierCtrl as store">
+  <div id="icontent" class="row marron-clair">
 
-  <!-- Theme Atelier  -->
-  <div class="col-sm-6 col-md-4 col-lg-4 bandeauHautAtelier" ng-repeat="atelier in presentation">
-    <div class="thumbnail text-center hfixed gris-clair">
-      <div class="caption" style="padding:50px">
-        <h3>{{atelier.numeroAtelier}}</h3>
-        <p>{{atelier.titreAtelier}}</p>
-        <button ng-click="store.choiceElement(atelier)" type="button" class="btn btn-primary" data-toggle="modal" data-target=".atel"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Plus de détails</button>
+    <!-- Theme Atelier  -->
+    <div class="col-sm-6 col-md-4 col-lg-4 bandeauHautAtelier" ng-repeat="atelier in presentation">
+      <div class="thumbnail text-center hfixed gris-clair">
+        <div class="caption" style="padding:50px">
+          <h3>{{atelier.numeroAtelier}}</h3>
+          <p>{{atelier.titreAtelier}}</p>
+          <button ng-click="store.choiceElement(atelier)" type="button" class="btn btn-primary" data-toggle="modal" data-target=".atel"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Plus de détails</button>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="modal fade atel" tabindex="-1" role="dialog" aria-labelledby="atel">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content gris-clair">
-        <div class="thumbnail text-center">
-          <h1>{{elementModal.titreAtelier}}</h1>
-          <div class="caption">
-            <p class="alert alert-info">{{elementModal.detailAtelier}}"</p>
+    <div class="modal fade atel" tabindex="-1" role="dialog" aria-labelledby="atel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content gris-clair">
+          <div class="thumbnail text-center">
+            <button type="button" class="close" data-dismiss="modal" name="button">&times;</button>
+            <h1>{{elementModal.titreAtelier}}</h1>
+            <div class="caption">
+              <p class="alert alert-info">{{elementModal.detailAtelier}}</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-            <div class="row lesProfessionels">
-              <div class="col-xs-12 gris-clair bandeauHautAtelier">
-                <h1><span class="coin">Pour les professionnels :</span></h1><br>
-                  <h3>Spécialisée en promotion de la santé et l'éducation pour la santé depuis 9 ans .<br> Mélina GUILLET vous propose: des ateliers, des conférences et des formations sur le thème de l’alimentation pour tout public (particulier ou professionnel) .</h3>
-                  <h3>Les ateliers collectifs de 2H : Les animations interactives et ludiques adaptées à la demande et aux besoins du public .</h3>
-                  <h3>Exemples de thématique :</h3>
-              <div class="row atelierThematique">
-                <div class="col-xs-6 col-xs-offset-3">
-                  <ul><h3>
-                    <li>L’alimentation des enfants, adolescents, adultes, la femme enceinte/femme allaitante, seniors .</li>
-                    <li>Les légumes et les fruits .</li>
-                    <li>Le petit-déjeuner, le goûter .</li>
-                    <li>L’alimentation équilibrée .</li>
-                    <li>L’activité physique .</li>
-                    <li>La lecture d’étiquettes .</li>
-                    <li>Les ateliers-cuisine .</li>
-                </h3></ul>
-                </div>
-              </div>
-                  <h3>Formation pour les professionnels de la petite enfance, de la restauration scolaire et pour les professionnels médico-sociaux. Tout public.</h3>
-                  <h3>Personnalisation à la demande, n’hésitez pas à me contacter.</h3>
-            </div>
 
-            <div class="row accrocheContact">
-              <div class="col-xs-12">
-                <h3>Vous avez décidé de prendre soin de vous ? C'est le moment</h3>
-                <a class="boutonAccroche hvr-round-corners" ng-click="image.changeImg('/contact')">Me contacter</a>
-              </div>
-            </div>
-          </div>
+<div class="row lesProfessionels marron">
+  <div class="col-xs-12 gris-clair bandeauHautAtelier">
+    <h1><span class="coin">Pour les professionnels :</span></h1><br>
+      <p>Spécialisée en promotion de la santé et l'éducation pour la santé depuis 9 ans .<br> Mélina GUILLET vous propose: des ateliers, des conférences et des formations sur le thème de l’alimentation pour tout public (particulier ou professionnel) .</p>
+      <p>Les ateliers collectifs de 2H : Les animations interactives et ludiques adaptées à la demande et aux besoins du public .</p>
+      <p>Exemples de thématique :</p>
+  <div class="row atelierThematique">
+    <div class="col-xs-6 col-xs-offset-3">
+      <ul><p>
+        <li>L’alimentation des enfants, adolescents, adultes, la femme enceinte/femme allaitante, seniors .</li>
+        <li>Les légumes et les fruits .</li>
+        <li>Le petit-déjeuner, le goûter .</li>
+        <li>L’alimentation équilibrée .</li>
+        <li>L’activité physique .</li>
+        <li>La lecture d’étiquettes .</li>
+        <li>Les ateliers-cuisine .</li>
+    </p></ul>
+    </div>
+  </div>
+      <p>Formation pour les professionnels de la petite enfance, de la restauration scolaire et pour les professionnels médico-sociaux. Tout public.</p>
+      <p>Personnalisation à la demande, n’hésitez pas à me contacter.</p>
+    </div>
+</div>
+
+<div class="row accrocheContact">
+  <div class="col-xs-12">
+    <h3>Vous avez décidé de prendre soin de vous ? C'est le moment</h3>
+    <a class="boutonAccroche hvr-round-corners" ng-click="image.changeImg('/contact')">Me contacter</a>
+  </div>
+</div>
