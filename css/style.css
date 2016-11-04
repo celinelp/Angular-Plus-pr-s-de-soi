@@ -274,6 +274,13 @@ footer > ul
 	padding: 10px;
 	text-align: center;
 	font-size: 1.3em;
+	line-height: 24px;
+	letter-spacing: 1px;
+
+}
+.consult {
+	padding-top: 10px;
+	padding-left: 20px;
 
 }
 .descriptifDiet {
