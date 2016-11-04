@@ -201,9 +201,10 @@ footer > ul
 {
 	margin-bottom: 5vh;
 }
+.accueil_btn_top:hover,.accueil_btn_bottom:hover  {background-color: yellow !important;}
 .accueil_btn_top , .accueil_btn_bottom
 	{
-		color: white;
+
 		border: none;
 		display:inline-block;
 		font-size: 16px;
@@ -254,16 +255,15 @@ footer > ul
 	.accueil_btn_top, .accueil_btn_top > a
 	{
 	   border-radius: 60px 60px 0 0;
-	   color: #FFF !important;
+	
 	}
 	.accueil_btn_bottom, .accueil_btn_bottom > a
 	{
 	    border-radius: 0px 0px 60px  60px;
-	    color: #000 !important;
-	}
+	 }
 	.accueil_txt
 	{
-		font-size: 1.2em;
+	  font-size: 1.2em;
 	  padding:30px 30px 60px 30px;
 	  margin-bottom:-60px;
 	}
