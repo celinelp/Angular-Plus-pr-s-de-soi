@@ -1,27 +1,24 @@
-<div class="row marron descriptifMagnet" ng-controller="magnetController as magnetCtrl">
+<div class="row marron descriptifMagnet">
 <div class="col-xs-11 col-md-11">
   <h1>{{magnetData[0].titreDescriptif}}</h1>
   <p  ng-bind-html="magnetData[0].texteDescriptif"></p>
+  <h3 class="consult">Séance d’une heure:&nbsp;la personne peut avoir besoin d’une ou plusieurs séances.</h3>
 </div>
 </div>
 
 <div class="row gris-clair approcheMagnet">
+<h2 class="text-mag3" >Mon approche du magnétisme et de la libération émotionnelle.</h2>
   <div class="col-xs-4">
   <img class="img-responsive4" src="img/magnetisme2.jpg" >
   </div>
 
   <div class="col-xs-8 col-md-8">
-
-    <h2 class="text-mag3" >Mon approche du magnétisme et de la libération émotionnelle. </h2>
-    <p class="text-mag3">Le magnétisme permet de se détendre, de s’apaiser, de se retrouver.<br> Ce travail permet aussi de se réénergiser. Cela permet également de prendre conscience et de rendre plus « claires » certaines   difficultés qui provoquent <strong>insomnie, stress, douleurs</strong>…
-     Le travail que je propose en magnétisme peut-être complété par un travail de libération émotionnelle. <br>Au cours de l’enfance ou tout au long de notre vie de nombreuses émotions (colère, tristesse…) sont restées bloquées ou enfouies au plus profond de nous-mêmes : problèmes relationnels, harcèlement, deuil, colère, tristesse, difficulté à se positionner, à dire « non »….<br> Tant qu’elles restent bloquées, elles nous empêchent d’avancer et de vivre pleinement notre vie, librement.<br> Je propose un accompagnement pour travailler sur ces émotions et enfin vous retrouver plus « vrai ». Le travail se fait grâce à la mise en situation de moments vécus difficiles présents ou passés par l’expression de sons ou de mots.<br>
-     La force des émotions bloquées ou de souffrance gardées au fond de soi est incroyable, les problèmes liées à l’alimentation (surpoids, préoccupation excessive du poids, troubles du comportement, maigreur…) peuvent-être la conséquence de ces émotions non exprimées qui « pèsent» au fil des années.<br> Le fait de libérer ces « blocages » va contribuer, par exemple,  à la perte de poids ultérieure en parallèle des changements d’habitude alimentaire mais parfois même sans rien changer dans l’alimentation.<br>
-     Le magnétisme et le travail émotionnel permettent des prises de conscience afin de pouvoir avancer, faire des choix et agir pour vivre mieux.</p>
+    <p class="text-mag3" ng-bind-html="magnetData[0].texteApproche"></p>
   </div>
 </div>
 <div class="row vert">
-   <div class="col-xs-2 col-xs-offset-5">
-    <p style="color:white">Libération émotionnelle.</p>
+   <div class="col-xs-offset-3 col-xs-7 audioMag">
+    <p class="audioTitre1">Emission radio Grand Ciel  sur la libération émotionnelle.</p>
     <audio controls src="audio/magnetisme.mp3" class="audio">Votre navigateur n'est pas compatible HTML5.</audio>
   </div>
 </div>
