@@ -27,7 +27,9 @@
       controllerAs : "storeDiet"
     })
     .when('/magnetisme',{
-      templateUrl : 'partials/magnetisme/magnetisme.html'
+      templateUrl : 'partials/magnetisme/magnetisme.html',
+      controller : "magnetController"
+      
     })
     .when('/mention',{
       templateUrl : 'partials/mention/mention.html'
@@ -160,8 +162,8 @@ app.controller('HomeController', function($rootScope, $scope, $sce){
   }
   $scope.HomeVueCtrlData = [
   {
-    txtBgVert:  $sce.trustAsHtml('"On ne voit bien qu’ avec le coeur, l’ essentiel est invisible pour les yeux". <br> St Exupéry, extrait Le Petit Prince.'),
-    txtBgMarron:  $sce.trustAsHtml('\"Le magnétisme, comme jadis l\'électricité ou la lumière, fait partie de ces énergies mystérieuses,<br> dont on observe les effets sans en connaître les causes.\" <br>Citation Anonyme ')
+    txtBgVert:  $sce.trustAsHtml('"<i>On ne voit bien qu’ avec le coeur, l’ essentiel est invisible pour les yeux".</i><br> St Exupéry, extrait Le Petit Prince.'),
+    txtBgMarron:  $sce.trustAsHtml('\"<i>Le magnétisme, comme jadis l\'électricité ou la lumière, fait partie de ces énergies mystérieuses,<br> dont on observe les effets sans en connaître les causes.</i>\" <br>Citation Anonyme')
   },
     {
       imgAtelierMois: "img/homeAtelier.jpg",
@@ -229,7 +231,7 @@ app.controller('dietController', ["$scope","$rootScope","$sce","$location","$anc
   $scope.diet = [
    {titreDescriptif : "Définition de la diététique",
    texteDescriptif : $sce.trustAsHtml("La diététique est la science de l’alimentation équilibrée qui contribue à être en bonne santé."),
-   texteDescriptif2 : $sce.trustAsHtml("<span style='font-size:20px;'><strong>Séance d’une heure:</strong> le suivi demande plusieurs mois de consultation et la fréquence dépend des besoins de chacun.</span>"),
+   texteDescriptif2 : $sce.trustAsHtml("<span style='font-size:20px;padding-top:40px;'><strong>Séance d’une heure:</strong> le suivi demande plusieurs mois de consultation et la fréquence dépend des besoins de chacun.</span>"),
 
   },
 
@@ -310,7 +312,8 @@ app.controller('magnetController', function($scope,$sce){
 $scope.magnetData = [
   {
     titreDescriptif : "Définition du magnétisme",
-    texteDescriptif : $sce.trustAsHtml("Le magnétisme est un soin d’énergie vitale qui permet de soigner les maux du corps et de l’esprit.<br> Il soulage les douleurs&nbsp;: zonas,&nbsp; verrues, brûlures, eczéma, troubles fonctionnels et nerveux, stress, insomnie, fatigue, deuil, …<br>Je suis un canal de l’énergie du ciel et de la terre et cette énergie va aider la personne à l’endroit où elle en a besoin.<br> La personne soignée reste habillée et est allongée sur une table de massage..<br><small>Attention : le magnétisme ne se substitue pas à un suivi médical, ni à un traitement médicamenteux.<samll><br><span style='font-size:20px;'>Séance d’une heure: La personne peut avoir besoin d’une ou plusieurs séances</span>…")
+    texteDescriptif : $sce.trustAsHtml("Le magnétisme est un soin d’énergie vitale qui permet de soigner les maux du corps et de l’esprit.<br> Il soulage les douleurs&nbsp;: zonas,&nbsp; verrues, brûlures, eczéma, troubles fonctionnels et nerveux, stress, insomnie, fatigue, deuil, …<br>Je suis un canal de l’énergie du ciel et de la terre et cette énergie va aider la personne à l’endroit où elle en a besoin.<br> La personne soignée reste habillée et est allongée sur une table de massage..<br><small>Attention : le magnétisme ne se substitue pas à un suivi médical, ni à un traitement médicamenteux.<samll><br><span style='font-size:20px;'>Séance d’une heure: La personne peut avoir besoin d’une ou plusieurs séances</span>…"),
+    texteApproche: $sce.trustAsHtml("Le magnétisme permet de se détendre, de s’apaiser, de se retrouver.<br> Ce travail permet aussi de se réénergiser. Cela permet également de prendre conscience et de rendre plus « claires » certaines   difficultés qui provoquent <strong>insomnie, stress, douleurs</strong>…Le travail que je propose en magnétisme peut-être complété par un travail de libération émotionnelle. <br>Au cours de l’enfance ou tout au long de notre vie de nombreuses émotions (colère, tristesse…) sont restées bloquées ou enfouies au plus profond de nous-mêmes : problèmes relationnels, harcèlement, deuil, colère, tristesse, difficulté à se positionner, à dire « non »….<br> Tant qu’elles restent bloquées, elles nous empêchent d’avancer et de vivre pleinement notre vie, librement.<br> Je propose un accompagnement pour travailler sur ces émotions et enfin vous retrouver plus « vrai ». Le travail se fait grâce à la mise en situation de moments vécus difficiles présents ou passés par l’expression de sons ou de mots.<br>La force des émotions bloquées ou de souffrance gardées au fond de soi est incroyable, les problèmes liées à l’alimentation (surpoids, préoccupation excessive du poids, troubles du comportement, maigreur…) peuvent-être la conséquence de ces émotions non exprimées qui « pèsent» au fil des années.<br> Le fait de libérer ces « blocages » va contribuer, par exemple,  à la perte de poids ultérieure en parallèle des changements d’habitude alimentaire mais parfois même sans rien changer dans l’alimentation.<br>Le magnétisme et le travail émotionnel permettent des prises de conscience afin de pouvoir avancer, faire des choix et agir pour vivre mieux.")
   }
 ];
 
@@ -324,7 +327,7 @@ app.controller('AproposController', function($scope,$sce){
 $scope.aproposData = [
  {imageBio: "img/melina9.jpg",
   textBio: $sce.trustAsHtml("Née en Mayenne, confrontée à l’âge de 11 ans à un problème de santé important, j’ai eu une véritable prise de conscience sur le fait que l’alimentation est une clé essentielle de notre SANTE. J‘ai commencé à 16 ans à faire un travail sur moi, pour vivre mieux, pour me connaître <br>et pour avancer. C’est à Tours que j’ai eu mon diplôme de diététique, en 1999. Je suis tombée amoureuse de cette ville et y ai vécu 10 ans.<br> Après mes études et pendant 7 ans,  j’ai travaillé en tant que diététicienne-téléconseillère dans un service consommateurs : j’ai beaucoup appris sur la communication et le conseil personnalisé. Par la suite, j’ai eu envie de réaliser des animations sur l’alimentation auprès de différents publics.<br> Malgré ma volonté de rester sur Tours, la vie m’a menée en Eure et Loir.<br> J’ai en effet trouvé le travail dont je rêvais à Dreux. En effet depuis fin 2007, je suis Chargée de prévention surpoids-obésité au Centre Hospitalier de Dreux où je réalise des animations auprès de différents publics.<br>Je réalise également des consultations de prévention et de prise en charge surpoids-obésité auprès des enfants et adolescents  et  la coordination de différents projets tels que ''&nbsp;<strong>la semaine du goût</strong>&nbsp;''.<br> La rencontre avec les différentes cultures a été une richesse que je n’aurais jamais soupçonnée. Je suis dans un domaine qui s’appelle l’éducation pour la santé. L’objectif est  d’accompagner les personnes vers des changements de comportement et d’informer sur les bienfaits d’une alimentation saine ainsi que la promotion de l’activité physique, sans jugement, ni dogmatisme ce qui leur permettra de faire des choix éclairés meilleurs pour leur santé morale et physique. Mon père était sourcier, je l’ai souvent suivi sur le terrain jusqu’au jour où  j’ai senti que je trouvais les sources aussi. Je n’ai jamais voulu utiliser mon don car je souhaitais être au clair avec moi-même et apprendre à me protéger.")},
-  {textCitation: $sce.trustAsHtml('"On ne voit bien qu’avec le coeur,<br>l’essentiel est invisible pour les yeux" </br>St Exupéry. Extrait Le Petit Prince')}
+  {textCitation: $sce.trustAsHtml('"<i> On ne voit bien qu’avec le coeur,<br>l’essentiel est invisible pour les yeux "</i></br>St Exupéry. Extrait Le Petit Prince')}
 
 
 ];

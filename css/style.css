@@ -502,9 +502,7 @@ padding-top: 30px;
 .lesProfessionels {
 	padding: 40px;
 	text-align: center;
-	background-color: #A97052;
 	color: white;
-	height: 500px;
 	margin: auto;
 }
 .atelierThematique{
@@ -560,7 +558,12 @@ h3.theme {
 	text-align: justify;
 	line-height: 25px;
 	color: #2E3837;
+	letter-spacing: 1px;
+	padding-top: 20px;
 
+}
+.fondParcours p {
+	padding-top: 15px;
 }
 .parcours-bio h2 {
 	color: black;
@@ -592,10 +595,10 @@ h3.theme {
 }
 h2.titre1 {
 	color: #6e5342;
-	font-weight: bold;
 	font-size: 32px;
 	padding-top: 20px;
-
+	font-weight: bolder;
+	font-size: 2.1em;
 
 }
 
@@ -648,8 +651,9 @@ blockquote {
 
 h2.aproposTitre3 {
 	color: #6e5342;
-	font-weight: bold;
-	font-size: 1.8em;
+	font-weight: bolder;
+	font-size: 32px;
+	
 
 }
 
@@ -780,19 +784,21 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 	font-size: 1.3em;
 	text-align: center;
 	padding-top: 15px;
-	padding-bottom: 25px;
+	padding-bottom: 60px;
 	padding-left: 25px;
-	line-height: 24px;
+	line-height: 28px;
 	letter-spacing: 1px;
 
 }
 .descriptifMagnet h1 {
-	font-size: 2.1em;
+	font-size: 40px;
+	padding-top: 30px;
+	padding-bottom: 15px;
 
 }
 .img-responsive4 {
 	width: 105%;
-	padding-top: 180px;
+	padding-top: 130px;
 	padding-left: 80px;
 
 
@@ -812,19 +818,32 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 }
 h2.text-mag3  {
 	font-size: 40px;
-	width: 150%;
-	float: right;
+	text-align: center;
+	margin-left: 40px;
 	margin-right: 80px;
-	padding-top: 20px;
+	padding-top: 40px;
 
 }
 p.text-mag3 {
 	color:#2E3837;
 	text-align: left;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 	line-height: 24px;
 	letter-spacing: 1px;
+	padding-top: 40px;
 
+}
+
+.audioTitre1 {
+	font-size: 36px;
+	color: #2E3837;
+	font-family: 'titre', serif;
+
+}
+.audioMag {
+	
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 footer {
 	font-size: 1.1em;
