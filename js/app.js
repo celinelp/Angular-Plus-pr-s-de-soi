@@ -13,7 +13,9 @@
       controllerAs : "HomeCtrl"
     })
     .when('/apropos',{
-      templateUrl : 'partials/apropos/apropos.html'
+      templateUrl : 'partials/apropos/apropos.html',
+      controller : "AproposController",
+      controllerAs : "apropos"
     })
     .when('/atelier',{
       templateUrl : 'partials/atelier/atelier.html'

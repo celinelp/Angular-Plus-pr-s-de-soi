@@ -724,7 +724,7 @@ span.assoc {
 	border-radius: 15px;
 	color: #fff;
 }
-zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
+
 .nav.nav-justified > li > a > img { box-shadow: 0 0 0 5px #A97052; }
 .nav.nav-justified > li > a > img {
 	max-width: 80%;
@@ -744,7 +744,7 @@ zz.nav.nav-justified > li.active > a > .quote { opacity: 1; }
 	-webkit-transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.tab-pane .tab-inner {  padding: 30px 0 20px; }
+/*.tab-pane .tab-inner {  padding: 30px 0 20px; }*/
 
 @media (min-width: 768px) {
 	.nav.nav-justified > li > a > .quote {
