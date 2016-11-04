@@ -193,20 +193,19 @@ footer > ul
 {
 	margin-bottom: 5vh;
 }
-.accueil_btn_top:hover,.accueil_btn_bottom:hover  {background-color: yellow !important;}
+.accueil_btn_top:hover,.accueil_btn_bottom:hover  {background-color: #FFF931 !important; color:#6e5342; }
 .accueil_btn_top , .accueil_btn_bottom
 	{
 		border: none;
 		display:inline-block;
-		font-size: 16px;
 		width: 200px;
 		height: 100px;
 		margin: auto;
 		font-size: 2em;
 	}
-	.acc_btn_top_txt, .acc_btn_bot_txt{ font-family: "titre"; font-size: 1.1em;}
-	.acc_btn_top_txt{margin-bottom: -30px;  color:#e7dcc6 ;}
-	.acc_btn_bot_txt{margin-bottom: 30px;  color:#6e5342 ; }
+	.acc_btn_top_txt, .acc_btn_bot_txt{ font-family: "titre"; font-size: 1.1em}
+	.acc_btn_top_txt{margin-bottom: -30px; }
+	.acc_btn_bot_txt{margin-bottom: 30px;  color:#6e5342; }
 	.accueil_btn_top
 	{
 		border-radius: 100px 100px 0 0;
@@ -230,7 +229,6 @@ footer > ul
 	{
 		line-height: 2em;
 		font-size: 1.5em;
-		color: #e7dcc6;
 		margin-top: -100px;
 		padding:100px 50px 50px 50px;
 		text-align: center;
