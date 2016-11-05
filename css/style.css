@@ -505,11 +505,13 @@ color: white;
 /* bandeau haut mes ateliers*/
 .bandeauHautAtelier{
 padding-top: 30px;
+padding-bottom: 30px;
 }
 .lesProfessionels {
 	padding: 40px;
 	text-align: center;
 	color: white;
+	
 }
 .lesProfessionels p, .lesProfessionels li{
 	font-size: 1.3em;
@@ -799,11 +801,13 @@ span.assoc {
 	line-height: 28px;
 	letter-spacing: 1px;
 
+
 }
 .descriptifMagnet h1 {
 	font-size: 40px;
 	padding-top: 30px;
 	padding-bottom: 15px;
+
 
 }
 .img-responsive4 {
@@ -832,6 +836,7 @@ h2.text-mag3  {
 	margin-left: 40px;
 	margin-right: 80px;
 	padding-top: 40px;
+	color: #2E3837;
 
 }
 p.text-mag3 {
